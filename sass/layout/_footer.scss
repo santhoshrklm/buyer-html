@@ -1,0 +1,100 @@
+.footer{
+    background-color: #ececee;
+    margin-top: 0rem;
+    /*
+    position: relative;
+    z-index: -2;
+    */
+    .foot-pad{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding: 2.5rem 0;
+    }
+    ul{
+        margin: 0 1.5rem;
+        padding: 0;
+        li{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            color: #999;
+            margin-bottom: .5rem;
+            a{
+                color: #999;
+                text-decoration: none;
+                &:hover{
+                    color: #555;
+                }
+            }
+            span{
+                width: 2rem;
+                display: inline-flex;
+                border: .1rem solid #999;
+                text-align: center;
+                padding: .2rem 0;
+                margin-right: .7rem;
+                i{
+                    padding: 0;
+                    margin: 0 auto;
+                }
+            }
+            h3{
+                font-size: 1.6rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin: 0 0 1rem 0;
+                color: #555;
+            }
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer{
+        ul{
+            margin: 0;
+            margin-top: 2.5rem;
+            width: 33.3%;
+        }
+        .foot-pad{
+            flex-direction: row;
+            padding-top: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        ul{
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer{
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+.footer{
+    .rights{
+        background-color: #999;
+        color: #fff;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+}

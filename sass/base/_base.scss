@@ -1,0 +1,123 @@
+@import "../css/icomoon.css";
+*,
+*::after,
+*::before{}
+html{
+    font-size: 62.5%; /* 0.625 x 16 = 10 Root */
+}
+a{
+    &:link{
+        color: $theme-primary;
+    }
+    &:hover{
+        color: darken($theme-primary, 10%);
+    }
+}
+body {
+    font-family: 'Maitree', serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #fff;
+    font-size: 1.3rem;
+    &.modal-open {
+        padding-right: 0!important;
+        .modal{
+            padding-right: 0!important;
+            .close{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+.mand{
+    color: $theme-secondary;
+    margin-left: .25rem;
+}
+.pull-right {
+    float: right;
+}
+.btn{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    box-shadow: none!important;
+    outline: none!important;
+    border-radius: .1rem;
+    &-primary{
+        background-color: $theme-primary!important;
+        border-color: $theme-primary!important;
+        color: #fff!important;
+        &:hover{
+            background-color: darken($theme-primary, 6%)!important;
+        }
+    }
+    &-secondary{
+        background-color: $theme-secondary!important;
+        border-color: $theme-secondary!important;
+        color: #fff!important;
+        &:hover{
+            background-color: darken($theme-secondary, 6%)!important;
+        }
+    }
+    &-outline{
+        &-primary{
+            background-color: #fff!important;
+            border-color: rgba(0, 0, 0, 0.125)!important;
+            color: #555!important;
+            &:hover{
+                background-color: darken($theme-primary, 6%)!important;
+                border-color: $theme-primary!important;
+                color: #fff!important;
+            }
+        }
+        &-secondary{
+            background-color: #fff!important;
+            border-color: rgba(0, 0, 0, 0.125)!important;
+            color: #555!important;
+            &:hover{
+                background-color: rgba($offwhite, 80%)!important;
+                color: $grey;
+            }
+        }
+    }
+}
+.form-control{
+    border-radius: .1rem;
+    border-color: #ebebeb;
+    color: #cac8c9;
+    &::-webkit-input-placeholder { /* Chrome */
+        color: #cac8c9;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: #cac8c9;
+        opacity: 1;
+    }
+}
+.form-check-label{
+    margin-left: .5rem;
+}
+select{
+    &.form-control:not([size]):not([multiple]){
+        height: auto;
+    }
+}
+.table-responsive{
+    overflow: auto;
+}
+.btn-compare-main{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .7rem 2rem;
+    z-index: 3;
+}
+.custom-control-label{
+    margin-left: .75rem;
+    &::after,
+    &::before{
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 0;
+    }
+}
