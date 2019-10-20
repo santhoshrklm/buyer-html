@@ -106,9 +106,10 @@
                         </li>
                       </ul>
                     </aside>
+
                     <div class="right-panel">
                       <h1>add your new delivery address</h1>
-                        <form class="add-new-address mt-5" novalidate="">
+                        <!-- <form class="address-panel mt-5" novalidate="">
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <label for="firstName">First name</label>
@@ -144,8 +145,9 @@
                           </div>
 
                           <div class="row">
+
                             <div class="col-md-12 mb-3">
-                              <label for="country">City</label>
+                              <label for="country">Please type subdistrict, district, city name or postal code and choose from the list</label>
                               <input class="form-control" type="tel" value="" id="city">
                               <div class="invalid-feedback">
                                 Please select a valid country.
@@ -153,8 +155,16 @@
                             </div>
 
                             <div class="col-md-12 mb-3">
+                              <label for="country">City</label>
+                              <input class="form-control" type="tel" value="" id="city" disabled>
+                              <div class="invalid-feedback">
+                                Please select a valid country.
+                              </div>
+                            </div>
+
+                            <div class="col-md-12 mb-3">
                               <label for="state">State</label>
-                              <select class="custom-select d-block w-100" id="state" required="">
+                              <select class="custom-select d-block w-100" id="state" required="" disabled>
                                 <option value="">Choose...</option>
                                 <option></option>
                               </select>
@@ -165,7 +175,7 @@
 
                             <div class="col-md-12 mb-3">
                               <label for="zip">postal code</label>
-                              <input type="text" class="form-control" id="postalCode" placeholder="" required="">
+                              <input type="text" class="form-control" id="postalCode" placeholder="" required="" disabled="disabled">
                               <div class="invalid-feedback">
                                 Zip code required.
                               </div>
@@ -178,7 +188,93 @@
                           <hr class="mb-4">
                           <button class="btn btn-primary btn-lg" type="submit">Add Address</button>
                           <button class="btn btn-secondary btn-lg" type="submit">Cancel</button>
-                        </form>
+                        </form> -->
+                        <div class="address-panel">
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label title="">Name</label>
+                                <input type="text" id="" name="fullName" class="form-control false" placeholder="Name" value="">
+                              </div>
+                              <div class="form-group">
+                                <label title="">Phone Number</label>
+                                <input type="text" id="" name="phoneNo" class="form-control false" placeholder="Phone Number" value="" disabled>
+                              </div>
+                              <div class="form-group">
+                                <label title="">Address </label>
+                                <textarea id="" name="addressLine1" class="form-control false" placeholder="Enter Plot/House Number, Village Road." ></textarea>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <label title="">Province</label>
+                                    <select class="custom-select select-menu" required>
+                                      <option value="">Select or type your Province Name</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                  <div class="form-group">
+                                    <label title="">Postal Code</label>
+                                    <select class="custom-select select-menu" required disabled>
+                                      <option value="">Select or type your Postal code</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="form-group">
+                                    <label title="">District name</label>
+                                    <select class="custom-select select-menu" required>
+                                      <option value="">Select or type your District name</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="form-group">
+                                    <label title="">Sub-District name</label>
+                                    <select class="custom-select select-menu" required disabled>
+                                      <option value="">Select or type your Sub-district name</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="form-group">
+                                <label title="">Province</label>
+                                <input type="text" id="" name="city" class="form-control false" placeholder="Select or type your Province Name" value="">
+                              </div>
+                              <div class="form-group">
+                                <label title="">Postal Code</label>
+                                <input type="text" id="" name="city" class="form-control false" placeholder="City" value="Select or type your Postal code" disabled>
+                              </div>
+                              <div class="form-group">
+                                <label title="">District name</label>
+                                <input type="text" id="" name="zipCode" class="form-control false" placeholder="Postal Code" value="Select or type your District name" disabled>
+                              </div>
+                              <div class="form-group">
+                                <label title="">Sub-District name</label>
+                                <input type="text" id="" name="zipCode" class="form-control false" placeholder="Postal Code" value="Select or type your Sub-district name" disabled>
+                              </div> -->
+                              <div class="form-group form-check">
+                                <input type="checkbox" id="" name="defaultAddress" class="form-check-input false" placeholder="" value="">
+                                <label title="" class="form-check-label">Make this my default address</label>
+                              </div>
+                                <button type="button" class="btn btn-primary">Save Address</button>
+                                <button type="button" class="btn btn-secondary btn ml-2">Cancel</button>
+                            </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -224,9 +320,9 @@
                         </ul>
                         <ul>
                             <li><h3>Connect with Us</h3></li>
-                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span>Facebook</a></li>
-                            <li><a href="#"><span><i class="fab fa-twitter"></i></span>Twitter</a></li>
-                            <li><a href="#"><span><i class="fab fa-pinterest"></i></span>Pinterest</a></li>
+                            <li><a href="#"><div><i class="fab fa-facebook-f"></i></div>Facebook</a></li>
+                            <li><a href="#"><div><i class="fab fa-twitter"></i></div>Twitter</a></li>
+                            <li><a href="#"><div><i class="fab fa-pinterest"></i></div>Pinterest</a></li>
 
                         </ul>
                         <ul>

@@ -67,7 +67,96 @@
               <input type="text" class="form-control" id="g-search" placeholder="Search Products.." aria-label="Search Products.." aria-describedby="basic-addon2" value="">
               <div class="input-group-append"><button class="btn btn-outline-secondary" type="button"><i class="icon-search"></i></button></div></div>
             </div>
-          <div class="account"><span class="signup"><div class="btn-group"><a id="signInPanel" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In / Sign Up</a><div class="dropdown-menu dropdown-menu-right signInDiv"><h1>Sign In</h1></div></div></span><span class="nav-tools"><a class="wishlist"><i class="fas fa-heart"></i></a><a id="cartItems-pop" class="shopping-cart popper-cart"><i class="fas fa-shopping-cart"></i><sub class="badge-sub">2</sub></a><div><div class="popover show bs-popover-bottom" x-placement="bottom" data-placement="bottom" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1064px, 81px, 0px); display: none;"><div class="popover-inner"><div class="popover-body"> <div class="my-cart pop"><h1>Your Cart (2 Items) </h1><div class="table-responsive"><table class="table"><tbody></tbody></table></div><div class="bx-total"><label>Final Amount <small>(Before Tax &amp; Shipping)</small></label> <label class="cart-price">$99</label></div><div class="bx-btn"><form method="get" action="cart.html"><button type="submit" class="btn btn-secondary btn-lg">Go to My Cart</button></form></div></div></div></div><span class="arrow" style="left: 145px;"></span></div></div></span></div></div></div>
+          <div class="account">
+            <span class="signup">
+            <div class="btn-group">
+              <div class="dropdown profile-menu">
+                <button class="btn btn-sign-in dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user-circle"></i> <span class="user-name">John Doe<span>
+                </button>
+
+                <!-- Sign in section -->
+                <!-- <form class="dropdown-menu p-4 dropdown-menu-right">
+                  <div class="form-group">
+                    <label class="main-label">sign in</label>
+                    <label for="exampleDropdownFormEmail2">Email or phone number</label>
+                    <input type="text" class="form-control" id="" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword2">Password<a href="#" class="pull-right">Forgot Password?</a></label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                  <a class="custom-link"href="#">New Customer?</a>
+                  <button type="submit" class="btn btn-secondary btn-lg btn-block">Create your Account</button>
+                </form> -->
+
+
+
+                <!-- Create Account section-->
+                <form class="dropdown-menu p-4 dropdown-menu-right">
+                  <div class="form-group">
+                    <label class="main-label">Create Account</label>
+                    <label for="exampleDropdownFormEmail3">First name</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail3">Last name</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail3">Phone Number</label>
+                    <input type="tel" name="usrtel" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail2">Email</label>
+                    <input type="text" class="form-control" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword2">Password</label>
+                    <input type="password" class="form-control" id="Password2" placeholder="Minimum 8 characters">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword2">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword2" placeholder="Minimum 8 characters">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck3">
+                    <label class="form-check-label" for="dropdownCheck3">Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">create account</button>
+                    <div class="footer-link">I agree to the <a href="#">Terms & Conditions of use</a></div>
+                    <div class="footer-link">Already have an account? <a href="#">Sign in</a></div>
+                </form>
+
+
+                <!-- Thank you message section -->
+                <!-- <div class="dropdown-menu p-4 dropdown-menu-right thankyou-message">
+                  <p>Thank you. We have sent you anaccount activation link.</p>
+                  <p>Please check your email or phone,activate your account and enjoyshopping with us!</p>
+                  <p>For any help, please <a href="#">click here</a></p>
+                </div> -->
+
+                <!-- Profile menu section -->
+                <!-- <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">My Addresses</a>
+                  <a class="dropdown-item" href="#">My Orders</a>
+                  <a class="dropdown-item" href="#">Saved Payment Methods</a>
+                  <div class="dropdown-divider"></div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">logout</button>
+                </div> -->
+
+              </div>
+            </div>
+          </span>
+        <span class="nav-tools"><a class="wishlist"><i class="fas fa-heart"></i></a><a id="cartItems-pop" class="shopping-cart popper-cart"><i class="fas fa-shopping-cart"></i><sub class="badge-sub">2</sub></a><div><div class="popover show bs-popover-bottom" x-placement="bottom" data-placement="bottom" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1064px, 81px, 0px); display: none;"><div class="popover-inner"><div class="popover-body"> <div class="my-cart pop"><h1>Your Cart (2 Items) </h1><div class="table-responsive"><table class="table"><tbody></tbody></table></div><div class="bx-total"><label>Final Amount <small>(Before Tax &amp; Shipping)</small></label> <label class="cart-price">$99</label></div><div class="bx-btn"><form method="get" action="cart.html"><button type="submit" class="btn btn-secondary btn-lg">Go to My Cart</button></form></div></div></div></div><span class="arrow" style="left: 145px;"></span></div></div></span></div></div></div>
 
 
 

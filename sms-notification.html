@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/favicon.ico">
+
+        <title>Noc Noc - Home</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Google Font Maitree -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=thai" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!-- Icon styles for this template -->
+        <link href="css/icomoon.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <link href="css/trackpad-scroll-emulator.css" rel="stylesheet" />
+
+        <noscript>
+            <style>
+                /**
+                * Reinstate scrolling for non-JS clients
+                *
+                * You coud do this in a regular stylesheet, but be aware that
+                * even in JS-enabled clients the browser scrollbars may be visible
+                * briefly until JS kicks in. This is especially noticeable in IE.
+                * Wrapping these rules in a noscript tag ensures that never happens.
+                */
+                .tse-scrollable {
+                    overflow-y: scroll;
+                }
+                .tse-scrollable.horizontal {
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                }
+            </style>
+        </noscript>
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+        <div class="wrap">
+
+            <div class="header-panel">
+              <div class="container">
+                  <div class="logo">
+                    <a href="index.html" title="Noc Noc">
+                      <img src="images/logo.svg" class="logo" onerror="this.onerror=null; this.src='image.png'">
+                    </a>
+                  </div>
+                  <div class="main-search">
+                    <div class="input-group main-search-select">
+                      <div class="select-container nav-list">
+                        <span class="current-selection">Category</span>
+                        <span class="arrow"></span>
+                        <select id="header-select-menu">
+                          <option selected>Category</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </div>
+                      <input type="hidden" id="temphiddenfield">
+                      <input type="text" class="form-control" id="g-search" placeholder="Search Products.." aria-label="Search Products.." aria-describedby="basic-addon2" value="">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button"><i class="icon-search"></i></button></div>
+                    </div>
+                  </div>
+                  <div class="account">
+
+                    <span class="nav-tools">
+                      <span class="myaccount">
+                        <i class="far fa-user"></i>
+                        <a id="" data-toggle="modal" data-target="#loginModal" aria-haspopup="true" aria-expanded="false">Sign In | Join Free</a  class="btn btn-sign-in dropdown-toggle" type="button" id="" data-toggle="modal" data-target="#loginModal" aria-haspopup="true" aria-expanded="false">
+                        <small>My Account</small>
+                      </span>
+                      <a class="mywishlist">
+                        <i class="far fa-heart"></i>
+                        <sub>0</sub>
+                        <small>Wishlist</small>
+                      </a>
+                      <a id="cartItems-pop" class="shopping-cart popper-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <sub>0</sub>
+                        <small>Cart</small>
+                      </a>
+                    </span>
+
+                  </div>
+              </div>
+            </div>
+
+            <main role="content" class="product-detail content-wrap">
+                <div class="container">
+                    
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Proceed to Payment</li>
+                        </ol>
+                    </nav>
+
+                    <div class="cart-pad">
+                      
+                        <div class="checkout">
+                          
+                          <div class="selected-tab-section">
+                            
+                            <div class="selected-tab-line"></div>
+                            
+                            <div class="selected-tab-circle-container">
+                            
+                              <div class="selected-tab-circle completed">
+                                <span><i class="fas fa-check"></i></span>
+                                <h4>รายละเอียดการจัดส่ง</h4>
+                              </div>
+                              
+                              <div class="selected-tab-circle selected">
+                                <span>2</span>
+                                <h4>เลือกวิธีการจัดส่ง</h4>
+                              </div>
+                              
+                              <div class="selected-tab-circle">
+                                <span>3</span>
+                                <h4>ชำระเงิน</h4>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                          
+                          <h1 class="mt-4">เลือกวิธีการจัดส่ง</h1>
+                          
+                          <a href="#" data-toggle="modal" data-target="#otpModal" aria-haspopup="true" aria-expanded="false">SMS Notification</a>
+                          
+                          <div class="choose-delivery-method mt-4">
+                            <div class="shipment-details-checkout">
+                              
+                              <div class="shipment-one">
+                              
+                                <header>
+                                  <h4>รายการจัดส่งที่ 1 (2 รายการสินค้า)</h4>
+                                  <div class="seller-warehouse">
+                                    <small>ร้านค้า: {Seller Name}</small> <small class="ml-3 mr-3 divider">|</small> <small> คลังสินค้า: {Warehouse Name}</small>
+                                  </div>
+                                </header>
+                                
+                                <section class="product-carousel-checkout">
+                                </section>
+
+                                <div class="shipment-option-checkout order-list shipping mt-3">
+                                  <ul>
+                                      <li class="shipping-options">
+                                        
+                                          <div class="form-check">
+                                            <div class="radio">
+                                              <input id="radio-1" name="radio" type="radio">
+                                              <label  for="radio-1" class="radio-label"><span class="icon-shipping_delivery_ecomomic ml-1 mr-3"></span>จัดส่งแบบประหยัด์</label>
+                                              <div class="shipping-options-name">ได้สินค้าภายใน 7-8 วันทำการ</div>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="shipping-option-price-details">
+                                            <span class="rate">$45</span>
+                                          </div>
+                                          
+                                      </li>
+                                      <li class="shipping-options">
+                                        
+                                          <div class="form-check">
+                                            <div class="radio">
+                                              <input id="radio-2" name="radio" type="radio">
+                                              <label  for="radio-2" class="radio-label"><span class="icon-express ml-1 mr-3"></span>จัดส่งแบบด่วน</label>
+                                              <div class="shipping-options-name">ได้สินค้าภายใน 7-8 วันทำการ</div>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="shipping-option-price-details">
+                                            <span class="rate">$45</span>
+                                          </div>
+                                          
+                                      </li>
+                                      <li class="shipping-options">
+                                          
+                                          <div class="form-check">
+                                            <div class="radio">
+                                              <input id="radio-3" name="radio" type="radio">
+                                              <label  for="radio-3" class="radio-label"><span class="icon-shipping_pickup1 ml-1 mr-3"></span>รับสินค้าที่ร้าน</label>
+                                              <div class="shipping-options-name">รับสินค้าได้ภายใน 3 วันหลังสั่งซื้อ
+                                              ที่อยู่ร้าน: 243/20 หมู่บ้านชวนชื่นพาร์ควิว ถนนกาญจนาภิเษก 
+                                              เเขวงศาลาธรรมสพน์ เขตทวีวัฒนา กรุงเทพมหานคร 10170
+                                              </div>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="shipping-option-price-details">
+                                            <span class="rate">$45</span>
+                                            <span class="view-store-address"><span class="icon-map mr-2"></span>ดูที่อยู่ร้านค้า</span>
+                                          </div>
+                                          
+                                      </li>
+                                  </ul>
+                                </div>
+                              
+                              </div>
+                            
+                              <div class="shipment-one">
+                            
+                              <header>
+                                <h4>รายการจัดส่งที่ 1 (2 รายการสินค้า)</h4>
+                                <small>ร้านค้า: {Seller Name} | คลังสินค้า: {Warehouse Name}</small>
+                              </header>
+                              
+                              <section class="product-carousel-checkout">
+                              </section>
+
+                              <div class="shipment-option-checkout order-list shipping mt-3">
+                                <ul>
+                                    <li class="shipping-options">
+                                      
+                                        <div class="form-check">
+                                          <div class="radio">
+                                            <input id="radio-4" name="radio" type="radio">
+                                            <label  for="radio-4" class="radio-label"><span class="icon-shipping_delivery_ecomomic ml-1 mr-3"></span>จัดส่งแบบประหยัด์</label>
+                                            <div class="shipping-options-name">ได้สินค้าภายใน 7-8 วันทำการ</div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="shipping-option-price-details">
+                                          <span class="rate">$45</span>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="shipping-options">
+                                      
+                                        <div class="form-check">
+                                          <div class="radio">
+                                            <input id="radio-5" name="radio" type="radio">
+                                            <label  for="radio-5" class="radio-label"><span class="icon-shipping_delivery_ecomomic ml-1 mr-3"></span>จัดส่งแบบด่วน</label>
+                                            <div class="shipping-options-name">ได้สินค้าภายใน 7-8 วันทำการ</div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="shipping-option-price-details">
+                                          <span class="rate">$45</span>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="shipping-options">
+                                        
+                                        <div class="form-check">
+                                          <div class="radio">
+                                            <input id="radio-6" name="radio" type="radio">
+                                            <label  for="radio-6" class="radio-label"><span class="icon-shipping_pickup1 ml-1 mr-3"></span>รับสินค้าที่ร้าน</label>
+                                            <div class="shipping-options-name">รับสินค้าได้ภายใน 3 วันหลังสั่งซื้อ
+                                            ที่อยู่ร้าน: 243/20 หมู่บ้านชวนชื่นพาร์ควิว ถนนกาญจนาภิเษก 
+                                            เเขวงศาลาธรรมสพน์ เขตทวีวัฒนา กรุงเทพมหานคร 10170
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="shipping-option-price-details">
+                                          <span class="rate">$45</span>
+                                          <span class="view-store-address"><span class="icon-map mr-2"></span>ดูที่อยู่ร้านค้า</span>
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+                              </div>
+                            
+                            </div>
+
+                            </div>
+                          </div>
+                          
+                          <div class="form-row button-container-checkout">
+                              <button type="button" class="btn btn-primary btn-xl btn-block">ดำเนินการต่อ</button>
+                              <button type="button" class="btn btn-grey btn-xl btn-block">ย้อนกลับ</button>
+                          </div>
+
+                        </div>
+                        
+                        <div class="order-summary">
+                            
+                            <div class="pad">
+                                
+                              <div class="card purchase-detail">
+                                
+                                <div class="card-header">
+                                  <h2>สรุปการสั่งซื้อ</h2>
+                                </div>
+                                
+                                <div class="card-body">
+                                  
+                                  <label>กรอกโปรโมโค้ดที่คุณมี</label>
+                                  <div class="input-group  mb-2">
+                                    <input class="form-control" type="text" value="" >
+                                    <span class="input-group-btn">
+                                      <button class="btn btn-primary btn-copy" type="button">
+                                        ใช้
+                                      </button>
+                                    </span>
+                                  </div>
+                                  
+                                  <span class="promotion-code border-bottom"><i class="fas fa-check-circle mr-2"></i>โปรโมโค้ดนี้ใช้สามารถใช้ลดราคาได้</span>
+                                  
+                                  <div class="product-details-price">
+                                    
+                                    <header>
+                                      <span>ราคารวมสินค้า (4 รายการ)</span>
+                                      <span>฿ 42,948.00</span>
+                                    </header>
+                                    
+                                    <div class="item-desc-deails">
+                      
+                                      <div class="bximg mr-4">
+                                        <a href="product-detail.html">
+                                          <img src="images/product1.jpg" alt="Best Deal 1" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    
+                                      <div class="my-cart-item-desc-new mb-2">
+                                          <span class="cart-item-desc">กระเบื้องยางไวนิลลายไม้ 90PVC collection 942x157x2 มม Albino </span>
+                                          
+                                          <div class="price-new">                              
+                                          
+                                            <div class="price-new-per-piece">
+                                              <label class="offer">฿32.00</label>
+                                              <small>/ piece</small>
+                                            </div>
+                                            <div class="quantity">จำนวน : 20 กล่อง</div>
+                                          
+                                          </div>
+                                          
+                                      </div>
+  
+                                      <span class="total-price">฿700.00</span>
+                                    
+                                    </div>
+                                    
+                                    <div class="item-desc-deails">
+                      
+                                      <div class="bximg mr-4">
+                                        <a href="product-detail.html">
+                                          <img src="images/product1.jpg" alt="Best Deal 1" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    
+                                      <div class="my-cart-item-desc-new mb-2">
+                                          <span class="cart-item-desc">กระเบื้องยางไวนิลลายไม้ 90PVC collection 942x157x2 มม Albino </span>
+                                          
+                                          <div class="price-new">                              
+                                          
+                                            <div class="price-new-per-piece">
+                                              <label class="offer">฿32.00</label>
+                                              <small>/ piece</small>
+                                            </div>
+                                            <div class="quantity">จำนวน : 20 กล่อง</div>
+                                          
+                                          </div>
+                                          
+                                      </div>
+  
+                                      <span class="total-price">฿700.00</span>
+                                    
+                                    </div>
+                                    
+                                    <div class="item-desc-deails">
+                      
+                                      <div class="bximg mr-4">
+                                        <a href="product-detail.html">
+                                          <img src="images/product1.jpg" alt="Best Deal 1" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    
+                                      <div class="my-cart-item-desc-new mb-2">
+                                          <span class="cart-item-desc">กระเบื้องยางไวนิลลายไม้ 90PVC collection 942x157x2 มม Albino </span>
+                                          
+                                          <div class="price-new">                              
+                                          
+                                            <div class="price-new-per-piece">
+                                              <label class="offer">฿32.00</label>
+                                              <small>/ piece</small>
+                                            </div>
+                                            <div class="quantity">จำนวน : 20 กล่อง</div>
+                                          
+                                          </div>
+                                          
+                                      </div>
+  
+                                      <span class="total-price">฿700.00</span>
+                                    
+                                    </div>
+                                    
+                                    <div class="item-desc-deails">
+                      
+                                      <div class="bximg mr-4">
+                                        <a href="product-detail.html">
+                                          <img src="images/product1.jpg" alt="Best Deal 1" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    
+                                      <div class="my-cart-item-desc-new mb-2">
+                                          <span class="cart-item-desc">กระเบื้องยางไวนิลลายไม้ 90PVC collection 942x157x2 มม Albino </span>
+                                          
+                                          <div class="price-new">                              
+                                          
+                                            <div class="price-new-per-piece">
+                                              <label class="offer">฿32.00</label>
+                                              <small>/ piece</small>
+                                            </div>
+                                            <div class="quantity">จำนวน : 20 กล่อง</div>
+                                          
+                                          </div>
+                                          
+                                      </div>
+  
+                                      <span class="total-price">฿700.00</span>
+                                    
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  <div class="order-list-new orders">
+                                    <ul>
+                                      <li><label>ราคารวมสินค้า (4 รายการ)</label> <label class="total-amount ">10,372.00</label></li>
+                                      <li><label>ค่าบริการติดตั้ง</label><label class="total-amount "> 300.00</label></li>
+                                      <li>
+                                        <label>ส่วนลดโปรโมโค้ด</br>
+                                        <span class="delete-coupon">BLACKFRIDAY<a href="#"><i class="fas fa-times"></i><a/></span></label>
+                                          <label class="discount-amount"> -5,000.00</label>
+                                      </li>
+                                      <li><label>Estimate Tax</label><label class="total-amount "> 1,153.04</label></li>
+                                      <li class="mb-0">
+                                        <div class="bx-total">
+                                          <label>Total</label> <label class="order-total ">17,625.04</label>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                </div>
+                                                
+                              </div>
+                                      
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="foot-pad">
+                        <ul>
+                            <li><h3>nocnoc</h3></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Team</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>Our Policies</h3></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>Need Help?</h3></li>
+                            <li><a href="#">Track Your Order</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>Connect with Us</h3></li>
+                            <li><a href="#"><span><i class="fab fa-facebook-f"></i></span>Facebook</a></li>
+                            <li><a href="#"><span><i class="fab fa-twitter"></i></span>Twitter</a></li>
+                            <li><a href="#"><span><i class="fab fa-pinterest"></i></span>Pinterest</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><h3>Office Address</h3></li>
+                            <li>The Siam Cement Pcl.(Headquarters)<br>
+                                1 Siam Cement Road,<br>
+                                Bangsue,<br>
+                                Bangkok 10800<br>
+                                Thailand
+                            </li>
+                            <li>Telephone : ++66 2586 4444</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rights">
+                    Copyright &copy; 2018 nocnoc.com. All Rights Reserved.
+                </div>
+            </footer>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade otp-modal" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="otpModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                
+                <div class="modal-content">
+                  <h5 class="modal-title">Enter phone number verification code<button type="button" class="close"><span>×</span></button></h5>
+                  
+                  <div class="modal-body">
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active">
+                        <p>We have sent a confirmation code via SMS to Phone number +6686 *** 0178</p>
+                        
+                        <form autocomplete="off" class=" " id="login-form-dropdown">
+                          
+                          <div class="">
+                            <div class="form-group">
+                              <label title="" for="">Enter the confirmation code received.</label>
+                              <input type="text" id="" name="loginemail" class="form-control false" placeholder="เช่น 111111" value="">
+                            </div>
+                            <div class="form-group">
+                              <div class="text-center p-1"> 
+                                <button type="button" class="btn btn-primary p-3 pr-5 pl-5 align-self-center btn-block mt-3">OK</button>
+                                <a href="#" class="mt-3">Request a new code</a>    
+                              </div>
+                            </div>
+                          </div>
+                        
+                      </form>
+                          
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+
+            <!-- Bootstrap core JavaScript
+================================================== -->
+            
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+
+            <script>
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+            $(function () {
+              $('[data-toggle="popover"]').popover()
+            })
+            </script>
+
+            <!--Custom Chat Box-->
+            <script>
+                $('.popper').popover({
+                    placement: 'top',
+                    container: '.chat-wrap .container',
+                    html: true,
+                    content: function () {
+                        return $(this).next('.popper-content').html();
+                    }
+                });
+
+            </script>
+            <!--Custom Chat Box-->
+
+            <!--Custom Chat Box-->
+            <script>
+                $('.popper-cart').popover({
+                    placement: 'bottom',
+                    container: '.account .cart',
+                    html: true,
+                    content: function () {
+                        return $(this).next('.popper-content').html();
+                    }
+                });
+
+            </script>
+            <!--Custom Chat Box-->
+
+            <!--Prevent auto slide in Carousel-->
+            <script>
+                $('.carousel').carousel({
+                    interval: false;
+                });
+            </script>
+            <!--Prevent auto slide in Carousel-->
+
+            <script>
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+
+                    //>=, not <=
+                    if (scroll >= 100) {
+                        //clearHeader, not clearheader - caps H
+                        $(".wrap").addClass("scrollinit");
+                    }
+                }); //missing );
+            </script>
+
+            <!--Mobile Nav-->
+            <script>
+                $(function () {
+                    'use strict'
+
+                    $('[data-toggle="offcanvas"]').on('click', function () {
+                        $('.offcanvas-collapse').toggleClass('open'),
+                            $('.navbar-toggler').toggleClass('clicked')
+                    })
+                })
+            </script>
+
+            <!--       Login & Signup-->
+
+            <script>
+
+                // VERSION WITH BOOTSTRAP 4 : https://codepen.io/seltix/pen/XRPrwM
+
+                jQuery('.dropdown-toggle').on('click', function (e) {
+                    $(this).next().toggle();
+                });
+                jQuery('.dropdown-menu.keep-open').on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+            </script>
+
+            <script>
+                $(document).ready(function(){
+                    $("#showSignIn").click(function(){
+                        $("div.signInDiv").show();
+                        $("div.showCreateAccountDiv").hide();
+                        $("div.showThanksDiv").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.signInDiv').toggleClass('noDrop');
+                    });
+                    $("#showCreateAccount").click(function(){
+                        $("div.showCreateAccountDiv").show();
+                        $("div.signInDiv").hide();
+                        $("div.showThanksDiv").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+
+                    });
+                    $("#showThanks").click(function(){
+                        $("div.showThanksDiv").show();
+                        $("div.showCreateAccountDiv").hide();
+                        $("div.signInDiv").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.showThanksDiv').toggleClass('noDrop');
+
+                    });
+                    $("#signInPanel").click(function(){
+                        $("div.signInDiv").show();
+                        $("div.showCreateAccountDiv").hide();
+                        $("div.showThanksDiv").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.signInDiv').toggleClass('noDrop');
+                    });
+                });
+
+                $(document).ready(function(){
+                    $("#showSignInMob").click(function(){
+                        $("div.signInDivMob").show();
+                        $("div.showCreateAccountDivMob").hide();
+                        $("div.showThanksDivMob").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.signInDiv').toggleClass('noDrop');
+                    });
+                    $("#showCreateAccountMob").click(function(){
+                        $("div.showCreateAccountDivMob").show();
+                        $("div.signInDivMob").hide();
+                        $("div.showThanksDivMob").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+
+                    });
+                    $("#showThanksMob").click(function(){
+                        $("div.showThanksDivMob").show();
+                        $("div.showCreateAccountDivMob").hide();
+                        $("div.signInDivMob").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.showThanksDiv').toggleClass('noDrop');
+
+                    });
+                    $("#signInPanelMob").click(function(){
+                        $("div.signInDivMob").show();
+                        $("div.showCreateAccountDivMob").hide();
+                        $("div.showThanksDivMob").hide();
+                        $('.signup').addClass('actv');
+                        //                    $('div.signInDiv').toggleClass('noDrop');
+                    });
+                });
+
+            </script>
+
+
+
+            <!-- Custom Scroll -->
+            <script src="js/jquery.trackpad-scroll-emulator.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    // Initialize scrollers.
+                    $('.demo1').TrackpadScrollEmulator();
+                    $('.demo2').TrackpadScrollEmulator();
+                    // Demonstration of changing the vertical scroller content and dimensions.
+                    $('.add-more').on('click', function(e){
+                        e.preventDefault();
+                        $('.demo1 .tse-content').append('<p class="odd">Additional content 1</p><p>Additional content 2</p><p p class="odd">Additional content 3</p><p>Additional content 4</p>');
+                        $('.demo1').TrackpadScrollEmulator('recalculate');
+                    });
+                    $('.toggle-height').on('click', function(e){
+                        e.preventDefault();
+                        if ($('.demo1').height() === 400) {
+                            $('.demo1').height(300);
+                        } else {
+                            $('.demo1').height(400);
+                        }
+                        $('.demo1').TrackpadScrollEmulator('recalculate');
+                    });
+                    // Demonstration of changing the horizontal scroller content and dimensions.
+                    $('.add-more-horiz').on('click', function(e){
+                        e.preventDefault();
+                        $('.demo2 .tse-content .boxes').append('<div class="box">A</div><div class="box">B</div><div class="box">C</div><div class="box">D</div>');
+                        $('.demo2').TrackpadScrollEmulator('recalculate');
+                    });
+                    $('.toggle-width').on('click', function(e){
+                        e.preventDefault();
+                        if ($('.demo2').width() === 600) {
+                            $('.demo2').width(500);
+                        } else {
+                            $('.demo2').width(600);
+                        }
+                        $('.demo2').TrackpadScrollEmulator('recalculate');
+                    });
+                });
+            </script>
+
+            <!--Slide Nav-->
+            <script>
+              $('#selectInstallation').change(function(){
+                if($(this).is(":checked")) {
+                    $('.service-inactive').addClass('service-active');
+                } else {
+                    $('.service-inactive').removeClass('service-active');
+                }
+              });
+            </script>
+
+            <script>
+              /*Dropdown Menu*/
+              $(document).ready(function() {
+                var $select = $(".select-language");
+                var $choose = $(".choose-language");
+
+                // handle KEYPRESS events
+                $("body").on("keypress", function(e) {
+                  var $target = $(e.target);
+                  var $parent = $target.parents(".select-language");
+                  if (e.which == 13) {
+                    if ($target.attr("name") == "account-type") {
+                      var $whichActive = $("#" + $choose.val());
+                      $whichActive.focus();
+                      $(".select-language").removeClass("active");
+
+                      var $clicked = $("input:checked ~ label");
+                      var clicked = $clicked.text();
+                      $choose.val($clicked.attr("for"));
+                      $choose.text(clicked);
+                      $select.removeClass("active");
+                    } else {
+                      $select.removeClass("active");
+                    }
+                  }
+                });
+
+                // handle random body clicks off-$target
+                  $("body").on("click", function (e) {
+                    var $target = $(e.target);
+                    var isSelect = $target.parents(".select-language").length > 0;
+                    if (!isSelect) {
+                      $select.removeClass("active");
+                    }
+                  });
+
+                // handle direct BUTTON click
+                $choose.on("click", function() {
+                  var $whichActive = $("#" + $choose.val());
+                  if ($select.hasClass("active")) {
+                    $select.removeClass("active");
+                    $choose.focus();
+                  } else {
+                    $select.addClass("active");
+                    $whichActive.focus();
+                  }
+                });
+
+                // handle direct LABEL clicks
+                $select.on("click", "label", function() {
+                  var clicked = $(this).text();
+                  $choose.val($(this).attr("for"));
+                  $choose.text(clicked);
+                  $select.removeClass("active");
+                });
+
+              });
+            </script>
+
+            </body>
+        </html>

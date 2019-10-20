@@ -19,6 +19,40 @@
     background-color: #fff;
     margin-left: 1rem;
     border-radius: .1rem;
+    @include breakpoint-down(xs){
+      background-color: $mobile-bg;
+
+    }
+}
+
+.sort-section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.lising-header-carousel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 1rem 0 2rem;;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid $border-new;
+  color: $dark-grey;
+  .lising-header-carousel-left {
+    width: 30%;
+    h1 {
+      font-size: 3.2rem;
+    }
+    h4 {
+       font-size: 1.4rem;
+       margin: 0;
+    }
+  }
+  .lising-header-carousel-right {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -34,7 +68,15 @@
         margin: 0;
     }
     .sort-head{
-        margin-top: .4rem;
+        margin: .4rem 0;
+        h1{
+          font-size: 2.2rem !important;
+        }
+        p{
+          font-size: 1.4rem;
+          color: $tipslink;
+        }
+       
     }
 }
 
@@ -100,24 +142,38 @@
     padding: 0rem .7rem .7rem .7rem;
     justify-content: flex-start;
     position: relative;
+    @include breakpoint-down(xs){
+      padding: 0rem;
+    }
     .items{
         padding: .7rem;
-        width: 25%;
+        width: 33.33%;
     }
     .bximg{
         border: .1rem solid #ebebeb;
-        border-bottom:0; 
+        border-bottom:0;
+        @include breakpoint-down(xs){
+          padding: 0rem;
+        }
     }
     .bxdetail{
         border: .1rem solid #ebebeb;
         border-top:0;
         background-color: #fff;
+        @include breakpoint-down(xs){
+          padding: 0.8rem;
+        }
         h2{
             height: auto;
             a{
                 color: #555;
                 text-decoration: none;
             }
+        }
+        .check {
+          padding: 1rem 0 0;
+          border-top: 0.1rem solid $border;
+          margin: 1.5rem 0 0;
         }
     }
 }
@@ -137,4 +193,226 @@
             width: 100%;
         }
     }
+}
+
+/*----Sort By-----*/
+.sortby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $theme-tertiary-light;
+  margin: 1.4rem;
+  padding: 1rem;
+  .sortby-select-menu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background: $white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: $grey;
+    text-decoration: none;
+  }
+  .form-group {
+    margin: 0;
+  }
+  select {
+    display: flex;
+    padding: 0.5rem 1rem;
+    background: $white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: $grey;
+    text-decoration: none;
+    border: 0;
+  }
+  .sortby-left-section {
+    width: 70%;
+    .sort-by-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      a {
+        display: flex;
+        padding: 0.5rem 1rem;
+        background: $white;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+          background: $theme-tertiary;
+          color: $white;
+        }
+        &.active {
+          background: $theme-tertiary;
+          color: $white;
+        }
+      }
+    }
+  }
+  .sortby-right-section {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    .pagination-page-number {
+      justify-content: flex-end;
+      display: flex;
+      flex: auto;
+      align-items: center;
+      padding: 0 1rem 0 0;
+      a {
+        color: $grey;
+        &:hover {
+          color: $theme-tertiary;
+        }
+        &.active-page {
+          color: $theme-tertiary;
+        }
+      }
+    }
+  }
+  .pagination {
+    justify-content: flex-end;
+    a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      background: $white;
+      color: $grey;
+      &:first-child {
+        margin-right: 0.3rem;
+      }
+      &:hover:not(.active) {
+        background: rgba($white, 0.5);
+      }
+    }
+  }
+}
+
+
+.sort-sec{
+  label{
+    min-width: fit-content;
+    font-size: 1.3rem;
+  }
+  .custom-select{
+    font-size: 1.2rem;
+  }
+  .xs-display{
+    @include breakpoint-down(xs) {
+      display: none !important;
+    }
+  }
+  @include breakpoint-down(xs){
+    margin: 0rem !important;
+  }
+}
+/* search list page article links*/
+.article-sec {
+  .article-sec-accordion {
+    .card {
+      border-radius: 0.4rem;
+      border: solid 0.2rem $theme-primary-soft;
+      background-color: $white;
+      .card-body {
+        padding: 3.5rem 2rem 2rem 2rem;
+      }
+      &-left {
+        h1 {
+          font-size: 2.2rem;
+          line-height: 1;
+          color: $theme-quaternary;
+          margin: 0 0 4.3rem 0;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 1.4rem;
+            margin: 4rem 0 0;
+            height: 2rem;
+            width: 14rem;
+            border-top: 0.1rem solid $tipslink;
+          }
+        }
+      }
+      &-right {
+
+      }
+    }
+    .card-header {
+      background: $theme-primary-soft !important;
+      padding: 1.5rem;
+      font-size: 2rem !important;
+      line-height: 1.29;
+      letter-spacing: normal;
+      color: $tipslink;
+      h4 {
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: $tipslink;
+      }
+      &.collapsed {
+          background: $light-grey2;
+          i {
+            &:before {
+              color: $theme-quaternary;
+            }
+          }
+      }
+      i {
+        &:before {
+          color: $tipslink;
+        }      
+      }
+    }  
+  }
+  h3{
+    font-weight: 700;
+    border-top: 1px solid $soft-gray;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+  }
+  ul{
+    padding: 0;
+    margin: 2rem 0;
+    li{
+      display: inline;
+      padding: .1rem .5rem;
+      font-size: 1.8rem;
+      border-right: 1px solid $soft-gray;
+      &:first-child{
+       padding-left: 0rem;
+      }
+      &:last-child{
+        border: none;
+      }
+      a{
+        color: $dark-grey;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.free-sec{
+  @include breakpoint-down(xs){
+    display: none !important;
+  }
+}
+
+
+
+.filter-section{
+  ul{
+    li{
+      list-style: none;
+      a{
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: $filterlist
+      }
+    }
+  }
 }

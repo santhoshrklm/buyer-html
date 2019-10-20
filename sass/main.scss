@@ -19,14 +19,25 @@
 
 @import "components/mainmenu";
 @import "components/offcanvas";
+@import "components/deptdropdown";
+
 
 @import "pages/home";
 @import "pages/cart";
 
 @import "pages/checkout";
 
+@import "themes/default";
+
+
 @import "pages/compare";
 @import "pages/inspiration";
 @import "pages/product-listing";
 @import "pages/product-detail";
 @import "pages/profile";
+
+@import "pages/wishlist";
+@import "pages/static";
+@import "pages/services";
+@import "pages/our-services";
+@import "pages/sitemap";

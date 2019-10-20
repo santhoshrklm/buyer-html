@@ -25,9 +25,7 @@
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
-
         <div class="wrap">
             <div class="badge-panel">
                 <div class="container">
@@ -60,18 +58,137 @@
                     <img src="images/logo.jpg" alt="Noc Noc"></a></div>
                     <div class="main-search">
                       <div class="input-group main-search-select">
-                        <div class="select-container">
-                          <select>
+                        <div class="select-container nav-list">
+                          <span class="current-selection">All</span>
+                          <span class="arrow"></span>
+                          <select id="header-select-menu">
                             <option selected>All</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
-                          </select>
+\                          </select>
                           <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <input type="hidden" id="temphiddenfield">
                         <input type="text" class="form-control" id="g-search" placeholder="Search Products.." aria-label="Search Products.." aria-describedby="basic-addon2" value="">
-                        <div class="input-group-append"><button class="btn btn-outline-secondary" type="button"><i class="icon-search"></i></button></div></div></div><div class="account"><span class="signup"><div class="btn-group"><a id="signInPanel" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In / Sign Up</a><div class="dropdown-menu dropdown-menu-right signInDiv"><h1>Sign In</h1></div></div></span><span class="nav-tools"><a class="wishlist"><i class="fas fa-heart"></i></a><a id="cartItems-pop" class="shopping-cart popper-cart"><i class="fas fa-shopping-cart"></i><sub class="badge-sub">2</sub></a><div><div class="popover show bs-popover-bottom" x-placement="bottom" data-placement="bottom" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1064px, 81px, 0px); display: none;"><div class="popover-inner"><div class="popover-body"> <div class="my-cart pop"><h1>Your Cart (2 Items) </h1><div class="table-responsive"><table class="table"><tbody></tbody></table></div><div class="bx-total"><label>Final Amount <small>(Before Tax &amp; Shipping)</small></label> <label class="cart-price">$99</label></div><div class="bx-btn"><form method="get" action="cart.html"><button type="submit" class="btn btn-secondary btn-lg">Go to My Cart</button></form></div></div></div></div><span class="arrow" style="left: 145px;"></span></div></div></span></div></div></div>
+
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button"><i class="icon-search"></i></button></div>
+                        </div>
+                      </div>
+                      <div class="account">
+
+                        <span class="signup">
+
+                          <!-- <div class="btn-group">
+                            <a id="signInPanel" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In / Sign Up</a>
+                            <div class="dropdown-menu dropdown-menu-right signInDiv"><h1>Sign In</h1>
+                            </div>
+                          </div> -->
+                          <div class="dropdown profile-menu">
+                            <button class="btn btn-sign-in dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sign In / Sign Up
+                            </button>
+
+                            <!-- Sign in section -->
+                            <!-- <form class="dropdown-menu p-4 dropdown-menu-right">
+                              <div class="form-group">
+                                <label class="main-label">sign in</label>
+                                <label for="exampleDropdownFormEmail2">Email or phone number</label>
+                                <input type="text" class="form-control" id="" placeholder="email@example.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Password<a href="#" class="pull-right">Forgot Password?</a></label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                  Remember me
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                              <a class="custom-link"href="#">New Customer?</a>
+                              <button type="submit" class="btn btn-secondary btn-lg btn-block">Create your Account</button>
+                            </form> -->
+
+
+
+                            <!-- Create Account section-->
+                            <form class="dropdown-menu p-4 dropdown-menu-right">
+                              <div class="form-group">
+                                <label class="main-label">Create Account</label>
+                                <label for="exampleDropdownFormEmail3">First name</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail3">Last name</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail3">Phone Number</label>
+                                <input type="tel" name="usrtel" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Email</label>
+                                <input type="text" class="form-control" placeholder="email@example.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Password</label>
+                                <input type="password" class="form-control" id="Password2" placeholder="Minimum 8 characters">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword2" placeholder="Minimum 8 characters">
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck3">
+                                <label class="form-check-label" for="dropdownCheck3">Remember me</label>
+                              </div>
+                              <label class="dropdown-label">Already have an account? <a href="#">Sign in</a></label>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block">create account</button>
+                                <div class="footer-link">By creating an account, I agree to the terms and conditions</div>
+                            </form>
+
+
+                            <!-- Thank you message section -->
+                            <!-- <div class="dropdown-menu p-4 dropdown-menu-right thankyou-message">
+                              <p>Thank you. We have sent you anaccount activation link.</p>
+                              <p>Please check your email or phone,activate your account and enjoyshopping with us!</p>
+                              <p>For any help, please <a href="#">click here</a></p>
+                            </div> -->
+
+                            <!-- Profile menu section -->
+                            <!-- <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Profile</a>
+                              <a class="dropdown-item" href="#">My Addresses</a>
+                              <a class="dropdown-item" href="#">My Orders</a>
+                              <a class="dropdown-item" href="#">Saved Payment Methods</a>
+                              <div class="dropdown-divider"></div>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">logout</button>
+                            </div> -->
+
+                          </div>
+                          </span>
+
+                            <span class="nav-tools"><a class="wishlist"><i class="fas fa-heart"></i></a>
+                              <a id="cartItems-pop" class="shopping-cart popper-cart"><i class="fas fa-shopping-cart"></i><sub class="badge-sub">2</sub></a><div>
+                                <div class="popover show bs-popover-bottom" x-placement="bottom" data-placement="bottom" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1064px, 81px, 0px); display: none;">
+                                  <div class="popover-inner">
+                                    <div class="popover-body">
+                                      <div class="my-cart pop"><h1>Your Cart (2 Items) </h1>
+                                        <div class="table-responsive"><table class="table"><tbody></tbody></table></div>
+                                        <div class="bx-total"><label>Final Amount <small>(Before Tax &amp; Shipping)</small></label>
+                                          <label class="cart-price">$99</label></div>
+                                          <div class="bx-btn"><form method="get" action="cart.html">
+                                            <button type="submit" class="btn btn-secondary btn-lg">Go to My Cart</button></form></div></div></div></div>
+                                            <span class="arrow" style="left: 145px;"></span></div>
+                                          </div>
+                                          </span>
+
+                                        </div>
+                                        </div>
+                                      </div>
 
             <div class="main-nav"><div class="container"><div><div class="nav-pad-main"><div class="nav-pad-quick"><ul class="quickmain"><li><a href="https://www.google.com/">Today's Deals</a></li><li><a href="https://www.google.com/">Track Delivery</a></li><li><a href="https://www.scg.com/">Sell On nocnoc</a></li></ul></div><nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav-fixed"><button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas"><i class="fas fa-bars"></i></button><div class="navbar-collapse offcanvas-collapse "><ul class="navbar-nav mr-auto"><li class="nav-item dropdown level1  active"><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a><ul id="parent-menu-category" class="dropdown-menu level1-block "><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flooring</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wood Flooring</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Laminate Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hardwood Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Engineered Hardwood Floors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bamboo Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cork Flooring</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tile Flooring</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceramic &amp; Porcelain Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Travertine Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Marble Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Granite Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Slate Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Limestone Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Sandstone Tile</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vinyl Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Specialty Flooring</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Adhesives</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Care Products</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Heating</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Underlay</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grout &amp; Mortar</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Moldings</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Carpet Tiles</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Decking</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Composite Decking</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wood Decking</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Tiles</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Railings</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Building Materials</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Siding</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Stone Veneer</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Stone Siding</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Panel Products</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabinet Plywood</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Paneling</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Moldings &amp; Millwork</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Tiles</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Rings</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Gable Vents</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Corbels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Rosettes</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Onlays</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Medallions</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Molding</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Casing</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Baseboards</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Crown Molding</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lumber</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dimensional Lumber</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outdoor</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Patio &amp; Outdoor Furniture</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outdoor Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Heaters &amp; Fireplaces</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shade &amp; Cooling</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Storage, Carts &amp; Shelves</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Landscape</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Pavers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fences</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lawn &amp; Garden</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Sheds</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hot Tubs</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kitchen</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wall Tile &amp; Mosaics</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Glass Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Glass &amp; Stone Blend</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Natural Stone Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceramic &amp; Porcelain</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Metal Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mosaics</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Borders &amp; Trims</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Countertops</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Butcher Block</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Granite Countertops</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Quartz Slabs</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Faucets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Sinks</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kitchen Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Cabinet Organization</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Cabinets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bathroom</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Faucets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Sinks</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vanities</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toilets &amp; Bidets</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Toilets</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Showers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Enclosures</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Doors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Pans</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Panels</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bathtubs &amp; Whirlpools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathtubs</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doors</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Interior Doors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Exterior Doors</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Furniture</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Living Room</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dining Room</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Entertainment</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bedroom</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Home Office</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mattresses &amp; Frames</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mattresses</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bed Frames</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Furniture</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lighting</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Lighting</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Light Bulbs</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lamps</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Lighting</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lighting Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appliances</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dishwashers &amp; Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dishwashers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Washers &amp; Dryers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dryers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washer &amp; Dryer Combos</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washer &amp; Dryer Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Refrigerators &amp; Freezers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Refrigerators</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bar &amp; Wine Fridges</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranges, Cooking &amp; Ventilation</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ranges</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cooktops</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Ovens</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Range Hoods</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Heating, Cooling &amp; Air Quality</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Heaters</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fans</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Air Purifiers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vacuums &amp; Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vacuums &amp; Floor Care</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vacuum Parts &amp; Floor Care Accessories</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Small Appliances</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Décor</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fireplaces &amp; Mantels</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fireplaces</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fireplace Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Accents</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Frames &amp; Albums</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Artwork</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Accents</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Pillows &amp; Cushions</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Room Dividers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mirrors</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Decorative Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Standing Mirrors</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Carpet &amp; Rugs</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Area Rugs</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wallpaper &amp; Wall Treatments</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wallpaper &amp; Borders</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Window Treatments</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Window Headers</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bedding &amp; Bedskirts</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cabinets &amp; Stackable Cubes</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabinets</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Closet Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wood Closet Organizers</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bookcases &amp; Magazine Racks</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shelves &amp; Hooks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Decorative Shelving Units</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Hooks</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shelves</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cleaning Supplies</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plumbing</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Water Heaters</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hardware</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Door Handles &amp; Locks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deadbolts</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Knobs</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Levers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Front Door Handle Sets</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Hardware</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fasteners</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Nails</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Staples</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clean Energy</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Generators</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clean Tech Parts &amp; Components</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Controllers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Converters</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">On-Grid Systems</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grid Assisted Systems</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inverters &amp; Inverter Chargers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Inverter Chargers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Inverters</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solar Panels</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">High Performance Panels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Light-Weight Panels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Traditional Panels</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Off-Grid Systems</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabin Systems</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Portable</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Batteries &amp; Battery Banks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Batteries</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solar Racking &amp; Mounts</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mount Kits &amp; Components</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hand Tools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hammers &amp; Sledges</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Flooring Tools</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Levels &amp; Markings</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Power Tool Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Drill Bits</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Saw Blades</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grinding &amp; Polishing Wheels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Misc Power Tool Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Power Tools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Saws</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Rotary &amp; Oscillating Tools</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wet Dry Vacs &amp; Pressure Washers</a></li></ul></li></ul></li></ul></div></nav></div></div></div></div>
             <div class="spotlite">
@@ -776,7 +893,7 @@
         </div>
 
 
-        <div class="new-arrivals slid">
+        <div class="product-carousel new-arrivals slid">
                 <div class="container">
 
                     <!-- <h1>
@@ -797,8 +914,8 @@
                     <div class="slid-pad">
 
                         <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                            <div class="carousel-inner bg-offwhite">
+                                <div class="carousel-item bg-offwhite active">
 
                                     <div class="item-wrap">
                                         <div class="items">
@@ -821,6 +938,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -842,6 +969,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -863,6 +1000,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -884,6 +1031,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -909,6 +1066,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -930,6 +1097,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -951,6 +1128,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -972,6 +1159,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -997,6 +1194,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1018,6 +1225,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1039,6 +1256,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1060,6 +1287,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1085,6 +1322,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1106,6 +1353,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1127,6 +1384,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1148,6 +1415,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1166,7 +1443,7 @@
                 </div>
             </div>
 
-        <div class="featured-products slid">
+        <div class="product-carousel slid">
                 <div class="container">
                     <!-- <h1>
                       <span class="title">Featured Products<mark class="timer" style="display: none;"><i class="far fa-clock"></i>19:43:40</mark></span>
@@ -1209,6 +1486,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1231,6 +1518,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1252,6 +1549,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1273,6 +1580,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1298,6 +1615,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1319,6 +1646,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1340,6 +1677,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1361,6 +1708,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1386,6 +1743,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1407,6 +1774,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1428,6 +1805,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1449,6 +1836,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1474,6 +1871,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1495,6 +1902,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1516,6 +1933,16 @@
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
                                             </div>
+                                            <form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                         <div class="items">
                                             <div class="bximg">
@@ -1536,7 +1963,16 @@
                                                     <label class="actual">$50</label>
                                                     <mark class="discount">70% Off</mark>
                                                 </div>
-                                            </div>
+                                            </div><form>
+                                              <div class="form-group check">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                      Add to compare
+                                                    </label>
+                                                  </div>
+                                              </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1816,6 +2252,23 @@
                 });
             });
 
+        </script>
+        <script>
+        $(function(){
+            var $dropdown = $('#header-select-menu'),
+                $currentSelection = $('.current-selection');
+            // set top value of dropdown to vertically center
+            $dropdown.css('top',($currentSelection.parent().outerHeight() - $dropdown.outerHeight())/2);
+            // set the initial selection text
+            $currentSelection.text( $dropdown.find('option:selected').text());
+            // change the selection text to match dropdown selected item
+            $('#header-select-menu').change(function(){
+             $currentSelection.text(
+               $(this)
+               .find('option:selected')
+                 .text());
+            });
+          });
         </script>
 
     </body>

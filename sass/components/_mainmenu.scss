@@ -45,17 +45,17 @@
             li{
                 display: inline-block;
                 list-style: none;
-                padding:1.7rem 0 1.7rem 0;
+                padding:1.3rem 0;
                 margin-left: 1.5rem;
                 a{
-                    color:yellowgreen;
+                    color: $white;
                     font-size:1.15rem;
                     font-weight: 500;
                     text-transform:uppercase;
                     display: inline-block;
                     padding: 0;
                     &:hover{
-                        color: #fff;
+                        color: $white;
                         text-decoration: none;
                     }
                 }
