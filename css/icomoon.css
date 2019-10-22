@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gwypqp');
-  src:  url('fonts/icomoon.eot?gwypqp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gwypqp') format('truetype'),
-    url('fonts/icomoon.woff?gwypqp') format('woff'),
-    url('fonts/icomoon.svg?gwypqp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?qpzlxm');
+  src:  url('fonts/icomoon.eot?qpzlxm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qpzlxm') format('truetype'),
+    url('fonts/icomoon.woff?qpzlxm') format('woff'),
+    url('fonts/icomoon.svg?qpzlxm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -24,6 +25,82 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e952";
+}
+.icon-size-survey:before {
+  content: "\e951";
+}
+.icon-downarrow:before {
+  content: "\e90b";
+}
+.icon-uparrow:before {
+  content: "\e950";
+}
+.icon-premium-shipping:before {
+  content: "\e94d";
+}
+.icon-seller-fleet:before {
+  content: "\e94e";
+}
+.icon-shipping-new:before {
+  content: "\e94f";
+}
+.icon-tick:before {
+  content: "\e94c";
+}
+.icon-delete1:before {
+  content: "\e91d";
+}
+.icon-policy:before {
+  content: "\e91e";
+}
+.icon-phone-new:before {
+  content: "\e91c";
+}
+.icon-cart-new:before {
+  content: "\e949";
+}
+.icon-profile-new:before {
+  content: "\e94a";
+}
+.icon-wishlist-new:before {
+  content: "\e94b";
+}
+.icon-share:before {
+  content: "\e948";
+}
+.icon-gift:before {
+  content: "\e945";
+  color: #3639b4;
+}
+.icon-delivered:before {
+  content: "\e946";
+  color: #3639b4;
+}
+.icon-review:before {
+  content: "\e947";
+  color: #3639b4;
+}
+.icon-CardPayment:before {
+  content: "\e93e";
+}
+.icon-CounterPayment:before {
+  content: "\e93f";
+}
+.icon-Filter:before {
+  content: "\e941";
+}
+.icon-InternetBanking:before {
+  content: "\e942";
+}
+.icon-heart-border:before {
+  content: "\e943";
+}
+.icon-heart-filled:before {
+  content: "\e944";
+  color: #f02748;
+}
 .icon-section_expand:before {
   content: "\e93c";
 }
@@ -137,18 +214,6 @@
 .icon-bestdeal:before {
   content: "\e91f";
 }
-.icon-cart-new:before {
-  content: "\e91c";
-  color: #100e37;
-}
-.icon-profile-new:before {
-  content: "\e91d";
-  color: #fff;
-}
-.icon-wishlist-new:before {
-  content: "\e91e";
-  color: #100e37;
-}
 .icon-call:before {
   content: "\e917";
   color: #fff;
@@ -215,9 +280,6 @@
 }
 .icon-doneorder:before {
   content: "\e90a";
-}
-.icon-downarrow:before {
-  content: "\e90b";
 }
 .icon-email:before {
   content: "\e90c";
