@@ -1,12 +1,200 @@
-//.content-wrap{
-//    background-color: #f7f7f7;
-//    & + .chat-wrap{
-//        background-color: #f7f7f7;
-//        margin: 0;
-//        padding: 5rem 0;
-//    }
-//}
 
+.seller-profile-page {
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: $base-color;
+  }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $base-color;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $base-color;
+    &.grey {
+      color: $grey-new-btn;
+    }
+  }
+  p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $base-color;
+  }
+  .seller-profile-basic-details {
+    background: $white;
+    padding: 2rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid $border;
+    @include breakpoint-down(xs) {
+      flex-direction: column;
+    }
+    .seller-profile-details-left {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      @include breakpoint-down(md) {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+      .img-seller {
+        width: 10.2rem;
+        height: 10.2rem;
+        margin-right: 1.5rem;
+        @include breakpoint-down(sm) {
+          display: none;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      .img-seller-mobile {
+        width: 7.4rem;
+        height: 7.4rem;
+        margin-right: 1.5rem;
+        display: none;
+        @include breakpoint-down(sm) {
+          display: block;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      .seller-profile-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .btn {
+        width: 20.2rem;
+        height: 5.6rem;
+        position: absolute;
+        right: 0;
+        top:0;
+        @include breakpoint-down(sm) {
+          width: 16.3rem;
+          height: 4.8rem;
+        }
+      }
+    }
+    .seller-profile-details-right {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        width: 20.2rem;
+        height: 5.6rem;
+        position: absolute;
+        right: 0;
+        top:0;
+        @include breakpoint-down(sm) {
+          width: 16.3rem;
+          height: 4.8rem;
+        }
+      }
+    }
+  }
+  .seller-profile-more-details {
+    background: $white;
+    padding: 2rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    @include breakpoint-down(lg) {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    .seller-profile-more-details-left {
+      width: 67%;
+      @include breakpoint-down(lg) {
+        width: 60%;
+      }
+      @include breakpoint-down(md) {
+        width: 50%;
+      }
+      @include breakpoint-down(md) {
+        width: 100%;
+      }
+      p {
+        width: 70%;
+        text-align: justify;
+        @include breakpoint-down(lg) {
+          width: 75%;
+        }
+        @include breakpoint-down(sm) {
+          width: 100%;
+        }
+      }
+    }
+    .seller-profile-more-details-right {
+      width: 33%;
+      @include breakpoint-down(lg) {
+        width: 40%;
+      }
+      @include breakpoint-down(md) {
+        width: 50%;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+      justify-content: flex-end;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          margin: 0;
+          padding: 1.6rem 0 0;
+          @include breakpoint-down(sm) {
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+          h3 {
+            font-weight: 600;
+          }
+          h4 {
+            margin-bottom: 1rem;
+          }
+          &:first-child {
+            width: 100% !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 2rem;
+            .seller-profile-rating {
+              width: 50%;
+            }
+            a {
+              width: 50%;
+              @include breakpoint-down(sm) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .content-pad{
     display: flex;
     justify-content: space-between;
