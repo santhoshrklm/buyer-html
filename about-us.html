@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/favicon.ico">
+
+        <title>Noc Noc - Home</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Google Font Maitree -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=thai" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!-- Icon styles for this template -->
+        <link href="css/icomoon.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="badge-panel">
+                <div class="container">
+                    <div class="clearfix pad">
+                        <span class="mobsignup">
+                          <a href="#">Sign In</a> / <a href="#">Sign Up</a></span>
+                        <div class="badge-items">
+                            <!-- <a class="links">
+                                Sell on NocNoc
+                            </a> -->
+                            <a class="links">
+                                Help Center
+                            </a>
+                            <span class="lang">
+                                  <fieldset class="select-language">
+                                    <legend>Select an Account Type</legend>
+                                    <button type="button" id="choose-language" name="choose-language" class="choose-language" aria-haspopup="true" value="credit-cards">
+                                      <label for="credit-cards">English</label></button>
+
+                                    <ul class="account-types" role="menu">
+                                      <li role="presentation">
+                                        <input type="radio" id="credit-cards" name="account-type" value="auth-credit-cards" role="menuitem" aria-checked="true" checked>
+                                        <label for="credit-cards">English</label>
+                                      </li>
+                                      <li role="presentation">
+                                        <input type="radio" id="banking" name="account-type" value="auth-bank">
+                                        <label for="banking">ไทย</label>
+                                      </li>
+                                    </ul>
+                                </fieldset>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-panel">
+              <div class="container">
+                  <div class="logo">
+                    <a href="index.html" title="Noc Noc">
+                      <img src="images/logo.svg" class="logo" onerror="this.onerror=null; this.src='image.png'">
+                    </a>
+                  </div>
+                  <div class="main-search">
+                    <div class="input-group main-search-select">
+                      <div class="select-container nav-list">
+                        <span class="current-selection">Category</span>
+                        <span class="arrow"></span>
+                        <select id="header-select-menu">
+                          <option selected>Category</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </div>
+                      <input type="hidden" id="temphiddenfield">
+                      <input type="text" class="form-control" id="g-search" placeholder="Search Products.." aria-label="Search Products.." aria-describedby="basic-addon2" value="">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button"><i class="icon-search"></i></button></div>
+                    </div>
+                  </div>
+                  <div class="account">
+
+                    <!-- <span class="signup">
+                      <div class="dropdown profile-menu">
+                        <button class="btn btn-sign-in dropdown-toggle" type="button" id="" data-toggle="modal" data-target="#loginModal" aria-haspopup="true" aria-expanded="false">
+                          Sign In / Sign Up
+                        </button>
+                      </div>
+                    </span> -->
+
+                    <span class="nav-tools">
+                      <span class="myaccount">
+                        <i class="far fa-user"></i>
+                        <div class="login-container">
+                            <a id="" data-toggle="modal" data-target="#loginModal" aria-haspopup="true" aria-expanded="false">
+                            Sign In</a>
+                            <a id="" data-toggle="modal" data-target="#loginModal" aria-haspopup="true" aria-expanded="false">
+                              Join Free</a>
+                          </div>
+                        <small>My Account</small>
+                      </span>
+                      <a class="mywishlist">
+                        <i class="far fa-heart"></i>
+                        <sub>0</sub>
+                        <small>Wishlist</small>
+                      </a>
+                      <a id="cartItems-pop" class="shopping-cart popper-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <sub>0</sub>
+                        <small>Cart</small>
+                      </a>
+                    </span>
+
+                  </div>
+              </div>
+            </div>
+            <div class="main-nav">
+              <div class="container">
+                <div>
+                  <div class="nav-pad-main">
+                  <div class="nav-pad-quick">
+                    <ul class="quickmain">
+                      <li><a href="https://www.scg.com/">Sell On nocnoc</a></li>
+                    </ul>
+                  </div>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav-fixed"><button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas"><i class="fas fa-bars"></i></button><div class="navbar-collapse offcanvas-collapse "><ul class="navbar-nav mr-auto"><li class="nav-item dropdown level1  active">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><small>Shop By</small>Category</a>
+              <ul id="parent-menu-category" class="dropdown-menu level1-block "><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flooring</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wood Flooring</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Laminate Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hardwood Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Engineered Hardwood Floors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bamboo Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cork Flooring</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tile Flooring</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceramic &amp; Porcelain Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Travertine Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Marble Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Granite Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Slate Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Limestone Tile</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Sandstone Tile</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vinyl Flooring</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Specialty Flooring</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Adhesives</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Care Products</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Heating</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Underlay</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grout &amp; Mortar</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Moldings</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Carpet Tiles</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Decking</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Composite Decking</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wood Decking</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Tiles</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Railings</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deck Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Building Materials</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Siding</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Stone Veneer</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Stone Siding</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Panel Products</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabinet Plywood</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Paneling</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Moldings &amp; Millwork</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Tiles</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Rings</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Gable Vents</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Corbels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Rosettes</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Onlays</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Medallions</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Floor Molding</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Casing</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Baseboards</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Crown Molding</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lumber</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dimensional Lumber</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outdoor</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Patio &amp; Outdoor Furniture</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outdoor Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Heaters &amp; Fireplaces</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shade &amp; Cooling</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Storage, Carts &amp; Shelves</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Landscape</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Pavers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fences</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lawn &amp; Garden</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Sheds</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hot Tubs</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kitchen</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wall Tile &amp; Mosaics</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Glass Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Glass &amp; Stone Blend</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Natural Stone Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceramic &amp; Porcelain</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Metal Mosaic</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mosaics</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Borders &amp; Trims</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Countertops</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Butcher Block</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Granite Countertops</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Quartz Slabs</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Faucets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Sinks</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kitchen Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Cabinet Organization</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Cabinets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Kitchen Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bathroom</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Faucets</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Sinks</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vanities</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toilets &amp; Bidets</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Toilets</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Showers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Enclosures</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Doors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Pans</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shower Panels</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bathtubs &amp; Whirlpools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathtubs</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doors</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Interior Doors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Exterior Doors</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Furniture</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Living Room</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dining Room</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Entertainment</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bedroom</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Home Office</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mattresses &amp; Frames</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mattresses</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bed Frames</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Furniture</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lighting</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ceiling Lighting</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Light Bulbs</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lamps</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Lighting</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Lighting Accessories</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appliances</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dishwashers &amp; Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dishwashers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Washers &amp; Dryers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Dryers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washer &amp; Dryer Combos</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Washer &amp; Dryer Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Refrigerators &amp; Freezers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Refrigerators</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bar &amp; Wine Fridges</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranges, Cooking &amp; Ventilation</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Ranges</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cooktops</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Ovens</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Range Hoods</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Heating, Cooling &amp; Air Quality</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Heaters</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fans</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Air Purifiers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vacuums &amp; Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vacuums &amp; Floor Care</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Vacuum Parts &amp; Floor Care Accessories</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Small Appliances</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Décor</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fireplaces &amp; Mantels</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fireplaces</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Fireplace Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Accents</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Frames &amp; Albums</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Artwork</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Accents</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Pillows &amp; Cushions</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Room Dividers</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mirrors</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bathroom Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Decorative Mirrors</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Standing Mirrors</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Carpet &amp; Rugs</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Area Rugs</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wallpaper &amp; Wall Treatments</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wallpaper &amp; Borders</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Window Treatments</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Window Headers</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bedding &amp; Bedskirts</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cabinets &amp; Stackable Cubes</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabinets</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Closet Storage &amp; Organization</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wood Closet Organizers</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Bookcases &amp; Magazine Racks</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shelves &amp; Hooks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Decorative Shelving Units</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wall Hooks</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Shelves</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cleaning Supplies</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plumbing</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Water Heaters</a></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hardware</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Door Handles &amp; Locks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Deadbolts</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Knobs</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Levers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Front Door Handle Sets</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Door Hardware</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fasteners</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Nails</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Staples</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clean Energy</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Generators</a></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clean Tech Parts &amp; Components</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Controllers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Converters</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">On-Grid Systems</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grid Assisted Systems</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inverters &amp; Inverter Chargers</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Inverter Chargers</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Inverters</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solar Panels</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">High Performance Panels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Light-Weight Panels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Traditional Panels</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Off-Grid Systems</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Cabin Systems</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Portable</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Batteries &amp; Battery Banks</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Batteries</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solar Racking &amp; Mounts</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Mount Kits &amp; Components</a></li></ul></li></ul></li><li class="nav-item dropdown level2 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a><ul id="parent-menu-category" class="dropdown-menu level2-block "><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hand Tools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Hammers &amp; Sledges</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Flooring Tools</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Levels &amp; Markings</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Power Tool Accessories</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Drill Bits</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Saw Blades</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Grinding &amp; Polishing Wheels</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Misc Power Tool Accessories</a></li></ul></li><li class="nav-item dropdown level3 "><a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Power Tools</a><ul id="parent-menu-category" class="dropdown-menu level3-block "><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Saws</a></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Rotary &amp; Oscillating Tools</a></li></ul></li><li class="menu-last-level"><a class="dropdown-item" href="javascript:void(0);">Wet Dry Vacs &amp; Pressure Washers</a></li></ul></li></ul></li></ul></div></nav></div></div></div></div>
+
+        <div class="about-us container-fluid">
+
+            <div class="about-us-banner">
+              <img src="images/about-banner-desktop.png" class="img-fluid">
+              <div class="about-us-banner-content">
+                <img src="images/logo.svg" class="img-fluid">
+                <span>One Small Thing Changes The Whole Room</span>
+              </div>
+            </div>
+
+        </div>
+
+        <main role="main" class="main-content about-us">
+
+            <div class="about-us-content">
+                  
+                <div class="container">
+
+                  <div class="row content-box">
+                  
+                    <div class="col-lg-6">
+                    <h1 class="mb-3">Who Are We</h1>
+                    <p>NocNoc.com แพลตฟอร์มซื้อ-ขายวัสดุและสินค้าตกแต่งบ้านออนไลน์ พร้อมบริการติดตั้งครบวงจร มาพร้อมกับเทคโนโลยี 
+                      AI ที่จะช่วยยกระดับวงการวัสดุก่อสร้างและของแต่งบ้านให้เป็นเรื่องง่ายมากยิ่งขึ้น NocNoc.com ทำหน้าที่เป็นตัวกลางเชื่อมต่อผู้ผลิต ร้านค้า
+                       ผู้ให้บริการ และเจ้าของบ้าน เข้าด้วยกัน เพื่อเป็นศูนย์รวมในการตอบสนองความต้องการเรื่องบ้านได้อย่างครบครัน
+                     </p>
+                   </div>
+                   <div class="col-lg-6">
+                     <img src="images/who-are-we.jpg" class="img-fluid">
+                   </div> 
+                        
+                  </div>
+                  
+                  <div class="row content-box">
+                    
+                    <div class="col-lg-6">
+                      <img src="images/what-we-do.jpg" class="img-fluid">
+                    </div> 
+                    
+                    <div class="col-lg-6">
+                      <h1 class="mb-3">What We Do</h1>
+                      <p>รวมบริการสำหรับทุกเรื่องบ้าน เพื่อร้านค้า ผู้ให้บริการ และผู้ใช้บริการ
+                        ที่พร้อมอำนวยความสะดวกในขั้นตอนต่างๆ ไม่ว่าจะเป็นขั้นตอนการซื้อ-ขาย ชำระเงิน จัดส่งสินค้า หรือบริการติดตั้งต่างๆ ทำให้เรื่องการทำบ้านไม่ใช่เรื่องยากอีกต่อไป เพราะ nocnoc.com ได้รวบรวมทุกการบริการเรื่องบ้านไว้ในที่เดียว รวบรวมสินค้าหลากหลายสไตล์แบ่งออกเป็น 3 หมวดหมู่หลัก ได้แก่ วัสดุปูพื้น / วัสดุตกแต่งผนัง และเฟอร์นิเจอร์
+                        แหล่งรวมความรู้ ไอเดียและแรงบันดาลใจ สำหรับผู้ที่สนใจเรื่องการตกแต่งบ้านโดยเฉพาะช่องทางการซื้อสินค้าที่มีความหลากหลายในราคาที่เหมาะสม ช่องทางการขายสำหรับร้านค้า ทำให้สามารถขยายฐานผู้บริโภคมากขึ้นและได้เรียนรู้ เข้าใจพฤติกรรมของผู้บริโภคเพิ่มขึ้น
+                        ช่องทางการให้บริการสำหรับช่างเฉพาะทางต่างๆ โดยมีคนกลางในการช่วยดูแลเรื่องการชำระเงิน อำนวยความสะดวกในการดำเนินงานและเพิ่มความมั่นใจในการรับงาน
+                       </p>
+                     </div>
+                          
+                    </div>
+                  
+                  <div class="row content-box">
+                    
+                    <div class="col-lg-6">
+                      <h1 class="mb-3">What We Offer</h1>
+                      <p>เรามีความตั้งใจที่จะเป็นผู้นำในการเปลี่ยนแปลงวงการและอำนวยความสะดวกเรื่องการสร้างบ้าน ด้วยแพลตฟอร์มการซื้อขายออนไลน์ ช่องทางที่สามารถอำนวยความสะดวกและตอบโจทย์ความต้องการทุกด้านให้แก่พาร์ทเนอร์ทุกคน
+                       </p>
+                     </div>
+                     <div class="col-lg-6">
+                       <img src="images/what-we-offer.jpg" class="img-fluid">
+                     </div> 
+                          
+                    </div>
+                    
+                  <div class="row content-box ">
+                      
+                      <div class="col-lg-6">
+                        <img src="images/our-promise.jpg" class="img-fluid">
+                      </div> 
+                      
+                      <div class="col-lg-6 our-promise">
+                        <h1 class="mb-3">Our Promise</h1>
+                        <ul>
+                          <li>
+                            <img src="images/one.svg" class="img-fluid" width="39px;">
+                            <h3 class="mb-3">Home Owners ผู้บริโภค</h3>
+                            <div>• 	ตัวเลือกหลากหลาย</div>
+                          	<div>• 	ราคาคุ้มค่า</div>
+                          	<div>• 	อำนวยความสะดวก</div>
+                          </li>
+                          <li>
+                            <img src="images/two.svg" class="img-fluid" width="39px;">
+                            <h3 class="mb-3">Carriers ผู้ให้บริการ</h3>
+                            <div>• 	ตัวเลือกหลากหลาย</div>
+                            <div>• 	ราคาคุ้มค่า</div>
+                            <div>• 	อำนวยความสะดวก</div>
+                          </li>
+                          <li class="mt-5">
+                            <img src="images/three.svg" class="img-fluid" width="39px;">
+                            <h3 class="mb-3">Manufacturers and Retailers ผู้ผลิตและจัดจำหน่าย</h3>
+                            <div>• 	ตัวเลือกหลากหลาย</div>
+                            <div>• 	ราคาคุ้มค่า</div>
+                            <div>• 	อำนวยความสะดวก</div>
+                          </li>
+                          <li class="mt-5">
+                            <img src="images/four.svg" class="img-fluid" width="39px;">
+                            <h3 class="mb-3">Installers ผู้บริการติดตั้ง</h3>
+                            <div>• 	ตัวเลือกหลากหลาย</div>
+                            <div>• 	ราคาคุ้มค่า</div>
+                            <div>• 	อำนวยความสะดวก</div>
+                          </li>
+                        </ul>
+                       </div>
+                            
+                      </div>
+                  
+                </div>
+                
+                <div class="our-culture">
+                  <div class="container">
+                  <h1>Our Culture</h1>
+                  <div class="row">                
+                    <div class="col-lg-12">
+                      <ul>
+                        <li>
+                          <img src="images/accountability.svg" class="img-fluid" width="48px;">
+                          <h3>Accountability</h3>
+                          <p>รับผิดชอบและมุ่งมั่นในการอำนวยความสะดวกทุกด้านเพื่อประโยชน์ของผู้บริโภค 
+                            ผู้ให้บริการ ร้านค้า ผู้ผลิต และพาร์ทเนอร์ทุกส่วนที่เกี่ยวข้อง</p>
+                        </li>
+                        <li>
+                          <img src="images/integrity.svg" class="img-fluid" width="62px;">
+                          <h3>Integrity </h3>
+                          <p>รยึดมั่นในคุณธรรมที่มีต่อหน้าที่ของตนเองและยินดีให้บริการอย่างซื่อสัตย์และจริงใจ</p>
+                        </li>
+                        <li>
+                          <img src="images/passion.svg" class="img-fluid" width="68px">
+                          <h3>Passion </h3>
+                          <p>ให้บริการด้วยความมุ่งมั่นและทุ่มเทเพื่อพาร์ทเนอร์ทุกคนอย่างตั้งใจจริง</p>
+                        </li>
+                        <li>
+                          <img src="images/curiosity.svg" class="img-fluid" width="66px">
+                          <h3>Curiosity</h3>
+                          <p>มองหาประสบการณ์หรือแง่มุมใหม่ๆเพื่อพัฒนาสิ่งที่ดีสุดอยู่เสมอ</p>
+                        </li>
+                        <li>
+                          <img src="images/respect.svg" class="img-fluid" width="75px">
+                          <h3>Respect</h3>
+                          <p>เคารพในความคิดเห็นของผู้อื่น เชื่อมั่นในเจตนาและความตั้งใจดี</p>
+                        </li> 
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="foot-pad">
+                    <ul>
+                        <li><h3>Get to Know Us</h3></li>
+                        <li><a href="#">About NocNoc</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Buy with Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><h3>Help Center</h3></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">How to Sell</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                        <li><a href="#">Call Center</a></li>
+                    </ul>
+                    <ul>
+                        <li><h3>Payment</h3></li>
+                        <li><a href="#" class="payment-logo"></a></li>
+                        <li><h3>Logistics</h3></li>
+                        <li><a href="#" class="logistics-logo"></a></li>
+                    </ul>
+                    <ul  class="social">
+                        <li><h3>Connect with Us</h3></li>
+                        <li><a href="#"><div class="social"><i class="fab fa-facebook-f"></i></div></a></li>
+                        <li><a href="#"><div class="social"><i class="fab fa-twitter"></i></div></a></li>
+                        <li><a href="#"><div class="social"><i class="fab fa-pinterest"></i></div></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+              <div class="container">
+                <div class="left">Copyright &copy; 2018 nocnoc.com. All Rights Reserved.</div>
+                <div class="right">BetterBe Marketplace Company Limited 1355 Pracharat Sai 1 Road, Wong Sawang, Bangsue, Bangkok 10800</div>
+              </div>
+            </div>
+
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!--Custom Chat Box-->
+        <script>
+            $('.popper').popover({
+                placement: 'top',
+                container: '.chat-wrap .container',
+                html: true,
+                content: function () {
+                    return $(this).next('.popper-content').html();
+                }
+            });
+
+        </script>
+        <script>
+            $('.popper2').popover({
+                placement: 'left',
+                container: '.feed-wrap',
+                html: true,
+                content: function () {
+                    return $(this).next('.popper2-content').html();
+                }
+            });
+
+        </script>
+        <!--Custom Chat Box-->
+        <!--Prevent auto slide in Carousel-->
+        <script>
+            $('.carousel').carousel({
+                interval: false;
+            });
+        </script>
+        <!--Prevent auto slide in Carousel-->
+
+        <script>
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                //>=, not <=
+                if (scroll >= 100) {
+                    //clearHeader, not clearheader - caps H
+                    $(".wrap").addClass("scrollinit");
+                }
+            }); //missing );
+        </script>
+<!--Mobile Nav-->
+
+        <script>
+            $(function () {
+                'use strict'
+
+                $('[data-toggle="offcanvas"]').on('mouseover', function () {
+                    $('.offcanvas-collapse').toggleClass('open'),
+                        $('.navbar-toggler').toggleClass('clicked')
+                })
+                $('.submenuparent').on('mouseover', function () {
+                    $('.submenuchild').css('display', 'block');
+
+
+                })
+                $('.submenuparent').on('mouseout', function () {
+//                    $('.submenuchild').removeClass('open show'),
+
+
+                })
+
+
+            })
+        </script>
+
+
+
+<!--       Login & Signup-->
+
+       <script>
+
+            // VERSION WITH BOOTSTRAP 4 : https://codepen.io/seltix/pen/XRPrwM
+
+            jQuery('.dropdown-toggle').on('click', function (e) {
+                $(this).next().toggle();
+            });
+            jQuery('.dropdown-menu.keep-open').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $("#showSignIn").click(function(){
+                    $("div.signInDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+                $("#showCreateAccount").click(function(){
+                    $("div.showCreateAccountDiv").show();
+                    $("div.signInDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+
+                });
+                $("#showThanks").click(function(){
+                    $("div.showThanksDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.signInDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showThanksDiv').toggleClass('noDrop');
+
+                });
+                $("#signInPanel").click(function(){
+                    $("div.signInDiv").show();
+                    $("div.showCreateAccountDiv").hide();
+                    $("div.showThanksDiv").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+            });
+
+            $(document).ready(function(){
+                $("#showSignInMob").click(function(){
+                    $("div.signInDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+                $("#showCreateAccountMob").click(function(){
+                    $("div.showCreateAccountDivMob").show();
+                    $("div.signInDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showCreateAccountDiv').toggleClass('noDrop');
+
+                });
+                $("#showThanksMob").click(function(){
+                    $("div.showThanksDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.signInDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.showThanksDiv').toggleClass('noDrop');
+
+                });
+                $("#signInPanelMob").click(function(){
+                    $("div.signInDivMob").show();
+                    $("div.showCreateAccountDivMob").hide();
+                    $("div.showThanksDivMob").hide();
+                    $('.signup').addClass('actv');
+//                    $('div.signInDiv').toggleClass('noDrop');
+                });
+            });
+
+        </script>
+
+        <script>
+        $(function(){
+            var $dropdown = $('#header-select-menu'),
+                $currentSelection = $('.current-selection');
+            // set top value of dropdown to vertically center
+            $dropdown.css('top',($currentSelection.parent().outerHeight() - $dropdown.outerHeight())/2);
+            // set the initial selection text
+            $currentSelection.text( $dropdown.find('option:selected').text());
+            // change the selection text to match dropdown selected item
+            $('#header-select-menu').change(function(){
+             $currentSelection.text(
+               $(this)
+               .find('option:selected')
+                 .text());
+            });
+          });
+        </script>
+
+        <script>
+          /*Dropdown Menu*/
+          $(document).ready(function() {
+            var $select = $(".select-language");
+            var $choose = $(".choose-language");
+
+            // handle KEYPRESS events
+            $("body").on("keypress", function(e) {
+              var $target = $(e.target);
+              var $parent = $target.parents(".select-language");
+              if (e.which == 13) {
+                if ($target.attr("name") == "account-type") {
+                  var $whichActive = $("#" + $choose.val());
+                  $whichActive.focus();
+                  $(".select-language").removeClass("active");
+
+                  var $clicked = $("input:checked ~ label");
+                  var clicked = $clicked.text();
+                  $choose.val($clicked.attr("for"));
+                  $choose.text(clicked);
+                  $select.removeClass("active");
+                } else {
+                  $select.removeClass("active");
+                }
+              }
+            });
+
+            // handle random body clicks off-$target
+              $("body").on("click", function (e) {
+                var $target = $(e.target);
+                var isSelect = $target.parents(".select-language").length > 0;
+                if (!isSelect) {
+                  $select.removeClass("active");
+                }
+              });
+
+            // handle direct BUTTON click
+            $choose.on("click", function() {
+              var $whichActive = $("#" + $choose.val());
+              if ($select.hasClass("active")) {
+                $select.removeClass("active");
+                $choose.focus();
+              } else {
+                $select.addClass("active");
+                $whichActive.focus();
+              }
+            });
+
+            // handle direct LABEL clicks
+            $select.on("click", "label", function() {
+              var clicked = $(this).text();
+              $choose.val($(this).attr("for"));
+              $choose.text(clicked);
+              $select.removeClass("active");
+            });
+
+          });
+        </script>
+
+    </body>
+</html>

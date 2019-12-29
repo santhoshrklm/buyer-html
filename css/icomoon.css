@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qpzlxm');
-  src:  url('fonts/icomoon.eot?qpzlxm#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qpzlxm') format('truetype'),
-    url('fonts/icomoon.woff?qpzlxm') format('woff'),
-    url('fonts/icomoon.svg?qpzlxm#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2eufes');
+  src:  url('fonts/icomoon.eot?2eufes#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2eufes') format('truetype'),
+    url('fonts/icomoon.woff?2eufes') format('woff'),
+    url('fonts/icomoon.svg?2eufes#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,46 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+  content: "\e95d";
+}
+.icon-arrow-right:before {
+  content: "\e95e";
+}
+.icon-star-half:before {
+  content: "\e95a";
+}
+.icon-star-outline:before {
+  content: "\e95b";
+}
+.icon-star-filled:before {
+  content: "\e95c";
+}
+.icon-twitter:before {
+  content: "\e956";
+  color: #939393;
+}
+.icon-youtube:before {
+  content: "\e957";
+  color: #939393;
+}
+.icon-line1:before {
+  content: "\e958";
+  color: #939393;
+}
+.icon-facebook1:before {
+  content: "\e959";
+  color: #939393;
+}
+.icon-install-service:before {
+  content: "\e955";
+}
+.icon-close:before {
+  content: "\e954";
+}
+.icon-chat:before {
+  content: "\e953";
+}
 .icon-location:before {
   content: "\e952";
 }

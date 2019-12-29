@@ -6879,6 +6879,89 @@ label.label-unavailable {
   .compare-list .bximg {
     width: 11.8rem !important;
     height: 11.8rem !important; } }
+.navbar-light {
+  color: #fff;
+  background-color: #ccc6c6;
+  border-color: #aca1a2; }
+
+.navbar-light .navbar-nav > li > a {
+  color: #fff; }
+
+.navbar-light .navbar-nav > .dropdown > a .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff; }
+
+.navbar-light .navbar-brand {
+  color: #fff; }
+
+.menu-large {
+  position: static !important; }
+
+.megamenu {
+  padding: 20px 20px;
+  width: 100%; }
+
+.megamenu > div > li > ul {
+  padding: 0;
+  margin: 0; }
+
+.megamenu > div > li > ul > li {
+  list-style: none; }
+
+.megamenu .card {
+  outline: none; }
+
+.megamenu .card:hover,
+.megamenu .card:focus {
+  outline: 1px solid #000; }
+
+.megamenu > div > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal; }
+
+.megamenu > div > li > ul > li > a:hover,
+.megamenu > div > li > ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5; }
+
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  color: #999999; }
+
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  cursor: not-allowed; }
+
+.megamenu.dropdown-header {
+  color: #428bca;
+  font-size: 18px; }
+
+@media (max-width: 768px) {
+  .megamenu {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .megamenu > li {
+    margin-bottom: 30px; }
+
+  .megamenu > li:last-child {
+    margin-bottom: 0; }
+
+  .megamenu.dropdown-header {
+    padding: 3px 15px !important; }
+
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    color: #fff; } }
 .inspiration ul {
   margin: 0;
   padding: 0;
@@ -11172,5 +11255,133 @@ html {
         font-size: 1.4rem; }
         .nocnoc-sitemap .card .card-body ul li a:hover {
           color: #4d51bd; }
+
+@media (max-width: 767.98px) {
+  .about-us {
+    padding-top: 0rem;
+    padding-bottom: 0rem; } }
+.about-us.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+.about-us .about-us-banner {
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .about-us .about-us-banner .banner-img {
+      width: 100%; } }
+  .about-us .about-us-banner .about-us-banner-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    flex-direction: column; }
+    .about-us .about-us-banner .about-us-banner-content img {
+      width: 27rem;
+      max-width: 27rem; }
+      @media (max-width: 575.98px) {
+        .about-us .about-us-banner .about-us-banner-content img {
+          width: 15rem;
+          max-width: 15rem; } }
+    .about-us .about-us-banner .about-us-banner-content span {
+      font-size: 3.2rem;
+      font-weight: 300;
+      line-height: 1.25;
+      letter-spacing: normal;
+      color: white;
+      margin-top: 2rem; }
+      @media (max-width: 575.98px) {
+        .about-us .about-us-banner .about-us-banner-content span {
+          font-size: 2.4rem;
+          max-width: 80%;
+          text-align: center; } }
+.about-us .about-us-content .content-box {
+  margin-top: 6.5rem; }
+  @media (max-width: 767.98px) {
+    .about-us .about-us-content .content-box {
+      margin-top: 4rem; } }
+  @media (max-width: 767.98px) {
+    .about-us .about-us-content .content-box .img {
+      margin: 0 0 1.2rem 0;
+      width: 100%; } }
+  .about-us .about-us-content .content-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600; }
+    @media (max-width: 767.98px) {
+      .about-us .about-us-content .content-box h1 {
+        font-size: 2.4rem; } }
+  .about-us .about-us-content .content-box .our-promise ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap; }
+    .about-us .about-us-content .content-box .our-promise ul li {
+      display: flex;
+      width: 49%;
+      flex-direction: column; }
+      .about-us .about-us-content .content-box .our-promise ul li h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1.5rem 0 1rem; }
+        @media (max-width: 767.98px) {
+          .about-us .about-us-content .content-box .our-promise ul li h3 {
+            font-size: 16px;
+            font-weight: 500; } }
+      .about-us .about-us-content .content-box .our-promise ul li div {
+        font-size: 1.6rem; }
+        @media (max-width: 767.98px) {
+          .about-us .about-us-content .content-box .our-promise ul li div {
+            font-size: 1.4rem; } }
+.about-us .about-us-content .our-culture {
+  background: white;
+  padding: 5rem 0; }
+  .about-us .about-us-content .our-culture h1 {
+    margin: 4rem 0; }
+  .about-us .about-us-content .our-culture ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: row; }
+    @media (max-width: 991.98px) {
+      .about-us .about-us-content .our-culture ul {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    .about-us .about-us-content .our-culture ul li {
+      display: flex;
+      width: 20%;
+      padding-right: 2.5rem;
+      flex-direction: column;
+      justify-content: flex-start; }
+      @media (max-width: 767.98px) {
+        .about-us .about-us-content .our-culture ul li {
+          width: 50%;
+          padding-right: 1rem; }
+          .about-us .about-us-content .our-culture ul li:nth-child(3) {
+            margin-top: 2rem; }
+          .about-us .about-us-content .our-culture ul li:nth-child(4) {
+            margin-top: 2rem; } }
+      .about-us .about-us-content .our-culture ul li h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1.5rem 0 1rem; }
+        @media (max-width: 991.98px) {
+          .about-us .about-us-content .our-culture ul li h3 {
+            font-size: 1.6rem; } }
+      .about-us .about-us-content .our-culture ul li p {
+        font-size: 1.6rem; }
+        @media (max-width: 767.98px) {
+          .about-us .about-us-content .our-culture ul li p {
+            font-size: 1.4rem; } }
+      .about-us .about-us-content .our-culture ul li div {
+        font-size: 1.6rem; }
+  .about-us .about-us-content .our-culture h1 {
+    text-align: center;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
