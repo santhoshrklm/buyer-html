@@ -360,6 +360,16 @@
       p {
         margin: 2.4rem 0;
       }
+      h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.33;
+        color: $base-color;
+        padding: 1rem 0;
+        &.italic {
+          font-style: italic;
+        }
+      }
       .btn {
         width: 20.2rem;
         height: 5.6rem;
@@ -369,6 +379,16 @@
         @include breakpoint-down(sm) {
           width: 16.3rem;
           height: 4.8rem;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          font-size: 1.4rem;
+          line-height: 1.57;
+          color: #565656;
         }
       }
     }
