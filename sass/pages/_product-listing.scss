@@ -1,5 +1,49 @@
 
 .seller-profile-page {
+  margin-top: 4.8rem;
+  .seller-banner {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    .banner-img {
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+    .seller-banner-content {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      flex-direction: column;
+      img {
+        width: 27rem;
+        max-width: 27rem;
+        @include breakpoint-down(xs) {
+          width: 15rem;
+          max-width: 15rem;
+        }
+      }
+      span {
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: $white;
+        margin-top: 2rem;
+        @include breakpoint-down(xs) {
+          font-size: 2.4rem;
+          max-width: 80%;
+          text-align: center;
+        }
+      }
+    }
+  }
   h1 {
     font-size: 3.2rem;
     font-weight: 600;
@@ -24,7 +68,7 @@
     color: $base-color;
   }
   .seller-profile-basic-details {
-    background: $white;
+    // background: $white;
     padding: 2rem 0;
     justify-content: space-between;
     flex-direction: row;
@@ -105,7 +149,7 @@
     }
   }
   .seller-profile-more-details {
-    background: $white;
+    // background: $white;
     padding: 2rem 0;
     justify-content: space-between;
     flex-direction: row;
@@ -190,6 +234,141 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .seller-profile {
+    padding: 2rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-bottom: 0.1rem solid $border;
+    @include breakpoint-down(xs) {
+      flex-direction: column;
+    }
+    .seller-profile-left {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      flex-direction: row;
+      position: relative;
+      @include breakpoint-down(md) {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+      .img-seller {
+        width: 10.2rem;
+        height: 10.2rem;
+        margin-right: 1.5rem;
+        position: absolute;
+        top: -7.5rem;
+        @include breakpoint-down(sm) {
+          display: none;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      .img-seller-mobile {
+        width: 7.4rem;
+        height: 7.4rem;
+        margin-right: 1.5rem;
+        display: none;
+        @include breakpoint-down(sm) {
+          display: block;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      .seller-profile-info {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0 0 0;
+      }
+      .btn {
+        width: 15rem;
+        height: 4.8rem;
+        right: 0;
+        top:0;
+        @include breakpoint-down(sm) {
+          width: 16.3rem;
+          height: 4.8rem;
+          position: absolute;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          margin: 0;
+          padding: 1.6rem 0 0;
+          @include breakpoint-down(sm) {
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+          h3 {
+            font-weight: 600;
+            font-size: 1.4rem;
+          }
+          h4 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+          }
+          &:first-child {
+            width: 100% !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            .seller-profile-rating {
+              width: 50%;
+            }
+            a {
+              width: 50%;
+              color: $theme-tertiary;
+              font-weight: 600;
+              &:hover, &:active {
+                opacity: 0.7;
+                text-decoration: none;
+              }
+              @include breakpoint-down(sm) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .seller-profile-right {
+      .seller-profile-right-container {
+        width: 80%;
+      }
+      p {
+        margin: 2.4rem 0;
+      }
+      .btn {
+        width: 20.2rem;
+        height: 5.6rem;
+        position: absolute;
+        right: 0;
+        top:0;
+        @include breakpoint-down(sm) {
+          width: 16.3rem;
+          height: 4.8rem;
         }
       }
     }
