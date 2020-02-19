@@ -110,89 +110,167 @@
                     <div class="right-panel">
                       <h1>add your new delivery address</h1>
                         
-                      <div class="address-panel"><div><h1 class="mb-5">My Addresses</h1><h4 class="mb-5">Note: Any address changes made will not effect already placed Orders. Please contact Customer service for more information.</h4></div><div class="form-row"><div class="col-md-12">
-  
-  <div class="form-container" style="
-  width: 80%;
-">
-  
-  <div class="form-group"><label title="" for="fullName1582091808094">Full Name<small class="mandatory">*</small></label><input type="text" id="fullName1582091808094" name="fullName" class="form-control false" placeholder="Full Name" value="Santhosh"></div>
-      
-      <div class="form-group">
-          <label title="" for="phoneNo1582091808095">Phone Number<small class="mandatory">*</small></label>
-          <div class="phone-field d-flex"><div class="custom-select reactdrop w-auto reactdrop dropdown">
-              <div aria-haspopup="true" class="reactdrop-lbl pr-2 position-relative d-flex" aria-expanded="false"><label class="m-0" title="+66">+66</label><i class="icon-downarrow"></i></div>
-              <ul tabindex="-1" role="menu" aria-hidden="true" class="w-100 dropdown-menu"><li class="cu-pointer p-1 active" valuekey="_66" value="+66"><label class="m-0">+66</label></li><li class="cu-pointer p-1 " valuekey="_91" value="+91"><label class="m-0">+91</label></li></ul></div>
-              <input type="text" id="phoneNo1582091808095" name="phoneNo" class="form-control false" placeholder="Phone Number" value="22224444"></div></div>
-      
-      
-      <div class="form-group"><label title="" for="additionalPhoneNo1582091808098">buyer.address.additional_phone_number</label><div class="phone-field d-flex"><div class="custom-select reactdrop w-auto reactdrop dropdown"><div aria-haspopup="true" class="reactdrop-lbl pr-2 position-relative d-flex" aria-expanded="false"><label class="m-0" title="+66">+66</label><i class="icon-downarrow"></i></div><ul tabindex="-1" role="menu" aria-hidden="true" class="w-100 dropdown-menu"><li class="cu-pointer p-1 active" valuekey="_66" value="+66"><label class="m-0">+66</label></li><li class="cu-pointer p-1 " valuekey="_91" value="+91"><label class="m-0">+91</label></li></ul></div><input type="text" id="additionalPhoneNo1582091808098" name="additionalPhoneNo" class="form-control false" placeholder="buyer.address.additional_phone_number" value=""></div></div>
-      
-  </div>
+                      <div class="address-panel">
+                        
+                        <div>
+                          <h1 class="mb-5">My Addresses</h1>
+                          <h4 class="mb-5">Note: Any address changes made will not effect already placed Orders.
+                             Please contact Customer service for more information.</h4>
+                        </div>
+                             <div class="form-row">
+                               <div class="col-md-12">
+ 
+                                 <div class="form-container-address">
+                                  
+                                   <div class="form-group">
+                                    <label title="" for="fullName1582091808094">Full Name<small class="mandatory">*</small></label>
+                                    <input type="text" id="fullName1582091808094" name="fullName" class="form-control false" placeholder="Full Name" value="Santhosh">
+                                  </div>
+        
+                                    <div class="form-group">
+                                        <label title="" for="phoneNo1582091808095">Phone Number<small class="mandatory">*</small></label>
+                                        <div class="phone-field d-flex">
+                                          <div class="custom-select reactdrop w-auto reactdrop dropdown">
+                                            <div aria-haspopup="true" class="reactdrop-lbl pr-2 position-relative d-flex" aria-expanded="false">
+                                              <label class="m-0" title="+66">+66</label><i class="icon-downarrow"></i>
+                                            </div>
+                                            <ul tabindex="-1" role="menu" aria-hidden="true" class="w-100 dropdown-menu">
+                                              <li class="cu-pointer p-1 active" valuekey="_66" value="+66"><label class="m-0">+66</label></li>
+                                              <li class="cu-pointer p-1 " valuekey="_91" value="+91"><label class="m-0">+91</label></li>
+                                            </ul>
+                                          </div>
+                                          <input type="text" id="phoneNo1582091808095" name="phoneNo" class="form-control false" placeholder="Phone Number" value="22224444">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label title="" for="additionalPhoneNo1582091808098">buyer.address.additional_phone_number</label>
+                                      <div class="phone-field d-flex">
+                                        <div class="custom-select reactdrop w-auto reactdrop dropdown">
+                                        <div aria-haspopup="true" class="reactdrop-lbl pr-2 position-relative d-flex" aria-expanded="false">
+                                          <label class="m-0" title="+66">+66</label><i class="icon-downarrow"></i>
+                                        </div>
+                                        <ul tabindex="-1" role="menu" aria-hidden="true" class="w-100 dropdown-menu">
+                                          <li class="cu-pointer p-1 active" valuekey="_66" value="+66"><label class="m-0">+66</label></li>
+                                          <li class="cu-pointer p-1 " valuekey="_91" value="+91"><label class="m-0">+91</label></li>
+                                        </ul>
+                                      </div>
+                                      <input type="text" id="additionalPhoneNo1582091808098" name="additionalPhoneNo" class="form-control false" placeholder="buyer.address.additional_phone_number" value="">
+                                    </div>
+                                  </div>
+                                
+                                  </div>
+
+                                  <div>
+                                    <span class="icon-alert-new"></span>If we cannot contact you, Who should we call instead? <span>Add your alternate phone number</span>
+                                  </div>
+
+                                  <hr class="new">
+                              
+                                 <div class="form-container-address">
+                              
+                                  <div class="d-none">
+                                    <label title="" for="city1582091808105">Province</label>
+                                    <input type="text" id="city1582091808105" name="city" class="form-control false" placeholder="Province" value="Kollam">
+                                  </div>
+
+                                  <label><span class="icon-alert-new"></span>Type of Delivery Address</label>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Residence</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Office (Deliver only on weekday)</label>
+                                  </div>
+                                  
+                                  <div class="form-row">
+                                    
+                                    <div class="form-group multi-select col-md-6">
+                                      <label>Province / District / Subdistrict<small class="mandatory">*</small></label>
+                                      <div class="dropdown">
+                                        <div aria-haspopup="true" class="dropdown-toggle" aria-expanded="false">
+                                        <input type="text" id="addSearch" name="addSearchInp" class="dropdown-toggle form-control false" placeholder="Please select" readonly="" value="Kollam, , "></div><div tabindex="-1" role="menu" aria-hidden="true" class="p-3 dropdown-menu"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link">Province</a></li><li class="nav-item"><a class="nav-link">District</a></li></ul>
+                                        <div class="tab-content">
+                                          <div class="m-3">
+                                            <input type="text" id="searchInp" class="form-control false" placeholder="Search" value="">
+                                          </div>
+                                          <div class="tab-pane active"></div>
+                                          <div class="tab-pane"></div>
+                                          <div class="tab-pane"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-6"><label title="" for="zipCode1582091808107">Postal Code<small class="mandatory">*</small></label>
+                                    <input type="text" id="zipCode1582091808107" name="zipCode" disabled="" class="form-control false" placeholder="Postal Code" value="2222">
+                                  </div>
+                                  
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                      <label title="" for="addressLine11582091808100">Address No./ Building / Road<small class="mandatory">*</small></label>
+                                      <textarea id="addressLine11582091808100" name="addressLine1" class="form-control false" placeholder="Address No./ Building / Road" spellcheck="false">Nirmalyam
+                                    KK kunnil</textarea>
+                                  </div>
+
+                                  <h3><span class="icon-alert-new"></span>Help us deliver products to you accurately</h3>
+                                  <span>Please describe your address specifically (In case you would like to tell us)</span>
+                                  <div class="form-group">
+                                    <label title="" for="landmark1582091808108">buyer.address.landmark</label>
+                                    <textarea id="landmark1582091808108" name="landmark" class="form-control false" placeholder="buyer.address.landmark" maxlength="500"></textarea>
+                                  </div>
+                                  
+                                  <div>
+                                    <span class="icon-alert-new"></span>If you are not home and no one can signed for you. Can we leave your item with somebody else?
+                                  </div>
 
 
 
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">No, That must be me or my family only</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                  </div>
 
-<div><span class="icon-info"></span>If we cannot contact you, Who should we call instead? <span>Add your alternate phone number</span></div>
+                                  <div class="form-check form-check-inline col-md-6">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                  </div>
+                                  
+                                  <div class="d-none">
+                                    <label title="" for="subDistrictName1582091808110">Sub District Name</label>
+                                    <input type="text" id="subDistrictName1582091808110" name="subDistrictName" class="form-control false" placeholder="Sub District Name" value="">
+                                  </div>
+                                  <div class="d-none">
+                                    <label title="" for="subDistrictCode1582091808111">Sub District Code</label>
+                                    <input type="text" id="subDistrictCode1582091808111" name="subDistrictCode" class="form-control false" placeholder="Sub District Code" value="">
+                                  </div>
+                              
+                              </div>
+                              
+                                 <hr class="new">
 
-<hr class="new"><div class="d-none"><label title="" for="city1582091808105">Province</label><input type="text" id="city1582091808105" name="city" class="form-control false" placeholder="Province" value="Kollam"></div>
-
-<label>Type of Delivery Address</label><div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">Residence</label>
-</div>
-<div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-<label class="form-check-label" for="inlineRadio2">Office (Deliver only on weekday)</label>
-</div>
-<div class="form-row">
-  
-  <div class="form-group multi-select col-md-6"><label>Province / District / Subdistrict<small class="mandatory">*</small></label><div class="dropdown"><div aria-haspopup="true" class="dropdown-toggle" aria-expanded="false"><input type="text" id="addSearch" name="addSearchInp" class="dropdown-toggle form-control false" placeholder="Please select" readonly="" value="Kollam, , "></div><div tabindex="-1" role="menu" aria-hidden="true" class="p-3 dropdown-menu"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link">Province</a></li><li class="nav-item"><a class="nav-link">District</a></li></ul><div class="tab-content"><div class="m-3"><input type="text" id="searchInp" class="form-control false" placeholder="Search" value=""></div><div class="tab-pane active"></div><div class="tab-pane"></div><div class="tab-pane"></div></div></div></div></div>
-  
-  <div class="form-group col-md-6"><label title="" for="zipCode1582091808107">Postal Code<small class="mandatory">*</small></label><input type="text" id="zipCode1582091808107" name="zipCode" disabled="" class="form-control false" placeholder="Postal Code" value="2222"></div>
-</div><div class="form-group"><label title="" for="addressLine11582091808100">Address No./ Building / Road<small class="mandatory">*</small></label><textarea id="addressLine11582091808100" name="addressLine1" class="form-control false" placeholder="Address No./ Building / Road" spellcheck="false">Nirmalyam
-KK kunnil</textarea></div>
-
-<h3><span class="icon-info"></span>Help us deliver products to you accurately</h3>
-<span>Please describe your address specifically (In case you would like to tell us)</span>
-<div class="form-group"><label title="" for="landmark1582091808108">buyer.address.landmark</label><textarea id="landmark1582091808108" name="landmark" class="form-control false" placeholder="buyer.address.landmark" maxlength="500"></textarea></div><div><span class="icon-info"></span>If you are not home and no one can signed for you. Can we leave your item with somebody else?</div>
-
-
-
-<div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">No, That must be me or my family only</label>
-</div><div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">Yes</label>
-</div>
-
-<div class="form-check form-check-inline col-md-6">
-
-<input type="text" class="form-control" placeholder="First name">
-</div><div class="d-none"><label title="" for="subDistrictName1582091808110">Sub District Name</label><input type="text" id="subDistrictName1582091808110" name="subDistrictName" class="form-control false" placeholder="Sub District Name" value=""></div><div class="d-none"><label title="" for="subDistrictCode1582091808111">Sub District Code</label><input type="text" id="subDistrictCode1582091808111" name="subDistrictCode" class="form-control false" placeholder="Sub District Code" value=""></div><hr class="new">
-
-<div class="custom-control custom-checkbox pt-1"><input type="checkbox" id="defaultAddress-checkbox" name="defaultAddress" class="custom-control-input false" placeholder="" value="true"><label title="" for="defaultAddress-checkbox" class="custom-control-label ml-4">Make this my default address</label></div><div class="addressDelivery mt-5 mb-5 "><button type="button" class="btn btn-primary btn-xl">Save Address</button><button type="button" class="btn btn-secondary btn ml-3 btn-xl">Cancel</button></div></div></div></div>
+                                  <div class="custom-control custom-checkbox pt-1">
+                                  <input type="checkbox" id="defaultAddress-checkbox" name="defaultAddress" class="custom-control-input false" placeholder="" value="true">
+                                  <label title="" for="defaultAddress-checkbox" class="custom-control-label ml-4">Make this my default address</label>
+                                </div>
+                                  <div class="addressDelivery mt-5 mb-5 ">
+                                  <button type="button" class="btn btn-primary btn-xl">Save Address</button>
+                                  <button type="button" class="btn btn-secondary btn ml-3 btn-xl">Cancel</button>
+                                </div>
+                                
+                                </div>
+                              </div>
+                          </div>
                     </div>
                 </div>
             </div>
         </main>
 
-        <!-- <div class="chat-wrap">
-            <div class="container">
-                <button class="popper" data-toggle="popover"><i class="fas fa-comments"></i></button>
-                <div class="popper-content" style="display: none;">
-                    <div class="bxchat">
-                        <div class="head">
-                            <h2>MySCG Team<br><span>Instant Communicator</span></h2>
-                        </div>
-                        <div class="pad">
-                            <button type="button" class="btn btn-primary btn-md btn-block">Start A Conversation</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <footer class="footer">
                 <div class="container">
