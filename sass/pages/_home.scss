@@ -2341,3 +2341,30 @@ input {
     }
   }
 }
+
+.promotion-artwork {
+  .plain-rich-text {
+    .row {
+      @include breakpoint-down (sm) {
+        width: 100% !important;
+      }
+    }
+    .how-to-do-promotion {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-down (sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
+      img {
+        @include breakpoint-down (sm) {
+          width: 100px !important;
+          height: 100px !important;
+          margin-right: 2rem !important;
+        }
+      }
+    }
+  }
+}

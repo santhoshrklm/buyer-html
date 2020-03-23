@@ -4338,6 +4338,24 @@ input {
       .messaging-banner i {
         margin-bottom: 1rem; } }
 
+@media (max-width: 767.98px) {
+  .promotion-artwork .plain-rich-text .row {
+    width: 100% !important; } }
+.promotion-artwork .plain-rich-text .how-to-do-promotion {
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 767.98px) {
+    .promotion-artwork .plain-rich-text .how-to-do-promotion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; } }
+  @media (max-width: 767.98px) {
+    .promotion-artwork .plain-rich-text .how-to-do-promotion img {
+      width: 100px !important;
+      height: 100px !important;
+      margin-right: 2rem !important; } }
+
 .cart-pad {
   display: flex;
   justify-content: space-between;
