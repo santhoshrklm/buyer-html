@@ -2344,7 +2344,16 @@ input {
 
 .promotion-artwork {
   .plain-rich-text {
-    .row {
+    .title {
+      width: 80%; 
+      margin: 4rem auto;
+      @include breakpoint-down (sm) {
+        width: 100% !important;
+      }
+    }
+    .how-to-do-promotion-container {
+      width: 80%; 
+      margin: 0 auto;
       @include breakpoint-down (sm) {
         width: 100% !important;
       }

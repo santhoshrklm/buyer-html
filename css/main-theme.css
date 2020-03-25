@@ -4338,9 +4338,18 @@ input {
       .messaging-banner i {
         margin-bottom: 1rem; } }
 
-@media (max-width: 767.98px) {
-  .promotion-artwork .plain-rich-text .row {
-    width: 100% !important; } }
+.promotion-artwork .plain-rich-text .title {
+  width: 80%;
+  margin: 4rem auto; }
+  @media (max-width: 767.98px) {
+    .promotion-artwork .plain-rich-text .title {
+      width: 100% !important; } }
+.promotion-artwork .plain-rich-text .how-to-do-promotion-container {
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 767.98px) {
+    .promotion-artwork .plain-rich-text .how-to-do-promotion-container {
+      width: 100% !important; } }
 .promotion-artwork .plain-rich-text .how-to-do-promotion {
   display: flex;
   flex-direction: column; }
