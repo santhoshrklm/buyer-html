@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'sukhumvittadmai-medium';
+  src:  url('fonts/sukhumvittadmai-medium.eot');
+  src:  url('fonts/sukhumvittadmai-medium.eot') format('embedded-opentype'),
+    url('fonts/sukhumvittadmai-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

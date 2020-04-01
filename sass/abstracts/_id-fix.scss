@@ -1,0 +1,10 @@
+body[lang|=en][env|=id]{
+    .product-list .bxdetail .price .offer {
+        font-size: 1.8rem;
+        display: block;
+    }
+    .bxdetail .price label+label,.my-cart .price .offer,.order-summary .product-details-price .price-new .offer{
+        display: block;
+    }
+    
+}

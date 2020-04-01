@@ -1,0 +1,34 @@
+body{
+    &:lang(th){
+        .main-search{
+            flex: 1.3;
+        } 
+        .perc-off{
+            display: inline-block;               
+        }   
+        .product-carousel .bxdetail h2 a{
+            //line-height: 1.8rem !important;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+           
+        }
+        .special-tag{
+            background: url(../images/best-price.png) no-repeat right !important;
+        }
+        .reactdrop.carousel-filter-select{
+            top: -7px;
+        }
+        .surveySty .btn-survey{
+            width: 4rem;
+        }
+    }
+    .btn{
+        &.btn-lg, &.btn-sm {
+        padding: .8rem 1.5rem .6rem!important;
+        line-height: 1.7;
+    }
+}
+   
+}
