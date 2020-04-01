@@ -1,0 +1,26 @@
+.breadcrumb{
+    margin: 0;
+    padding: 1.4rem 0;
+    background-color: transparent;
+    border-radius: 0;
+    li{
+        font-size: 1.1rem;
+        color: $theme-primary;
+        &.active{
+            color: $theme-primary;
+            font-weight:600;
+            max-width: 70rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        a{
+            color: $base-color;
+            text-decoration: none;
+            font-size: 1.1rem;
+            &:hover{
+                color: $lightgrey;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FAFAFA" d="M-733-2084H707v3780H-733z"/>
+        <g>
+            <circle cx="19.5" cy="19.5" r="19.5" fill="#3639B4"/>
+            <text fill="#FFF" font-family="Prompt-Bold, Prompt" font-size="24" font-weight="bold">
+                <tspan x="13" y="28">3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

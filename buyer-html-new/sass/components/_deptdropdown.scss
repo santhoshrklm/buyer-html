@@ -1,0 +1,407 @@
+@media (min-width: 991px) {
+    .DeptNavDropdown-Wrap{     
+        position: relative;
+        left: 0%;
+        background: #fff;
+        top: 0px;
+        bottom: 0;
+        width: 100%;       
+        margin: 0;
+        cursor: default;
+        @include box-shadow(0px, 4px, 10px, rgba(0,0,0,.2), $inset: false);       
+        .DeptNavDropdown-grid{
+            display: flex;
+            padding:0rem;
+            background: $white;
+            justify-content: space-between;
+            .DeptNavDropdown-gridSection{                     
+                .DeptNavDropdown-linkTitle{
+                    font-size: 1.6rem;
+                    color:$base-color;                 
+                    display: flex;
+                    padding: .8rem 1.5rem;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    position: relative;
+                    line-height: 24px;
+                    justify-content: left;
+                    align-items: center;
+                    
+                    
+                    // &:hover{
+                    //     text-decoration: none;
+                    //     color: $white;
+                    //     @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary);  
+                    // }
+                   
+                    @include breakpoint-down(lg){
+                        font-size: 1.3rem;
+                    }
+                    &::after{
+                        content: " ";
+                        display:block;
+                        height:2px;
+                        background: $orange-color;
+                        position: absolute;
+                        bottom: .5rem;
+                        width: 32px;
+                    }
+                }
+                ul{            
+                    list-style-type: none;
+                    li{
+                        a{
+                            font-size: 1.4rem;
+                            color:$submenucolor;
+                            line-height: 1.57;
+                            display: block;
+                            padding: .6em 1.5rem;
+                            cursor: pointer;
+                            line-height: 1rem;
+                           
+                            font-weight: 400;
+                            &:hover{
+                                color: lighten($white, 0%);
+                                @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary);  
+                            }
+                            @include breakpoint-down(lg){
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+                &.menu-img-holder{
+                    position: relative;
+                    overflow: hidden;
+                    max-width: 46.5rem;
+                    .menu-img-details{
+                        top:0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.2);
+                        h1{
+                            position: absolute;
+                            color: $white;
+                            top: 5rem;
+                            left: 2.4rem;
+                            white-space: normal;
+                            padding-right: 4rem;
+                            @include breakpoint-down(lg){
+                                top: 2rem;
+                                left: 2rem;
+                                font-size: 1.3rem;
+                                padding-right: 2rem;
+                            }
+                        }
+                        h3{
+                            top: 2.4rem;
+                            left: 2.4rem;
+                            position: absolute;
+                            color: $white;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            @include breakpoint-down(lg){
+                                top: 1rem;
+                                left: 2rem;
+                                font-size: 1.3rem;
+                                padding-right: 2rem;
+                            }
+                        }
+                        p{
+                            color: $white;
+                            font-size: 1.4rem;
+                            position: absolute;
+                            top: 12rem;
+                            left: 2.4rem;
+                            white-space: pre-wrap;
+                            width: 80%;
+                            @include breakpoint-down(lg){
+                                top: 5.5rem;
+                                left: 2rem;
+                                font-size: 1.1rem;
+                            }
+                        
+                        }
+                        a{
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            color: $white;
+                            position: absolute;
+                            left:2.4rem;
+                            bottom:3rem;
+                            text-decoration: none;
+                            i{
+                                top: 0rem;
+                                font-size: 75%;
+                                font-weight: 600;
+                            }
+                            @include breakpoint-down(lg){                               
+                                bottom: 1rem;
+                                left: 2rem;
+                                font-size: 1.3rem;
+                            }
+                        }                   
+                     }
+                     &:hover{
+                         img{
+                            @include pulse( );
+                         }
+                     }
+                                     
+                }
+            }
+            .DeptNavDropdown-gridItem{
+                padding: 0rem;
+                min-width:max-content;
+                max-width: 20%;
+                overflow: hidden;               
+              &.DeptNavDropdown-gridImgItem{
+                @include breakpoint-down(lg){
+                    min-width: 32rem;
+                }                
+              }
+                       
+              
+            }
+            .DeptNavDropdown-gridItem-scroll{
+                display: block;
+                width: 100%;
+                max-height: 56rem;
+                overflow-y: auto;             
+                margin: 1.5rem .5rem;
+                padding: 1rem 0;
+              
+                @include breakpoint-down(lg){
+                    max-height: 45rem;
+                }
+                .DeptNavDropdown-gridItem{
+                    width: 25%;
+                    float: left;
+                }
+                @include scrollsty();
+                
+            }
+            
+        }
+
+    }
+    .main-nav {
+        .dropdown{     
+            &.level2{
+                &:hover{
+                        .DeptNavDropdown-Wrap {                             
+                               
+                                left: 0%;                            
+                                opacity: 1;                              
+                               position: relative;
+                               overflow: hidden;
+                             
+                               margin: 0;
+                              }  
+                        }
+
+                &.leaflevel0{
+                        .DeptNavDropdown-linkTitle{
+                            font-size: 1.4rem;
+                            padding-left: 3rem;
+                        }
+                    }
+                }
+                // .level1-block{                         
+                //     &:after{
+                //     height: 11rem;
+                //     background: url(../images/tile-laminate-dropdown.png)  no-repeat bottom left $offwhite ;
+                //     background-size:35%;
+                //     content: ("");
+                //     display: block;
+                //     width: 100%;
+                //     position: relative;;
+                //     bottom: 0;
+                //     margin-top: 2rem;
+                    
+                //     }
+                                
+                // }
+        }
+    }
+}
+.main-nav .dropdown.level1 .nav-link:hover + .level1-block .level2:first-child{
+    .nav-link{ 
+        background-color: $theme-tertiary; 
+        color: $white;
+        @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary); 
+        @include breakpoint-down(sm){
+            background: none !important;
+            color: $theme-quaternary;
+        } 
+    }
+ 
+    
+} 
+
+
+@media (max-width: 991px) {
+        .DeptNavDropdown-Wrap {
+            background-color: $white;
+            padding: 0 1rem;
+            .DeptNavDropdown-gridItem{
+                .DeptNavDropdown-gridSection{
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid $border;
+                    background: $offwhite;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    ul{
+                        padding-bottom: 0 !important;
+                        li{
+                            list-style-type: none;
+                            a{
+                                font-weight: 500 !important;
+                                padding: 0.7rem 0rem !important;
+                                cursor: pointer;
+                                display: block;
+                                font-size: 1.4rem;
+                                color: $submenucolor;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                line-height: 1.57;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .DeptNavDropdown-linkTitle{
+                    font-weight: 400 !important;
+                    padding: 0.7rem 0rem !important;
+                    cursor: pointer;
+                    display: block;
+                    color: $theme-quaternary;
+                    font-size: 1.3rem;
+                    position: relative;
+                    span {
+                      &::after {
+                        content: " ";
+                        display: block;
+                        height: 2px;
+                        background: #f87620;
+                        position: absolute;
+                        bottom: .5rem;
+                        width: 32px;
+                      }
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    i.noc-drop{
+                        position: absolute;
+                        right: 1rem;
+                        top: 1rem;
+                    }
+                    
+
+                } 
+        }
+    }
+}
+@media (min-width: 991px) {
+    .no-category{
+        .DeptNavDropdown-Wrap {
+            left: 0% !important;
+            position: relative;
+            opacity: 1;     
+            display: block !important;
+            box-shadow: none;
+            .DeptNavDropdown-grid{
+                flex-flow: column;
+                .DeptNavDropdown-linkTitle{
+                    &::after{
+                        display: none;
+                    }
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    &:hover{
+                        background-color: $theme-tertiary;
+                        color: $white;
+                    }
+                }
+                .DeptNavDropdown-gridItem{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }   
+        .dropdown-menu{           
+            width: 30rem !important;
+            .nav-link{
+                display: none;
+            }
+            &.l2{
+                margin-left: 9rem !important;
+                box-shadow: 3px 0px 5px $theme-primary-gray !important;
+            }
+            &.l3{
+                margin-left:39rem !important;
+                box-shadow: 3px 0px 5px $theme-primary-gray!important;
+            }
+            &.l4{
+                margin-left:69rem !important;
+                box-shadow: 3px 0px 5px $theme-primary-gray !important;
+                background: $white !important;
+                min-height: 66.3rem !important;
+            }
+        }
+        .level1-block:after{
+            display: none !important;
+        }
+        .navbar-nav{
+            width: 30rem !important;
+            .nav-link{
+                text-align: left !important;
+            }
+            .dropdown{
+                position: relative !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .no-category{
+        .dropdown-menu{
+            display: block;
+            &.level1:hover .level1-block{
+                background: $white !important;
+                min-height: 66.3rem !important;
+            }
+        }
+        .nav-link + .d-flex{
+            flex-flow: column !important;
+        }
+    }
+
+}
+@media (max-width:1024px) {
+    .no-category{
+        .dropdown-menu.l2{
+            margin-left: 24%!important;
+        }
+        .dropdown-menu.l3{
+            margin-left: 224%!important;
+        }
+        .dropdown-menu.l4{
+            margin-left: 424%!important;
+        }
+    }
+}
+.gallery-row{
+    .DeptNavDropdown-gridImgItem{
+        display: flex;
+    }
+}

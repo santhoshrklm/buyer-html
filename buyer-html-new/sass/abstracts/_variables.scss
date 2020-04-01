@@ -1,0 +1,191 @@
+$theme-primary-gray: #555;
+$theme-secondary-gray: #777;
+$lightgrey:#818181;
+$btn-grey: #e8e6ed;
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+@mixin skewY($degrees) {
+  -webkit-transform: skewY($degrees);
+  -moz-transform: skewY($degrees);
+  -ms-transform: skewY($degrees);
+  -o-transform: skewY($degrees);
+  transform: skewY($degrees);
+}
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+  -webkit-box-shadow:inset $left $top $blur $color;
+  -moz-box-shadow:inset $left $top $blur $color;
+  box-shadow:inset $left $top $blur $color;
+  } @else {
+  -webkit-box-shadow: $left $top $blur $color;
+  -moz-box-shadow: $left $top $blur $color;
+  box-shadow: $left $top $blur $color;
+  }
+  }
+
+  //media queries
+@mixin breakpoint-down($breakpoint) {
+  @if $breakpoint == xs {
+       @media (max-width:575.98px) { @content };
+  }
+  @if $breakpoint == sm {
+       @media (max-width:767.98px) { @content };
+  }
+  @if $breakpoint == md {
+       @media (max-width: 991.98px) { @content };
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 1199.98px) { @content };
+  }
+  @if $breakpoint == xl {
+    @media (max-width: 1365px) { @content };
+  }
+}
+@mixin breakpoint-up($breakpoint) {
+  @if $breakpoint == xs {
+       @media (min-width:575.98px) { @content };
+  }
+  @if $breakpoint == sm {
+       @media (min-width:767.98px) { @content };
+  }
+  @if $breakpoint == md {
+       @media (min-width: 991.98px) { @content };
+  }
+  @if $breakpoint == lg {
+    @media (min-width: 1199.98px) { @content };
+  }
+  @if $breakpoint == xl {
+    @media (min-width: 1365px) { @content };
+  }
+  @if $breakpoint == xxl {
+    @media (min-width: 1599px) { @content };
+  }
+}
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+$main-bg:#fafafa;
+$dark-grey:#333333;
+$green:#35900e;
+$green-new:#3ad516;
+$checkboxbrder:#aca9a9;
+$filterlist:#535353;
+$filtercross:#d1cbcb;
+$creamwhite:#f5f5f5;
+$green-border:#ccc3c3;
+$soft-green: #79cb55;
+$simple-border:#dedede;
+$mobile-bg:#f8f4f4;
+$grey-border:#939393;
+$submenucolor:#525252;
+$light-blue:#f1f2f8;
+
+$tipslink:#0e1dcb;
+
+$drop-dwn-border:#e2e2e2;
+
+$icon-color:#535252;
+
+
+$brder-color3:#e4e4e4;
+$xmasgreen:#388a46;
+$border-lite:#ebebeb;
+$copyright: #090823;
+$adsorage:#ff722e;
+
+
+@mixin scrollsty( ) {
+&::-webkit-scrollbar {
+  width: 6px;
+  background-color: $white;
+}
+&::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(219, 219, 219, 0.3);
+  background-color: $creamwhite;
+  border-radius: 6px;
+}
+
+&::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgb(214, 214, 214);
+}
+}
+@mixin scrollstyH( ) {
+  &::-webkit-scrollbar {
+    height: 3px;
+    background-color: $white;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(219, 219, 219, 0.3);
+    background-color: $creamwhite;
+    border-radius: 6px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgb(214, 214, 214);
+  }
+  }
+/* transistion */
+// Usage:   @include transition(width, height 0.3s ease-in-out);
+// Output:  -webkit-transition(width 0.2s, height 0.3s ease-in-out);
+//          transition(width 0.2s, height 0.3s ease-in-out);
+//
+// Pass in any number of transitions
+@mixin transition($transitions...) {
+  $unfoldedTransitions: ();
+  @each $transition in $transitions {
+    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+  }
+  
+  -webkit-transition: $unfoldedTransitions;
+  transition: $unfoldedTransitions;
+}
+
+@function unfoldTransition ($transition) {
+  // Default values
+  $property: all;
+  $duration: .2s;
+  $easing: null; // Browser default is ease, which is what we want
+  $delay: null; // Browser default is 0, which is what we want
+  $defaultProperties: ($property, $duration, $easing, $delay);
+
+  // Grab transition properties if they exist
+  $unfoldedTransition: ();
+  @for $i from 1 through length($defaultProperties) {
+    $p: null;
+    @if $i <= length($transition) {
+      $p: nth($transition, $i)
+    } @else {
+      $p: nth($defaultProperties, $i)
+    }
+    $unfoldedTransition: append($unfoldedTransition, $p);
+  }
+
+  @return $unfoldedTransition;
+}

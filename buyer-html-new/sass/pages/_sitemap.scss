@@ -1,0 +1,32 @@
+.nocnoc-sitemap {
+  .card {
+    background: $offwhite;
+    min-height: 23rem;
+    border: 0;
+    margin-bottom: 1rem;
+    .card-body {
+      .card-title {
+        color: $theme-primary-light;
+        border-bottom: 0.1rem solid $border;
+        padding: 0 0 1rem 0;
+        font-size: 1.6rem;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          padding: 0.5rem 0;
+          a {
+            color: $base-color;
+            text-decoration: none;
+            font-size: 1.4rem;
+            &:hover {
+              color: $theme-primary-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.bxpagn{
+    .pagination{
+        margin: 0 1.4rem;
+        // border-top: .1rem solid $border;
+        padding: 2.2rem 0 1.5rem 0;
+        border-radius: 0;
+        @include breakpoint-down(md){
+            margin-left: 0rem;
+        }
+        .page-item{
+            margin: 0rem .4rem;
+            border-bottom: 0 !important;
+            &.active {
+                .page-link{
+                    color: $white;
+                    background-color: $theme-tertiary;
+                }
+            }
+            &.disabled {
+                .page-link {
+                  color: $soft-gray;
+                  i {
+                    opacity: .5;
+                  }
+                }
+            }
+        }
+        .page-link{
+            border: 0;
+            color: $theme-tertiary;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: .5rem 1rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            border: 1px solid $border-lite;
+            border-radius: .4rem;
+            line-height: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &.mini-pagination{
+        .pagination{
+            border-top: none;
+            padding:0;
+        }
+    }
+    @include breakpoint-down(xs){
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bxpagn{
+        .pagination{
+            .page-link{
+                padding: .6rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+  .bxpagn {
+    margin: 0 auto;
+    .pagination {
+      .page-item {
+          margin: 0rem .1rem !important;
+      }
+    }
+  }
+}
+/* right side top pagination*/
+
+.pagn-top{
+    .justify-content-center{
+        justify-content: flex-end !important;
+        border: none !important;   
+        padding:0rem; 
+        @include breakpoint-down(xs){
+            justify-content: center !important;
+        }
+        .page-item{
+            text-transform: capitalize !important;
+            border:none;
+            a{
+                font-size:1.3rem;
+                text-transform: capitalize !important;
+                padding:.8rem .8rem .6rem!important;
+                text-align: center;
+                line-height: 1.3rem;               
+               
+              }
+            &.active .page-link {
+                color: $white;
+                background-color: $theme-primary;
+              
+            }
+            &.disabled{
+                opacity: .5;
+            }
+           
+        }   
+    }
+}

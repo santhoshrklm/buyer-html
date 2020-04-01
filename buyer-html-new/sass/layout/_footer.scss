@@ -1,0 +1,529 @@
+.footer{
+    background-color: $theme-quaternary;
+    margin-top: 0rem;
+    padding: 1.5rem 0 0;
+    .footer-link-two {
+      ul {
+        li {
+          h3 {
+            color: $white;
+            text-align: left;
+          }
+          p {
+            text-align: left;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .foot-pad{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding: 5rem 0;
+    }
+    .qr-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 14.5rem;
+      margin: 2rem 0 0 0;
+      .qr-code-img {
+        img {
+          width: 14.5rem;
+          height: 14.5rem;
+        }
+      }
+      h5 {
+        font-size: 1.3rem;
+        color: $grey-border;
+      }
+      span {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    ul{
+        margin: 0 1.5rem;
+        padding: 0;
+        flex-grow: 1;
+        &.social-icons {
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 1.6rem;
+            padding: .5rem 0;
+            a{
+              font-size: 2.3rem;
+              opacity: 1;
+            }
+          }
+        }
+      
+        &.social {
+          li {
+            display: block;
+            margin: 0 1rem 1rem 0 ;
+            &:first-child {
+                width: 100%;
+            }
+          }
+        }
+        li {
+            list-style: none;           
+            margin-bottom: 0rem;
+            font-size: 1.4rem;
+            padding: .8rem 0;            
+            .icon-call {
+              font-size: 2.3rem;
+              &:before {
+                color: $theme-quaternary;
+              }
+            }
+            p {
+              color: $white;
+              font-size: 1.4rem;
+              font-weight: 300;
+              // opacity: 0.7;
+              @include breakpoint-down(sm){
+                font-size: 1.2rem;  
+              }
+            }
+            a {
+              color: $white !important;
+              text-decoration: none;
+              font-weight: 300;
+              font-size: 1.4rem;
+              opacity: 0.7;
+              &.phone-number {
+                justify-content: flex-end;
+                @include breakpoint-down(sm){
+                  justify-content: flex-start;
+                }
+                span {
+                  color: $theme-tertiary-new;
+                  font-family: Prompt;
+                  font-size: 24px;
+                  font-weight:500;
+                  i {
+                    &::before{
+                      color: $theme-tertiary-new;
+                    }
+                    
+                  }
+                }
+              }
+              @include breakpoint-down(sm){
+                font-size: 1.2rem;  
+              }
+              &:hover{
+                  opacity: .7;
+              }
+              &.payment-logo {
+                display: flex;
+                background: url("../images/payment-method-footer.svg") no-repeat left;
+                background-size: auto;
+                height: 3rem;
+                margin: 0;
+                width: 100%;
+              }
+              &.payment-logo-ph {
+                display: flex;
+                background: url("../images/payment-method.svg") no-repeat left;
+                 background-size: auto;
+                height: 3rem;
+                margin: 0;
+                width: 100%;
+              }
+              &.logistics-logo {
+                display: flex;
+                background: url("../images/logistics.svg") no-repeat left;
+                background-size: contain;
+                height: 4rem;
+                margin: 0;
+                width: 90%;
+              }
+              &.logistics-logo-ph {
+                display: flex;
+                background: url("../images/logistics_ph_logo.svg") no-repeat left;
+                background-size: contain;
+                height: 4rem;
+                margin: 0;
+                width: 90%;
+              }
+              .phone-number {
+                font-size: 2rem;
+                font-weight: 600;
+                color: $theme-quaternary;
+              }
+            }
+            div {
+                display: inline;
+                width: 2rem;
+                display: inline-flex;
+                text-align: center;
+                padding: .2rem 0;
+                margin-right: .7rem;
+                background: $theme-primary-light;
+                &.social {
+                  border-radius: 50%;
+                  padding: .5rem 1rem;
+                  border: 0;
+                  background: $purple;
+                  margin: 0;
+                  justify-content: center;
+                  color: $white;
+                  margin-right: .7rem;
+                  &:hover {
+                    i {
+                      color: $theme-secondary;
+                    }
+                  }
+                  i{
+                      padding: 0;
+                      margin: 0;
+                      font-size: 1rem;
+                  }
+                }
+                i{
+                    padding: 0;
+                    margin: 0 auto;
+                    color: $white;
+                }
+            }
+           
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:nth-child(3) {
+          flex-grow: 3;
+        }
+    }
+    .footer-top {
+      background: $theme-quaternary;
+      padding: 2rem 0;
+      .social-icons-container {
+        ul {
+          margin: 1.5rem 0 0 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+          li {
+            list-style: none;
+            margin: 0 1.5rem 0 0;
+            padding: 0;
+            a {
+              height: 3.6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            i {
+            font-size: 3.2rem !important;
+            color: $white;
+            }
+          }
+        }
+        h4 {
+          color: $white;
+        }
+      }
+      .nocnoc-news {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        h4 {
+          color: $white;
+          padding-right: 4.4rem;
+          margin-bottom: 1.5rem;
+        }
+        .news-container {
+          display: flex;
+          max-width: 28.8rem;
+          width: 100%;
+          .icon-news {
+            padding: 1rem;
+            background: $white;
+            color: $theme-primary;
+            text-align: center;
+          }
+        }
+        .form-control {
+          border: 0;
+          padding-left: 0;
+        }
+        button {
+          background-color: $theme-tertiary !important;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          &:before {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 0.6em;
+            height: 0.6em;
+            border-right: 0.2em solid $white;
+            border-top: 0.2em solid $white;
+            transform: rotate(45deg);
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+    h3{
+      font-size: 1.4rem;
+      font-weight:500;    
+      margin: 0 0 1rem 0;
+      color: $white !important;
+      a {
+        font-size: 1.4rem;
+        font-weight:500 !important;    
+        margin: 0 0 1rem 0;
+        color: $white !important;
+        opacity: 1 !important;
+        &:hover, &:active {
+          color: $white !important;
+        }
+      }
+  }
+  .input-group-append{
+    .btn{
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      font-size: 1.6rem !important;
+      font-weight: bold;
+    }
+  }
+  .input-group{
+    .form-control{
+      font-size: 1.4rem;
+      color: $light-gray; 
+      border-top-left-radius: .4rem !important;
+      border-bottom-left-radius: .4rem !important;
+    }
+  }
+  .small-txt{
+    font-size: 1.3rem !important;
+  }
+  .footer-link-six{
+    > h3, form{
+      padding: .8rem 0;
+      @include breakpoint-down(sm){
+        padding: .8rem 0 0 !important;
+        margin-bottom: 0rem;
+      }
+    }
+    .small-txt {
+      text-align: right;
+      @include breakpoint-down(sm){
+        text-align: left;
+      }
+    }
+  }
+  &.seller-profile-page{
+    padding: 1.5rem 0 0 !important;
+  }
+  .payoptions {
+    ul{
+      li{
+        a{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer{
+        ul{
+            margin: 0;
+            // margin-top: 2.5rem;
+        }
+        .foot-pad{
+            flex-direction: row;
+            padding-top: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .footer-link-three, .footer-link-four {
+          margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    .footer-top {
+      .nocnoc-news {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        h4 {
+          padding-right: 0;
+          font-size: 1.4rem;
+        }
+      }
+      .social-icons-container {
+        ul {
+          justify-content: center;
+        }
+        h4 {
+          text-align: center;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .footer-link-one {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .row{
+        width: 100%;
+      }
+    }
+    .footer-link-two {
+      margin-bottom: 3rem;
+      ul {
+        li {
+        
+          &:first-child {
+            display: flex;
+          
+          }
+         
+        }
+      }
+      .qr-code-img {
+        img {
+          display: none;
+        }
+        content:url("../images/line-img-footer.png");
+        width: 10rem;
+      }
+    }
+    .qr-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 14.5rem;
+      margin: 2rem auto 0;
+    }
+    .footer-link-two,.footer-link-three, .footer-link-four, .footer-link-five, .footer-link-six {
+      width: 50% !important;
+      margin: 0rem 0rem 1rem 0rem;
+      padding: 0rem;
+    }
+    // .footer-link-three{
+    //   display: none;
+    // }
+    .footer-link-six{
+      width: 100% !important;
+      padding:0rem 15px;
+
+    }
+    .copyright {
+      display: flex !important;
+      flex-flow: column;
+      font-size: 1.2rem;   
+      font-weight: normal;
+      padding: 2rem 0 8rem 0!important;
+      .left,.right{
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 1rem;
+      }
+    }
+    .payoptions{
+      display: none;
+    }
+    ul{
+      li{
+        padding: .3rem 0 !important;
+      }
+      .small-txt{
+        font-size: 1.2rem !important;
+      }
+    }
+    .container{
+      .row{
+        margin-top: .5rem !important;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer{
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+.footer{
+    .rights{
+      background-color: $theme-quaternary;
+      color: $white;
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 1rem 0;
+    }
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+      color: $white;
+      font-size: 1.2rem;
+      padding: 1.2rem 0;
+      margin: 1rem 0 0;
+      background: $copyright;
+      font-weight: 300;
+      .left {
+        width: 30%;
+        float: left;
+      }
+      .right {
+        width: 70%;
+        float: left;
+        text-align: right;
+      }
+    }
+}
+#wh-widget-send-button {
+  @include breakpoint-down (md) {
+    height: 110px !important;
+    iframe {
+      height: 75px !important;
+    }
+  }
+}
+
+.footer-link-six {
+  h3 {
+    text-align: right;
+    @include breakpoint-down(sm){
+      text-align: left;
+    }
+  }
+  ul {
+    margin: 0;
+    p {     
+      a {
+        text-align: right;
+        opacity: 1;
+      }
+    }
+  }
+  .small-txt{
+    word-spacing: .5rem;
+  }
+}
