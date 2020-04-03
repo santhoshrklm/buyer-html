@@ -65,13 +65,13 @@ body {
         font-weight: 300; }
 
 .secondary-color {
-  color: #db2f4f; }
+  color: #f02748; }
 
 .whitespace-nowrap {
   white-space: nowrap; }
 
 .mand {
-  color: #db2f4f;
+  color: #f02748;
   margin-left: .25rem; }
 
 .pull-right {
@@ -154,8 +154,8 @@ body {
       font-size: 2.5rem; }
   .btn-gradient-border {
     background: white;
-    border: 0.1rem solid #db2f4f;
-    color: #db2f4f !important; }
+    border: 0.1rem solid #f02748;
+    color: #f02748 !important; }
     .btn-gradient-border:hover {
       background: #020024;
       background: linear-gradient(180deg, #020024 0%, #f8683c 0%, #f02748 100%);
@@ -568,7 +568,7 @@ label .mandatory {
 
 p.unmatchedoffer {
   font-size: 1.1rem;
-  background: #db2f4f;
+  background: #f02748;
   color: white;
   padding: 0 .3rem;
   position: absolute;
@@ -797,7 +797,7 @@ p.unmatchedoffer {
   background: #e4e4e4; }
 
 .off-badge {
-  background: #db2f4f;
+  background: #f02748;
   color: white;
   font-size: 1.4rem;
   top: 1.7rem;
@@ -807,7 +807,7 @@ p.unmatchedoffer {
     left: 0rem;
     content: " ";
     display: block;
-    background: #db2f4f;
+    background: #f02748;
     width: 1.3rem;
     bottom: -.5rem;
     position: absolute;
@@ -1109,7 +1109,7 @@ p.unmatchedoffer {
 .chat-count {
   position: absolute;
   top: 0;
-  background: #db2f4f;
+  background: #f02748;
   color: white;
   height: 24px;
   width: 24px;
@@ -1131,7 +1131,7 @@ p.unmatchedoffer {
   color: #3639b4; }
 
 .theme-secondary-color {
-  color: #db2f4f; }
+  color: #f02748; }
 
 .theme-tertiary-color {
   color: #f8531e; }
@@ -1142,9 +1142,8 @@ p.unmatchedoffer {
   width: 8rem;
   height: 4rem;
   right: 0;
-  bottom: 0;
-  background: url(../images/best-price.png) no-repeat right;
-  background-size: contain; }
+  bottom: 1rem;
+  background: url(../images/best-price.png) no-repeat right; }
   @media (max-width: 575.98px) {
     .special-tag {
       bottom: -.4rem;
@@ -2797,7 +2796,7 @@ span.ads {
     vertical-align: middle;
     margin-left: 0.5rem; }
     .account i:hover {
-      color: #db2f4f; }
+      color: #f02748; }
     @media (max-width: 1199.98px) {
       .account i {
         margin: 0; } }
@@ -2989,7 +2988,7 @@ span.ads {
           color: #3639b4;
           background: white; }
       .account .nav-tools .myaccount:hover i {
-        color: #db2f4f; }
+        color: #f02748; }
       .account .nav-tools .myaccount i {
         display: block;
         float: left;
@@ -3027,7 +3026,7 @@ span.ads {
       width: auto !important;
       display: none; }
       .account .nav-tools .wishlist:hover i {
-        color: #db2f4f; }
+        color: #f02748; }
       .account .nav-tools .wishlist i {
         display: block;
         float: left;
@@ -3069,7 +3068,7 @@ span.ads {
         .account .nav-tools .shopping-cart {
           height: 6rem; } }
       .account .nav-tools .shopping-cart:hover i {
-        color: #db2f4f; }
+        color: #f02748; }
       .account .nav-tools .shopping-cart i {
         display: block;
         float: left;
@@ -3113,7 +3112,7 @@ span.ads {
   background-color: #fff;
   padding: 1.5rem; }
   .my-cart h1 .btn {
-    background-color: #db2f4f;
+    background-color: #f02748;
     text-transform: uppercase; }
   .my-cart .bximg img {
     max-height: 100%;
@@ -3198,9 +3197,9 @@ span.ads {
         margin-right: 1rem; }
 
 .badge-sub {
-  background-color: #db2f4f;
+  background-color: #f02748;
   border-radius: 50%;
-  border: 0.1rem solid #db2f4f;
+  border: 0.1rem solid #f02748;
   color: #fff;
   padding: 0;
   width: 1.6rem;
@@ -3412,7 +3411,7 @@ span.ads {
   justify-content: center;
   align-items: center; }
   .modal-confirm .icon-box.error-color {
-    background: #db2f4f; }
+    background: #f02748; }
     .modal-confirm .icon-box.error-color i {
       font-size: 2rem; }
   .modal-confirm .icon-box.success-color {
@@ -4001,7 +4000,7 @@ span.ads {
           color: white;
           margin-right: .7rem; }
           .footer ul li div.social:hover i {
-            color: #db2f4f; }
+            color: #f02748; }
           .footer ul li div.social i {
             padding: 0;
             margin: 0;
@@ -4509,7 +4508,7 @@ span.ads {
       .main-nav .navbar .nav-item .nav-link:hover {
         color: white; }
       .main-nav .navbar .nav-item .nav-link.special {
-        background-color: #db2f4f !important;
+        background-color: #f02748 !important;
         color: white !important;
         padding: .7rem 1.5rem;
         margin-top: .8rem; }
@@ -4764,7 +4763,7 @@ span.ads {
     color: #101010;
     font-size: 1.4rem;
     font-weight: 600;
-    background-color: #db2f4f;
+    background-color: #f02748;
     padding: .8rem 1rem;
     margin-left: 2rem;
     -webkit-box-shadow: 0.3rem 0.3rem 0.5rem 0rem #eeeeee;
@@ -4997,17 +4996,17 @@ span.ads {
     font-size: 1.8rem;
     cursor: pointer; }
     .bxdetail .add-to-cart:hover {
-      color: #db2f4f !important; }
+      color: #f02748 !important; }
     .bxdetail .add-to-cart.added {
-      color: #db2f4f; }
+      color: #f02748; }
   .bxdetail .add-to-mywishlist.added i {
-    border-color: #db2f4f !important; }
+    border-color: #f02748 !important; }
     .bxdetail .add-to-mywishlist.added i:before {
-      color: #db2f4f !important; }
+      color: #f02748 !important; }
   .bxdetail .add-to-mywishlist.added label {
-    color: #db2f4f !important; }
+    color: #f02748 !important; }
   .bxdetail .offer {
-    color: #db2f4f; }
+    color: #f02748; }
   .bxdetail .actual {
     color: #999;
     text-decoration: line-through; }
@@ -5018,7 +5017,7 @@ span.ads {
         .bxdetail .actual .number-font {
           font-size: 1.2rem !important; } }
   .bxdetail .discount {
-    background-color: #db2f4f;
+    background-color: #f02748;
     color: white;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -5654,7 +5653,7 @@ span.ads {
       text-align: center;
       text-transform: capitalize; }
   .seasonal-deals .banner-carousel-header-img h1, .banner-carousel .banner-carousel-header-img h1, .product-carousel .banner-carousel-header-img h1 {
-    background: rgba(219, 47, 79, 0.8);
+    background: rgba(240, 39, 72, 0.8);
     padding: 1rem 0; }
   .seasonal-deals .seasonal-deals-img, .seasonal-deals .banner-carousel-header-img, .banner-carousel .seasonal-deals-img, .banner-carousel .banner-carousel-header-img, .product-carousel .seasonal-deals-img, .product-carousel .banner-carousel-header-img {
     height: 35rem;
@@ -5730,7 +5729,7 @@ span.ads {
       font-weight: 700;
       cursor: pointer; }
       .login-modal .modal-body .nav-tabs .nav-item .nav-link.active, .login-modal .modal-body .nav-tabs .nav-item .nav-link:hover {
-        border-color: white white #db2f4f; }
+        border-color: white white #f02748; }
   .login-modal .modal-body .tab-content {
     padding: 1rem; }
 .login-modal .form-check {
@@ -5910,7 +5909,7 @@ span.ads {
   margin: 0px auto;
   width: auto; }
   .product-carousel .bximg .label-red {
-    background: #db2f4f;
+    background: #f02748;
     position: absolute;
     top: 0;
     right: 0;
@@ -7315,15 +7314,15 @@ span.ads {
       background-color: #3639b4 !important; }
     .product-list .items .comparenwish-sec a:hover label, .product-list .items .comparenwish-sec a:focus label {
       text-decoration: none;
-      color: #db2f4f;
+      color: #f02748;
       cursor: pointer; }
       .product-list .items .comparenwish-sec a:hover label + i, .product-list .items .comparenwish-sec a:focus label + i {
         text-decoration: none;
-        color: #db2f4f;
+        color: #f02748;
         cursor: pointer;
-        border-color: #db2f4f; }
+        border-color: #f02748; }
         .product-list .items .comparenwish-sec a:hover label + i:before, .product-list .items .comparenwish-sec a:focus label + i:before {
-          color: #db2f4f; }
+          color: #f02748; }
     @media (max-width: 575.98px) {
       .product-list .items .comparenwish-sec {
         margin-top: 1.2rem; } }
@@ -7334,11 +7333,11 @@ span.ads {
         .product-list .items .comparenwish-sec .add-to-mywishlist label {
           display: none; } }
       .product-list .items .comparenwish-sec .add-to-mywishlist.added i::before {
-        color: #db2f4f; }
+        color: #f02748; }
       .product-list .items .comparenwish-sec .add-to-mywishlist:hover {
         cursor: pointer; }
         .product-list .items .comparenwish-sec .add-to-mywishlist:hover i::before {
-          color: #db2f4f; }
+          color: #f02748; }
 .product-list .bximg {
   border: none !important;
   padding: 0rem; }
@@ -7976,7 +7975,7 @@ span.ads {
 .view-all-btn.bottom-btn.primary-color a {
   background-color: #3639b4; }
 .view-all-btn.bottom-btn.secondary-color a {
-  background-color: #db2f4f; }
+  background-color: #f02748; }
 
 .flashbg {
   position: absolute;
@@ -8357,7 +8356,7 @@ span.ads {
           max-width: 100%;
           min-width: 100%; } }
   .my-cart h1 .btn {
-    background-color: #db2f4f;
+    background-color: #f02748;
     text-transform: uppercase; }
   .my-cart .bximg {
     width: 10rem; }
@@ -8798,7 +8797,7 @@ span.ads {
       text-transform: capitalize;
       margin-bottom: 1rem; }
       .order-summary .order-list-new ul li .delete-coupon {
-        background: #db2f4f;
+        background: #f02748;
         color: white;
         text-transform: uppercase;
         font-size: 1.4rem;
@@ -8857,7 +8856,7 @@ span.ads {
       align-items: center;
       margin: 1rem 0 1rem 0; }
       .order-summary .bx-inp form .offer-text {
-        color: #db2f4f;
+        color: #f02748;
         margin: 0;
         font-size: 1.3rem; }
   .order-summary .bx-btn {
@@ -8877,7 +8876,7 @@ span.ads {
   .order-summary .bx-inp form * {
     font-size: 1.4rem; }
   .order-summary .bx-inp .btn {
-    background-color: #db2f4f;
+    background-color: #f02748;
     text-transform: uppercase;
     color: #101010;
     border: .1rem solid #ebebeb; }
@@ -8948,14 +8947,14 @@ span.ads {
       .my-cart .price label {
         font-size: 1.2rem; } }
   .my-cart .price .offer {
-    color: #db2f4f; }
+    color: #f02748; }
   .my-cart .price .actual {
     color: #999;
     text-decoration: line-through; }
     .my-cart .price .actual .number-font {
       color: #999 !important; }
   .my-cart .price .discount {
-    background-color: #db2f4f;
+    background-color: #f02748;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -8981,7 +8980,7 @@ span.ads {
     font-size: 1.077rem;
     text-transform: capitalize; }
   .promotional-offers i {
-    color: #db2f4f;
+    color: #f02748;
     margin-right: 0.7692rem; }
 
 .quantity-area {
@@ -9011,7 +9010,7 @@ span.ads {
       padding: 1.8rem .75rem;
       background-color: transparent;
       border: solid transparent;
-      color: #db2f4f;
+      color: #f02748;
       font-size: 1.692rem;
       font-weight: 600;
       align-items: center; }
@@ -9291,7 +9290,7 @@ span.ads {
     position: absolute;
     right: 2rem;
     font-size: 2rem;
-    color: #db2f4f; }
+    color: #f02748; }
     .compare .print-compare-list:hover {
       opacity: 0.5; }
 
@@ -9306,11 +9305,11 @@ span.ads {
   .compare-list h1 {
     padding: 2rem 0 0 2rem; }
   .compare-list .add-to-mywishlist.added i {
-    border-color: #db2f4f !important; }
+    border-color: #f02748 !important; }
     .compare-list .add-to-mywishlist.added i:before {
-      color: #db2f4f !important; }
+      color: #f02748 !important; }
   .compare-list .add-to-mywishlist.added label {
-    color: #db2f4f !important; }
+    color: #f02748 !important; }
   .compare-list .items {
     flex: 1;
     text-align: center; }
@@ -9417,7 +9416,7 @@ span.ads {
           font-size: 1.8rem;
           font-weight: 600;
           text-align: left;
-          color: #db2f4f;
+          color: #f02748;
           margin-right: 0.6rem; }
         .compare-list .table td .compare-price-details small, .compare-list .table th .compare-price-details small {
           font-size: 1.4rem;
@@ -10463,7 +10462,7 @@ span.ads {
         font-weight: 600;
         line-height: 1.5;
         letter-spacing: normal;
-        color: #db2f4f; }
+        color: #f02748; }
 
 .lising-header-carousel-right-content {
   width: 100%;
@@ -10555,7 +10554,7 @@ span.ads {
       font-weight: 600;
       line-height: 1.5;
       letter-spacing: normal;
-      color: #db2f4f; }
+      color: #f02748; }
       @media (max-width: 767.98px) {
         .lising-header-carousel-right-content .right-content-section-three h4 {
           font-size: 1.4rem; } }
@@ -10567,7 +10566,7 @@ span.ads {
         width: 100%;
         font-size: 1.6rem;
         font-weight: 500;
-        color: #db2f4f; }
+        color: #f02748; }
         @media (max-width: 767.98px) {
           .lising-header-carousel-right-content .right-content-section-three ul li {
             font-size: 1.4rem; } }
@@ -10749,8 +10748,6 @@ span.ads {
     margin-right: 0;
     margin: 0 0 2rem 0;
     width: 49%; }
-    .product-pad .pad.transparent {
-      background: transparent; }
     .product-pad .pad .sku-number {
       padding: 0 0 1rem 0;
       font-size: 1.2rem;
@@ -10871,30 +10868,6 @@ span.ads {
     font-size: 1.3rem;
     line-height: 1.43;
     color: #999; }
-  .rating-section-container .divider {
-    width: 0.1rem;
-    height: 1.2rem;
-    background: #e0e0e0;
-    margin: 0 1rem; }
-  .rating-section-container .total-sold {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.58;
-    color: #858585; }
-    .rating-section-container .total-sold span {
-      font-size: 1.2rem;
-      font-weight: 500;
-      line-height: 1.33;
-      color: #101010; }
-  .rating-section-container .total-in-stock {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.33;
-    color: #101010;
-    background: #e6faf7;
-    padding: 0 0.4rem; }
-    .rating-section-container .total-in-stock span {
-      font-weight: 500; }
 
 @media only screen and (max-width: 991px) {
   .product-pad .pad {
@@ -10928,16 +10901,15 @@ span.ads {
       justify-content: space-between;
       margin-bottom: 2rem; }
       .product-desc .bxdetail header.new {
-        margin: 1.5rem 0 0; }
+        margin: 0; }
         .product-desc .bxdetail header.new h1 {
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          font-size: 2.4rem;
+          font-size: 2rem;
           color: #333333;
-          font-weight: 600;
-          line-height: 1.42; }
+          font-weight: 500; }
         .product-desc .bxdetail header.new h2 {
           margin: 0; }
       .product-desc .bxdetail header .brand-logo {
@@ -10994,18 +10966,8 @@ span.ads {
     .product-desc .bxdetail .other-styles {
       margin-top: 3rem; }
     .product-desc .bxdetail .price-wrapper {
-      align-items: flex-start;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      background: white;
-      padding: 1rem;
-      margin: 1.5rem 0 0; }
-      .product-desc .bxdetail .price-wrapper .get-wholesale-price {
-        border-top: 0.1rem solid #f5f5f5;
-        padding: 0.7rem 0 0 0;
-        margin: 1rem 0 0;
-        width: 100%; }
+      align-items: center;
+      display: flex; }
       .product-desc .bxdetail .price-wrapper .special-tag {
         bottom: 0;
         background-size: contain; }
@@ -11029,7 +10991,7 @@ span.ads {
         .product-desc .notify-me .input-group {
           width: 100%; } }
     .product-desc .notify-me h4 {
-      color: #db2f4f;
+      color: #f02748;
       font-size: 1.692rem;
       font-weight: 600; }
       @media (max-width: 767.98px) {
@@ -11294,7 +11256,7 @@ span.ads {
   border-bottom: 0.1rem solid #e0dee1;
   position: relative; }
   .share-widjet .reviews {
-    color: #db2f4f;
+    color: #f02748;
     display: flex;
     flex: 1;
     margin-left: 1rem; }
@@ -11306,25 +11268,6 @@ span.ads {
     margin: -1rem 0.5rem 0;
     padding: 0; }
 
-.product-pad .product-desc .timer-tag {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse; }
-  .product-pad .product-desc .timer-tag .timer-tag-left {
-    width: 50%;
-    background: #db2f4f; }
-  .product-pad .product-desc .timer-tag .timer-tag-right {
-    width: 50%;
-    position: static;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-    .product-pad .product-desc .timer-tag .timer-tag-right .nocnco-choice-image img {
-      width: 10rem !important; }
-    .product-pad .product-desc .timer-tag .timer-tag-right .special-tag {
-      position: unset;
-      width: 5rem;
-      height: 3.6rem; }
 .product-pad .product-desc .bxdetail .product-features-pdp {
   font-size: 1.4rem;
   color: #333333; }
@@ -11344,16 +11287,7 @@ span.ads {
 .product-pad .product-desc .bxdetail .price {
   margin-bottom: 0rem;
   padding-bottom: 0;
-  margin-top: 0.3rem;
-  line-height: 1; }
-  .product-pad .product-desc .bxdetail .price .offer {
-    font-size: 3.2rem;
-    font-weight: bold;
-    line-height: 1;
-    color: #db2f4f; }
-    .product-pad .product-desc .bxdetail .price .offer .grey {
-      color: #565656;
-      padding-left: 0.5rem; }
+  margin-top: 1rem; }
   .product-pad .product-desc .bxdetail .price .price-per-box {
     display: flex;
     justify-content: flex-start;
@@ -11424,7 +11358,7 @@ span.ads {
         .product-pad .product-desc .bxdetail .price .price-qty .price-per-sqm label small.thai-baht, .product-pad .product-desc .bxdetail .price .price-qty .qty-box label small.thai-baht {
           font-size: 1.077rem;
           display: inline;
-          color: #db2f4f; }
+          color: #f02748; }
       .product-pad .product-desc .bxdetail .price .price-qty .price-per-sqm .actual small.thai-baht, .product-pad .product-desc .bxdetail .price .price-qty .qty-box .actual small.thai-baht {
         color: #999; }
     .product-pad .product-desc .bxdetail .price .price-qty .qty-box {
@@ -11437,7 +11371,7 @@ span.ads {
       .product-pad .product-desc .bxdetail .price-new .offer small {
         font-size: 1.4rem;
         display: inline;
-        color: #db2f4f; }
+        color: #f02748; }
     .product-pad .product-desc .bxdetail .price-new .discount {
       margin: 0 1rem !important; }
     .product-pad .product-desc .bxdetail .price-new .actual {
@@ -11458,16 +11392,6 @@ span.ads {
           align-items: center; } }
       .product-pad .product-desc .bxdetail .price .off-price.post-discount + small {
         display: block; }
-      .product-pad .product-desc .bxdetail .price .off-price.post-discount .actual {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1;
-        color: #858585; }
-      .product-pad .product-desc .bxdetail .price .off-price.post-discount .perc-off .discount {
-        font-size: 1.4rem;
-        line-height: 1;
-        color: white;
-        padding: 0 0.4rem !important; }
 .product-pad .product-desc .other-details {
   border: 0;
   margin: 0;
@@ -11522,7 +11446,7 @@ span.ads {
     margin: 0 1rem; }
   .coverage-area .btn {
     border-radius: .1rem;
-    background-color: #db2f4f;
+    background-color: #f02748;
     border: .1rem solid #ddd;
     font-size: 1.4rem;
     color: #101010;
@@ -11722,7 +11646,7 @@ span.ads {
         flex-direction: row;
         justify-content: space-between; }
       .area-calculator .calculation-result .results span {
-        color: #db2f4f;
+        color: #f02748;
         font-weight: 600;
         display: block;
         float: left;
@@ -11754,7 +11678,7 @@ span.ads {
       padding: 1.8rem .75rem;
       background-color: transparent;
       border: solid transparent;
-      color: #db2f4f;
+      color: #f02748;
       font-size: 1.692rem;
       font-weight: 600;
       align-items: center; }
@@ -11814,7 +11738,7 @@ span.ads {
     font-weight: 500;
     line-height: 1.3;
     text-align: right;
-    color: #db2f4f; }
+    color: #f02748; }
 
 .similar-items.pad {
   padding: 1.5rem 0 0 0; }
@@ -12047,7 +11971,7 @@ span.ads {
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 1.11;
-        color: #db2f4f; }
+        color: #f02748; }
       .installation-section-new-container .installation-section-new p a {
         font-size: 1.4rem;
         padding: 0 !important; }
@@ -12692,7 +12616,7 @@ span.ads {
   .shipping-promotion.applied {
     background-color: rgba(228, 61, 39, 0.1); }
     .shipping-promotion.applied i {
-      background-color: #db2f4f; }
+      background-color: #f02748; }
     .shipping-promotion.applied-green {
       background-color: white;
       border-color: #28a745;
@@ -12715,7 +12639,7 @@ span.ads {
     float: inherit !important; }
   .shipping-promotion i {
     color: white;
-    background: #db2f4f;
+    background: #f02748;
     border-radius: 50%;
     padding: 0.5rem;
     border: 1px dashed #e0dee1;
@@ -12845,7 +12769,7 @@ span.ads {
     font-size: 1.077rem;
     text-transform: capitalize; }
   .promotional-offers i {
-    color: #db2f4f;
+    color: #f02748;
     margin-right: 0.7692rem; }
 
 /*Image Magnify*/
@@ -12894,14 +12818,14 @@ span.ads {
       color: #100e37; }
   .product-desc .add-to-mywishlist.added {
     background: white;
-    border: 0.1rem solid #db2f4f;
-    color: #db2f4f !important; }
+    border: 0.1rem solid #f02748;
+    color: #f02748 !important; }
     .product-desc .add-to-mywishlist.added:hover {
       background: white;
-      border: 0.1rem solid #db2f4f;
-      color: #db2f4f !important; }
+      border: 0.1rem solid #f02748;
+      color: #f02748 !important; }
     .product-desc .add-to-mywishlist.added i::before {
-      color: #db2f4f; }
+      color: #f02748; }
   .product-desc .add-to-mywishlist:hover, .product-desc .add-to-mywishlist:active, .product-desc .add-to-mywishlist:visited {
     border: 0.1rem solid #100e37; }
 
@@ -13370,7 +13294,7 @@ span.ads {
     .price .offer {
       margin: 0rem; }
       .price .offer .number-font {
-        color: #db2f4f;
+        color: #f02748;
         font-size: 1.8rem;
         font-weight: 700; }
     .price .unit-price-sm {
@@ -13661,4 +13585,4 @@ span.ads {
   .footer.product-details + .move-to-top + .chat-box-open {
     bottom: 76px; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

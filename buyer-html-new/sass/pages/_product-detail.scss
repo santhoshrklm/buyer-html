@@ -11,6 +11,9 @@
         margin-right: 0;
         margin: 0 0 2rem 0;
         width: 49%;
+        &.transparent {
+          background: transparent;
+        }
         .sku-number {
           padding: 0 0 1rem 0;
           font-size: 1.2rem;
@@ -183,6 +186,35 @@
     line-height: 1.43;
     color: $light-gray;
   }
+  .divider {
+    width: 0.1rem;
+    height: 1.2rem;
+    background: $divider;
+    margin: 0 1rem;
+  }
+  .total-sold {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.58;
+    color: $new-lable-color;
+    span {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.33;
+      color: $base-color;
+    }
+  }
+  .total-in-stock {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.33;
+    color: $base-color;
+    background: $soft-green-new;
+    padding: 0 0.4rem;
+    span {
+      font-weight: 500;
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -226,15 +258,16 @@
         justify-content: space-between;
         margin-bottom: 2rem;
         &.new {
-          margin: 0;
+          margin: 1.5rem 0 0;
           h1 {
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            font-size: 2rem;
+            font-size: 2.4rem;
             color: $dark-grey;
-            font-weight: 500;
+            font-weight: 600;
+            line-height: 1.42;
           }
           h2 {
             margin: 0;
@@ -312,12 +345,26 @@
         // padding-top: 2rem !important;
       }
       .price-wrapper {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: $white;
+        padding: 1rem;
+        margin: 1.5rem 0 0;
+        .get-wholesale-price {
+          border-top: 0.1rem solid $creamwhite;
+          padding: 0.7rem 0 0 0;
+          margin: 1rem 0 0;
+          width: 100%;
+        }
         .special-tag {
           bottom: 0;
           background-size: contain;
         }
+      }
+      .valid-coupons {
+        
       }
     }
     .notify-me {
@@ -733,6 +780,32 @@
 }
   .product-pad{
     .product-desc{
+      .timer-tag {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .timer-tag-left {
+          width: 50%;
+          background: $maroon;
+        }
+        .timer-tag-right {
+          width: 50%;
+          position: static;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          .nocnco-choice-image {
+            img {
+              width: 10rem !important;
+            }
+          }
+          .special-tag {
+            position: unset;
+            width: 5rem;
+            height: 3.6rem;
+          }
+        }
+      }
         .bxdetail{
           .product-features-pdp {
             font-size: 1.4rem;
@@ -757,7 +830,18 @@
             .price{
               margin-bottom: 0rem;
               padding-bottom: 0;
-              margin-top: 1rem;
+              margin-top: 0.3rem;
+              line-height: 1;
+              .offer {
+                font-size: 3.2rem;
+                font-weight: bold;
+                line-height: 1;
+                color: $theme-secondary;
+                .grey {
+                  color: $base-color-light;
+                  padding-left: 0.5rem;
+                }
+              }
               .price-per-box {
                 display: flex;
                 justify-content: flex-start;
@@ -807,18 +891,6 @@
                   padding: 0.4rem !important;         
                 }
               }
-              // .off-price {
-              //   display: flex;
-              //   .actual {
-              //     display: flex;
-              //     margin: 0;
-              //     font-size: 1.2rem;
-              //     font-weight: 400;
-              //     .thai-baht {
-              //       margin: 0;
-              //     }
-              //   }
-              // }
                 .coverage-area-unit{
                   margin-left: 1rem;
                   .area-sell-unit {
@@ -910,6 +982,20 @@
                     }
                     + small{
                       display: block;
+                    }
+                    .actual {
+                      font-size: 1.4rem;
+                      font-weight: 500;
+                      line-height: 1;
+                      color: $new-lable-color;
+                    }
+                    .perc-off {
+                      .discount {
+                        font-size: 1.4rem;
+                        line-height: 1;
+                        color: $white;
+                        padding: 0 0.4rem !important;
+                      }
                     }
                   }
                 }
@@ -1225,13 +1311,6 @@
       }
     }
     .form-group {
-      // display: flex;
-      // justify-content: flex-start;
-      // align-items: center;
-      // flex-direction: row;
-      // .btn {
-      //   margin: 0;
-      // }
     }
     .calculate-info{
       // margin-top: 2rem;
