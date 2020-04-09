@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1ledul');
-  src:  url('fonts/icomoon.eot?1ledul#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1ledul') format('truetype'),
-    url('fonts/icomoon.woff?1ledul') format('woff'),
-    url('fonts/icomoon.svg?1ledul#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ci7k37');
+  src:  url('fonts/icomoon.eot?ci7k37#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ci7k37') format('truetype'),
+    url('fonts/icomoon.woff?ci7k37') format('woff'),
+    url('fonts/icomoon.svg?ci7k37#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-policy-returns:before {
+  content: "\e971";
+}
+.icon-free-shipping:before {
+  content: "\e974";
+}
+.icon-card-payment:before {
+  content: "\e975";
+}
+.icon-video-player:before {
+  content: "\e969";
+}
+.icon-information:before {
+  content: "\e96a";
+}
+.icon-sample:before {
+  content: "\e96b";
+}
+.icon-install-service1:before {
+  content: "\e96c";
+}
+.icon-return-product:before {
+  content: "\e96d";
+}
+.icon-status-available:before {
+  content: "\e96e";
+  color: #39b436;
+}
+.icon-status-madeToOrder:before {
+  content: "\e96f";
+  color: #ff9802;
+}
+.icon-status-outOfStock:before {
+  content: "\e970";
+  color: #db2f4f;
+}
 .icon-plus:before {
   content: "\e967";
 }
