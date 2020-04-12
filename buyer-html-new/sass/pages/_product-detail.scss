@@ -80,9 +80,16 @@
             .two-column-layout-left {
               width: 70%;
               margin-right: 2.5rem;
+              @include breakpoint-down(sm) {
+                width: 100%;
+                margin-right: 0;
+              }
             }
             .two-column-layout-right {
               width: 28%;
+              @include breakpoint-down(sm) {
+                width: 100%;
+              }
             }
           }
         }
@@ -182,6 +189,36 @@
       }
       .slick-next {
         right: 0.5rem;
+      }
+    }
+    .wishlist-compare-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      button {
+        display: flex;
+        background: transparent;
+        font-size: 1.6rem;
+        color: $base-color;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.7rem 1rem;
+        border: 0;
+        margin: 2rem 0 0;
+        width: 50%;
+        &:first-child {
+          border-right: 0.2rem solid $divider;
+          width: 49%;
+        }
+        i {
+          color: #ff7235;
+          padding: 0 1rem;
+          &:before {
+            color: #ff7235;
+          }
+        }
       }
     }
     .card-section-pdp {
@@ -445,6 +482,9 @@
             display: inline-flex;
             height: 2.4rem;
             align-items: center;
+            i {
+              margin: 0 0 0 0.3rem;
+            }
           }
         }
       }
@@ -4079,7 +4119,6 @@
        
       }
       .area-calculator{
-        padding: 0rem 1.5rem;
         border: 0 !important;
         .calculate-section{
           padding:0;
@@ -4407,7 +4446,7 @@
       height: 2.4rem;
       align-items: center;
       i {
-        padding: 0 0.3rem;
+        margin: 0 0 0 0.3rem;
       }
     }
   }

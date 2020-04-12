@@ -987,8 +987,15 @@
         .product-pad .pad.full-width.two-column-layout .two-column-layout-left {
           width: 70%;
           margin-right: 2.5rem; }
+          @media (max-width: 767.98px) {
+            .product-pad .pad.full-width.two-column-layout .two-column-layout-left {
+              width: 100%;
+              margin-right: 0; } }
         .product-pad .pad.full-width.two-column-layout .two-column-layout-right {
           width: 28%; }
+          @media (max-width: 767.98px) {
+            .product-pad .pad.full-width.two-column-layout .two-column-layout-right {
+              width: 100%; } }
     .product-pad .pad.three-column {
       width: 37%; }
       .product-pad .pad.three-column.first {
@@ -1053,6 +1060,31 @@
     left: 0.6rem; }
   .product-pad .product-multi-carousel .slick-next {
     right: 0.5rem; }
+  .product-pad .wishlist-compare-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
+    .product-pad .wishlist-compare-section button {
+      display: flex;
+      background: transparent;
+      font-size: 1.6rem;
+      color: #101010;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      padding: 0.7rem 1rem;
+      border: 0;
+      margin: 2rem 0 0;
+      width: 50%; }
+      .product-pad .wishlist-compare-section button:first-child {
+        border-right: 0.2rem solid #e0e0e0;
+        width: 49%; }
+      .product-pad .wishlist-compare-section button i {
+        color: #ff7235;
+        padding: 0 1rem; }
+        .product-pad .wishlist-compare-section button i:before {
+          color: #ff7235; }
   .product-pad .card-section-pdp {
     display: flex;
     flex-direction: column; }
@@ -1258,6 +1290,8 @@
           display: inline-flex;
           height: 2.4rem;
           align-items: center; }
+          .product-desc .bxdetail .coupon-section .coupon span i {
+            margin: 0 0 0 0.3rem; }
     .product-desc .bxdetail .select-color-size {
       padding: 1.8rem 0; }
       .product-desc .bxdetail .select-color-size ul {
@@ -3959,7 +3993,6 @@
       padding-top: 0; }
 
   .area-calculator {
-    padding: 0rem 1.5rem;
     border: 0 !important; }
     .area-calculator .calculate-section {
       padding: 0; }
@@ -4224,7 +4257,7 @@
       height: 2.4rem;
       align-items: center; }
       .special-promotion .coupon span i {
-        padding: 0 0.3rem; }
+        margin: 0 0 0 0.3rem; }
 
 .product-detail-pdp {
   border-radius: 0.4rem;
