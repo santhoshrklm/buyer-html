@@ -11907,7 +11907,6 @@ span.ads {
 /*Calculate Area*/
 .area-calculator {
   background: white;
-  margin-top: 3rem !important;
   border: 0 !important;
   padding: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.05); }
