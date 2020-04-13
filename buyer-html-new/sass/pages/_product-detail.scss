@@ -1007,9 +1007,15 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        @include breakpoint-down(sm){
+          flex-direction: column;
+        }
         .timer-tag-left {
           width: 50%;
           background: $theme-secondary;
+          @include breakpoint-down(sm){
+            width: 100%;
+          }
         }
         .timer-tag-right {
           width: 50%;
@@ -1017,6 +1023,9 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          @include breakpoint-down(sm){
+            margin-top: 1.6rem;
+          }
           .nocnco-choice-image {
             img {
               width: 10rem !important;

@@ -1685,15 +1685,24 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse; }
+  @media (max-width: 767.98px) {
+    .product-pad .product-desc .timer-tag {
+      flex-direction: column; } }
   .product-pad .product-desc .timer-tag .timer-tag-left {
     width: 50%;
     background: #db2f4f; }
+    @media (max-width: 767.98px) {
+      .product-pad .product-desc .timer-tag .timer-tag-left {
+        width: 100%; } }
   .product-pad .product-desc .timer-tag .timer-tag-right {
     width: 50%;
     position: static;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    @media (max-width: 767.98px) {
+      .product-pad .product-desc .timer-tag .timer-tag-right {
+        margin-top: 1.6rem; } }
     .product-pad .product-desc .timer-tag .timer-tag-right .nocnco-choice-image img {
       width: 10rem !important; }
     .product-pad .product-desc .timer-tag .timer-tag-right .special-tag {
