@@ -3312,6 +3312,19 @@
         max-height: none;
       }
     }
+    .share-btn {
+      position: absolute;
+      z-index: 10;
+      background-color: $black !important;
+      opacity: 0.5 !important;
+      color: $white !important;
+      border-radius: 50% !important;
+      right: 1.6rem;
+      top: 1.6rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      line-height: 1;
+    }
   }
 }
 .unit-price-sm{
