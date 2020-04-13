@@ -1006,18 +1006,11 @@
       .timer-tag {
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
+        flex-direction: row;
         @include breakpoint-down(sm){
-          flex-direction: column;
+          flex-direction: column-reverse;
         }
         .timer-tag-left {
-          width: 50%;
-          background: $theme-secondary;
-          @include breakpoint-down(sm){
-            width: 100%;
-          }
-        }
-        .timer-tag-right {
           width: 50%;
           position: static;
           display: flex;
@@ -1035,6 +1028,28 @@
             position: unset;
             width: 5rem;
             height: 3.6rem;
+          }
+        }
+        .timer-tag-right {
+          width: 50%;
+          background: $theme-secondary;
+          display: flex;
+          justify-content: space-between;
+          .timer-section-left {
+            font-size: 1.2rem;
+            color: $white;
+            font-family: 'sukhumvittadmai-bold';
+            padding: 0.8rem;
+            @include breakpoint-down(sm){
+              font-size: 1.6rem;
+              padding: 1rem;
+            }
+          }
+          .timer-section-right {
+            
+          }
+          @include breakpoint-down(sm){
+            width: 100%;
           }
         }
       }

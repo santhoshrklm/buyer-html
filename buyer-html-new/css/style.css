@@ -11499,31 +11499,42 @@ span.ads {
 .product-pad .product-desc .timer-tag {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse; }
+  flex-direction: row; }
   @media (max-width: 767.98px) {
     .product-pad .product-desc .timer-tag {
-      flex-direction: column; } }
+      flex-direction: column-reverse; } }
   .product-pad .product-desc .timer-tag .timer-tag-left {
-    width: 50%;
-    background: #db2f4f; }
-    @media (max-width: 767.98px) {
-      .product-pad .product-desc .timer-tag .timer-tag-left {
-        width: 100%; } }
-  .product-pad .product-desc .timer-tag .timer-tag-right {
     width: 50%;
     position: static;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
     @media (max-width: 767.98px) {
-      .product-pad .product-desc .timer-tag .timer-tag-right {
+      .product-pad .product-desc .timer-tag .timer-tag-left {
         margin-top: 1.6rem; } }
-    .product-pad .product-desc .timer-tag .timer-tag-right .nocnco-choice-image img {
+    .product-pad .product-desc .timer-tag .timer-tag-left .nocnco-choice-image img {
       width: 10rem !important; }
-    .product-pad .product-desc .timer-tag .timer-tag-right .special-tag {
+    .product-pad .product-desc .timer-tag .timer-tag-left .special-tag {
       position: unset;
       width: 5rem;
       height: 3.6rem; }
+  .product-pad .product-desc .timer-tag .timer-tag-right {
+    width: 50%;
+    background: #db2f4f;
+    display: flex;
+    justify-content: space-between; }
+    .product-pad .product-desc .timer-tag .timer-tag-right .timer-section-left {
+      font-size: 1.2rem;
+      color: white;
+      font-family: 'sukhumvittadmai-bold';
+      padding: 0.8rem; }
+      @media (max-width: 767.98px) {
+        .product-pad .product-desc .timer-tag .timer-tag-right .timer-section-left {
+          font-size: 1.6rem;
+          padding: 1rem; } }
+    @media (max-width: 767.98px) {
+      .product-pad .product-desc .timer-tag .timer-tag-right {
+        width: 100%; } }
 .product-pad .product-desc .bxdetail .product-features-pdp {
   padding: 1.8rem 0;
   font-size: 1.4rem;
