@@ -10964,9 +10964,16 @@ span.ads {
     .rating-section-container .product-status.out-of-stock {
       color: #101010;
       background: #fdebef; }
+      .rating-section-container .product-status.out-of-stock i::before {
+        color: #db2f4f; }
+      .rating-section-container .product-status.out-of-stock span + span {
+        color: #db2f4f;
+        font-family: 'sukhumvittadmai-bold'; }
     .rating-section-container .product-status.made-to-order {
       color: #101010;
       background: #fff1eb; }
+      .rating-section-container .product-status.made-to-order i::before {
+        color: #ff9802; }
       .rating-section-container .product-status.made-to-order span + span {
         color: #db2f4f;
         font-family: 'sukhumvittadmai-bold'; }

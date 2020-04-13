@@ -300,10 +300,24 @@
     &.out-of-stock {
       color: $base-color;
       background: #fdebef;
+      i {
+        &::before {
+          color: $theme-secondary;
+        }
+      }
+      span + span {
+        color: $theme-secondary;
+        font-family: 'sukhumvittadmai-bold';
+      }
     }
     &.made-to-order {
       color: $base-color;
       background: #fff1eb;
+      i {
+        &::before {
+          color: #ff9802;
+        }
+      }
       span + span {
         color: $theme-secondary;
         font-family: 'sukhumvittadmai-bold';
@@ -1046,7 +1060,6 @@
             }
           }
           .timer-section-right {
-            
           }
           @include breakpoint-down(sm){
             width: 100%;
