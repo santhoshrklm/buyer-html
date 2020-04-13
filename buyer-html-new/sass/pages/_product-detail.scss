@@ -97,6 +97,8 @@
           width: 37%;
           &.first {
             width: 30%;
+            padding-left: 0;
+            padding-right: 0;
             @include breakpoint-down(lg) {
               width: 40%;
             }
@@ -141,7 +143,9 @@
           }
         }
         &.two-column {
-          width: 26%;
+          width: 24%;
+          padding-left: 0;
+          padding-right: 0;
           @include breakpoint-down(lg) {
             width: 100%;
             margin: 0 auto;

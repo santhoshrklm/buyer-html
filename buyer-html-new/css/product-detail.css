@@ -999,7 +999,9 @@
     .product-pad .pad.three-column {
       width: 37%; }
       .product-pad .pad.three-column.first {
-        width: 30%; }
+        width: 30%;
+        padding-left: 0;
+        padding-right: 0; }
         @media (max-width: 1199.98px) {
           .product-pad .pad.three-column.first {
             width: 40%; } }
@@ -1031,7 +1033,9 @@
       .product-pad .pad.three-column .bxdetail .price .post-discount + small {
         display: block; }
     .product-pad .pad.two-column {
-      width: 26%; }
+      width: 24%;
+      padding-left: 0;
+      padding-right: 0; }
       @media (max-width: 1199.98px) {
         .product-pad .pad.two-column {
           width: 100%;
