@@ -13336,6 +13336,28 @@ span.ads {
     width: 3.2rem;
     height: 3.2rem;
     line-height: 1; }
+  .product-multi-carousel.gallery .clearance-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #db2f4f;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'sukhumvittadmai-bold';
+    width: 13.4rem;
+    height: 3.2rem;
+    padding: 0 1.6rem;
+    border-radius: 1.6rem !important;
+    position: absolute;
+    z-index: 10;
+    left: 1.6rem;
+    top: 1.6rem; }
+    .product-multi-carousel.gallery .clearance-btn:hover, .product-multi-carousel.gallery .clearance-btn:active {
+      background: #db2f4f; }
+    .product-multi-carousel.gallery .clearance-btn i {
+      font-size: 2rem; }
+      .product-multi-carousel.gallery .clearance-btn i:before {
+        color: white; }
 
 .unit-price-sm label {
   color: #999;
