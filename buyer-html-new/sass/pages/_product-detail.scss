@@ -77,17 +77,30 @@
             padding: 0;
             background: transparent;
             margin: 4rem 0;
+            display: flex;
+            @include breakpoint-down(lg) {
+              flex-direction: column;
+            }
+            @include breakpoint-down(xs) {
+              padding: 0rem 2.5rem;
+            }
             .two-column-layout-left {
               width: 70%;
-              margin-right: 2.5rem;
-              @include breakpoint-down(sm) {
+              margin-right: 2%;
+              @include breakpoint-down(lg) {
+                width: 64%;
+              }
+              @include breakpoint-down(md) {
                 width: 100%;
                 margin-right: 0;
               }
             }
             .two-column-layout-right {
               width: 28%;
-              @include breakpoint-down(sm) {
+              @include breakpoint-down(lg) {
+                width: 34%;
+              }
+              @include breakpoint-down(md) {
                 width: 100%;
               }
             }
@@ -148,8 +161,9 @@
           padding-right: 0;
           @include breakpoint-down(lg) {
             width: 100%;
-            margin: 0 auto;
-            margin-bottom: 2rem;
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
             border-left: 0;
             .distributing-firm {
               .distributer-img {
@@ -171,6 +185,7 @@
           }
           @include breakpoint-down(sm) {
             width: 100%;
+            flex-direction: column;
             padding-top: 2rem !important;
             .distributing-firm {
               .distributer-img {
@@ -1398,6 +1413,12 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 0;
+    width: 64%;
+  }
+  @include breakpoint-down(sm) {
+    width: 100%;
+    margin-top: 2rem;
   }
   ul {
     margin: 0;
@@ -4344,12 +4365,11 @@
     justify-content: flex-start;
     width: 50%;
     @include breakpoint-down(lg) {
-      width: 50%;
-    }
-    @include breakpoint-down(md) {
       width: 100%;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+      padding: 1.5rem;
+      margin: 0;
     }
     @include breakpoint-down(sm) {
       width: 100%;
@@ -4422,13 +4442,8 @@
   .seller-profile-section-two {
     width: 50%;
     @include breakpoint-down(lg) {
-      width: 50%;
-    }
-    @include breakpoint-down(md) {
-      width: 50%;
-    }
-    @include breakpoint-down(sm) {
       width: 100%;
+      padding: 0 1.5rem 1.5rem 1.5rem;
     }
     ul {
       list-style: none;
@@ -4438,6 +4453,12 @@
       flex-wrap: wrap;
       border-left: 0.1rem solid $divider;
       margin: 2rem 0;
+      @include breakpoint-down(lg) {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        flex-wrap: nowrap;
+      }
       li {
         width: 50%;
         list-style: none;
@@ -4446,10 +4467,12 @@
         flex-direction: column;
         margin: 0;
         padding: 1.4rem 0;
-        @include breakpoint-down(sm) {
-          width: 33%;
-          text-align: left;
-          margin-left: 1.5rem;
+        @include breakpoint-down(lg) {
+          flex-direction: row;
+          border-right: 0.1rem solid $btn-grey-color;
+          text-align: center;
+          padding: 0 1rem;
+          width: auto;
         }
         &:last-child {
           @include breakpoint-down(sm) {
@@ -4465,6 +4488,13 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          @include breakpoint-down(lg) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            font-size: 2rem;
+            font-family: 'sukhumvittadmai-bold';
+          }
           small {
             font-size: 1.2rem;
             color: $base-color-light;
@@ -4476,6 +4506,7 @@
   }
   .seller-profile-section-three {
     width: 28%;
+    display: none;
     @include breakpoint-down(lg) {
       width: 50%;
     }
