@@ -1,7 +1,26 @@
 /* transistion */
+/*====== Primary color ======*/
 /*Lign Shade*/
-/*Lign Shade*/
-/*Lign Shade*/
+/*NocNoc Blue Dark Shade*/
+/*NocNoc Blue Light Shade*/
+/*Royal Blue*/
+/*====== Secondary color ======*/
+/*Light Shade*/
+/*--- Tub Tim ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*====== Tertiary color ======*/
+/*Light Shade*/
+/*--- Thai Tea ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*--- Kanom Tan ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*====== Accent color ======*/
+/*Look Choup - Error*/
+/*Kanom Chan - Success*/
+/*Med Khanun - Pending*/
 /*color*/
 @import url(../css/slick-carousel.css);
 .nav-home h2 {
@@ -1052,9 +1071,8 @@
       @media (max-width: 1199.98px) {
         .product-pad .pad.two-column {
           width: 100%;
-          display: flex;
-          margin: 0;
-          justify-content: space-between;
+          margin: 0 auto;
+          margin-bottom: 2rem;
           border-left: 0; }
           .product-pad .pad.two-column .distributing-firm .distributer-img .distributer-logo {
             left: 41%; } }

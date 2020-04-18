@@ -28,9 +28,28 @@ body[lang|=en][env|=id] .product-list .bxdetail .price .offer {
 body[lang|=en][env|=id] .bxdetail .price label + label, body[lang|=en][env|=id] .my-cart .price .offer, body[lang|=en][env|=id] .order-summary .product-details-price .price-new .offer {
   display: block; }
 
+/*====== Primary color ======*/
 /*Lign Shade*/
-/*Lign Shade*/
-/*Lign Shade*/
+/*NocNoc Blue Dark Shade*/
+/*NocNoc Blue Light Shade*/
+/*Royal Blue*/
+/*====== Secondary color ======*/
+/*Light Shade*/
+/*--- Tub Tim ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*====== Tertiary color ======*/
+/*Light Shade*/
+/*--- Thai Tea ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*--- Kanom Tan ---*/
+/*Dark Shade*/
+/*Light Shade*/
+/*====== Accent color ======*/
+/*Look Choup - Error*/
+/*Kanom Chan - Success*/
+/*Med Khanun - Pending*/
 /*color*/
 html {
   font-size: 62.5%;
@@ -1122,7 +1141,8 @@ p.unmatchedoffer {
   background: #f1f2f8; }
 
 .globalbg-offwhite {
-  background: #fafafa; }
+  background: #fafafa;
+  background-color: #fafafa; }
 
 .globalbg-softblue {
   background: #ebebf7; }
@@ -1218,6 +1238,49 @@ span.ads {
 
 .tag-right-ico {
   display: none; }
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.8rem;
+  height: 2.4rem; }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+    .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 1.8rem;
+      width: 1.8rem;
+      left: 0.2rem;
+      bottom: 0.3rem;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    .switch .slider.round {
+      border-radius: 5rem; }
+      .switch .slider.round:before {
+        border-radius: 50%; }
+  .switch input:checked + .slider {
+    background-color: #39B436; }
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #39B436; }
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); }
 
 #btn-feed {
   position: fixed;
@@ -10934,9 +10997,8 @@ span.ads {
       @media (max-width: 1199.98px) {
         .product-pad .pad.two-column {
           width: 100%;
-          display: flex;
-          margin: 0;
-          justify-content: space-between;
+          margin: 0 auto;
+          margin-bottom: 2rem;
           border-left: 0; }
           .product-pad .pad.two-column .distributing-firm .distributer-img .distributer-logo {
             left: 41%; } }
@@ -14332,5 +14394,47 @@ span.ads {
 @media (max-width: 575.98px) {
   .footer.product-details + .move-to-top + .chat-box-open {
     bottom: 76px; } }
+
+.cookies {
+  padding-top: 2.4rem; }
+  .cookies h2 {
+    font-size: 2.4rem;
+    color: #101010;
+    font-family: 'sukhumvittadmai-bold';
+    line-height: 3.4rem;
+    margin-bottom: 1rem; }
+  .cookies h4 {
+    font-size: 1.6rem;
+    color: #101010;
+    font-family: 'sukhumvittadmai-bold';
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; }
+  .cookies p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #565656; }
+  .cookies hr {
+    border-top: 0.1rem solid #ebebeb;
+    margin: 0;
+    padding: 0; }
+  .cookies .cookie-notice {
+    background-color: white;
+    padding: 2.4rem;
+    width: 86rem;
+    margin: 0 auto; }
+    @media (max-width: 991.98px) {
+      .cookies .cookie-notice {
+        width: 100%; } }
+    .cookies .cookie-notice hr {
+      margin: 2.5rem 0; }
+    .cookies .cookie-notice p {
+      margin-bottom: 2rem; }
+      .cookies .cookie-notice p a {
+        color: #3639b4;
+        font-family: 'sukhumvittadmai-bold'; }
+        .cookies .cookie-notice p a:hover, .cookies .cookie-notice p a:active {
+          color: #3639b4; }
 
 /*# sourceMappingURL=style.css.map */
