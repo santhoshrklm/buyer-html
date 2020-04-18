@@ -5774,112 +5774,147 @@ span.ads {
         margin-right: 1rem; }
 
 /*Login Modal*/
-.login-modal .close-login {
-  position: absolute;
-  right: 0.8rem !important;
-  z-index: 100; }
-.login-modal .modal-body {
-  padding: 2rem; }
-  .login-modal .modal-body .nav-tabs .nav-item {
-    margin-bottom: -1px;
-    width: 50%;
-    text-align: center; }
-    .login-modal .modal-body .nav-tabs .nav-item .nav-link {
-      color: #303030;
-      background-color: white;
-      border-bottom: 0.2rem solid #e0dee1;
-      padding: 1rem;
-      width: 100%;
-      font-weight: 700;
-      cursor: pointer; }
-      .login-modal .modal-body .nav-tabs .nav-item .nav-link.active, .login-modal .modal-body .nav-tabs .nav-item .nav-link:hover {
-        border-color: white white #db2f4f; }
-  .login-modal .modal-body .tab-content {
-    padding: 1rem; }
-.login-modal .form-check {
-  position: relative;
-  display: block;
-  padding-left: 0rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
-  .login-modal .form-check a {
-    padding: 0;
-    margin-bottom: 1rem;
-    color: #3639b4;
-    font-size: 1.5rem; }
-.login-modal .form-group {
-  position: relative; }
-  .login-modal .form-group .main-label {
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #303030;
-    display: block;
-    text-align: center;
-    padding: 1rem 0; }
-  .login-modal .form-group input + i {
+.login-modal {
+  max-width: 64rem; }
+  .login-modal .custom-control-label::after, .login-modal .custom-control-label::before {
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 0; }
+  .login-modal .close-login {
     position: absolute;
-    top: 47px;
-    right: 4px;
-    color: #303030; }
-.login-modal .form-control {
-  font-size: 1.3rem;
-  padding: 1rem 0.7rem 0.8rem 0.7rem;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #e0dee1; }
-.login-modal input {
-  color: #777; }
-.login-modal label {
-  color: #303030;
-  font-weight: 700; }
-  .login-modal label.fullwidth {
-    width: 100%;
-    padding: 0.5rem 0 0rem; }
-.login-modal a {
-  padding: 0.5rem 0 0;
-  display: inline-block;
-  color: #3639b4;
-  text-decoration: none;
-  font-size: 1.5rem; }
-  .login-modal a:active, .login-modal a:hover {
-    opacity: 0.7;
-    text-decoration: none; }
-.login-modal .valid-feedback, .login-modal .invalid-feedback {
-  margin: 0.5rem 0 0 0; }
-.login-modal .reactdrop {
-  border-width: 0 0 .1rem !important; }
-.login-modal button {
-  font-size: 1.7rem;
-  font-weight: 500; }
-.login-modal .mediaButtons .btn {
-  min-height: 4.5rem;
-  display: flex;
-  justify-content: center;
-  width: 49% !important;
-  font-size: 1.6rem;
-  align-items: center; }
-  .login-modal .mediaButtons .btn.fb {
-    background: #3b5998; }
-    .login-modal .mediaButtons .btn.fb i {
-      background-image: url("../images/facebook.png"); }
-  .login-modal .mediaButtons .btn.google {
-    background: #4285f4; }
-    .login-modal .mediaButtons .btn.google i {
-      background-image: url("../images/google.png"); }
-  .login-modal .mediaButtons .btn i {
+    right: 0.8rem !important;
+    z-index: 100; }
+  .login-modal .modal-body {
+    padding: 2rem; }
+    .login-modal .modal-body .nav-tabs .nav-item {
+      margin-bottom: -1px;
+      width: 50%;
+      text-align: center; }
+      .login-modal .modal-body .nav-tabs .nav-item .nav-link {
+        color: #303030;
+        background-color: white;
+        border-bottom: 0.2rem solid #e0dee1;
+        padding: 1rem;
+        width: 100%;
+        font-weight: 700;
+        cursor: pointer; }
+        .login-modal .modal-body .nav-tabs .nav-item .nav-link.active, .login-modal .modal-body .nav-tabs .nav-item .nav-link:hover {
+          border-color: white white #db2f4f; }
+    .login-modal .modal-body .tab-content {
+      padding: 1rem; }
+  .login-modal .form-check {
+    position: relative;
     display: block;
-    width: 2.4rem;
-    height: 2.4rem;
-    margin-right: 1.6rem; }
-    @media (max-width: 767.98px) {
-      .login-modal .mediaButtons .btn i {
-        margin-right: .5rem; } }
-.login-modal .mediaButtons p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.6rem; }
-  .login-modal .mediaButtons p.txt-or {
-    font-size: 1.4rem;
-    font-weight: 600; }
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    .login-modal .form-check a {
+      padding: 0;
+      margin-bottom: 1rem;
+      color: #3639b4;
+      font-size: 1.5rem; }
+  .login-modal .form-group {
+    position: relative; }
+    .login-modal .form-group.terms {
+      display: flex;
+      flex-direction: column; }
+    .login-modal .form-group .main-label {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #303030;
+      display: block;
+      text-align: center;
+      padding: 1rem 0; }
+    .login-modal .form-group input + i {
+      position: absolute;
+      top: 47px;
+      right: 4px;
+      color: #303030; }
+    .login-modal .form-group .custom-control label {
+      font-size: 1.2rem !important;
+      font-weight: 500;
+      color: #101010 !important;
+      margin-left: 0.9rem !important; }
+      .login-modal .form-group .custom-control label a {
+        color: #3639b4 !important;
+        font-size: 1.2rem;
+        text-decoration: none; }
+        .login-modal .form-group .custom-control label a:hover, .login-modal .form-group .custom-control label a:active {
+          color: #3639b4 !important;
+          text-decoration: none; }
+  .login-modal .form-control {
+    font-size: 1.3rem;
+    padding: 1rem 0.7rem 0.8rem 0.7rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #e0dee1; }
+  .login-modal input {
+    color: #777; }
+  .login-modal label {
+    color: #303030;
+    font-weight: 500; }
+    .login-modal label.fullwidth {
+      width: 100%;
+      padding: 0.5rem 0 0rem; }
+    .login-modal label strong {
+      font-family: 'sukhumvittadmai-bold'; }
+  .login-modal a {
+    padding: 0.5rem 0 0;
+    display: inline-block;
+    color: #3639b4;
+    text-decoration: none;
+    font-size: 1.5rem; }
+    .login-modal a:active, .login-modal a:hover {
+      opacity: 0.7;
+      text-decoration: none; }
+  .login-modal .valid-feedback, .login-modal .invalid-feedback {
+    margin: 0.5rem 0 0 0; }
+  .login-modal .reactdrop {
+    border-width: 0 0 .1rem !important; }
+  .login-modal button {
+    font-size: 1.7rem;
+    font-weight: 500; }
+  .login-modal .mediaButtons .btn {
+    min-height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    width: 49% !important;
+    font-size: 1.6rem;
+    align-items: center; }
+    .login-modal .mediaButtons .btn.fb {
+      background: #3b5998; }
+      .login-modal .mediaButtons .btn.fb i {
+        background-image: url("../images/facebook.png"); }
+    .login-modal .mediaButtons .btn.google {
+      background: #4285f4; }
+      .login-modal .mediaButtons .btn.google i {
+        background-image: url("../images/google.png"); }
+    .login-modal .mediaButtons .btn i {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1.6rem; }
+      @media (max-width: 767.98px) {
+        .login-modal .mediaButtons .btn i {
+          margin-right: .5rem; } }
+  .login-modal .mediaButtons p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6rem; }
+    .login-modal .mediaButtons p.txt-or {
+      font-size: 1.4rem;
+      font-weight: 600; }
+  .login-modal small {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    color: #101010; }
+    .login-modal small a {
+      color: #3639b4;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-family: 'sukhumvittadmai-bold'; }
+      .login-modal small a:hover, .login-modal small a:active {
+        color: #3639b4;
+        text-decoration: none; }
 
 /*Out of stock image */
 .bximg.not-available {
