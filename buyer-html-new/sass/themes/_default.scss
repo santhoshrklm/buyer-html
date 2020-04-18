@@ -1,18 +1,73 @@
+/*====== Primary color ======*/
+
 $theme-primary: #3639b4;
 /*Lign Shade*/
 $theme-primary-light: #4d51bd;
 $theme-primary-soft: #ebebf7;
 
+/*NocNoc Blue Dark Shade*/
+$nocnoc-blue-dark: #151648;
+$nocnoc-blue-med-dark: #2B2D90;
+
+/*NocNoc Blue Light Shade*/
+$nocnoc-blue-light: #E1E1F3;
+$nocnoc-blue-soft: #F4F4FB;
+
+/*Royal Blue*/
+$theme-primary-royal-blue: #535EDB;
+
+
+/*====== Secondary color ======*/
+
 $theme-secondary: #db2f4f;
-/*Lign Shade*/
+/*Light Shade*/
 $theme-secondary-light: #f0465c;
 
+/*--- Tub Tim ---*/
+$tub-tim: #F03765;
+/*Dark Shade*/
+$tub-tim-dark: #C02C50;
+$tub-tim-med-dark: #DD325D;
+/*Light Shade*/
+$tub-tim-light: #F35F83;
+$tub-tim-soft: #FDEBEF;
+
+
+/*====== Tertiary color ======*/
+
 $theme-tertiary: #f8531e;
-/*Lign Shade*/
+/*Light Shade*/
 $theme-tertiary-light: #feede8;
 $theme-tertiary-new: #f87620;
 
+/*--- Thai Tea ---*/
+$thai-tea: #FF7235;
+/*Dark Shade*/
+$thai-tea-dark: #CC5B2A;
+$thai-tea-med-dark: #EB6930;
+/*Light Shade*/
+$thai-tea-light: #FF8E5D;
+$thai-tea-soft: #FFF1EB;
+
+/*--- Kanom Tan ---*/
+$kanom-tan: #FFDB51;
+/*Dark Shade*/
+$kanom-tan-dark: #CC5B2A;
+$kanom-tan-med-dark: #EB6930;
+/*Light Shade*/
+$kanom-tan-light: #FF8E5D;
+$kanom-tan-soft: #FFFBED;
+
+
 $theme-quaternary: #100e37;
+
+/*====== Accent color ======*/
+/*Look Choup - Error*/
+$look-choup: #DB2F4F;
+/*Kanom Chan - Success*/
+$kanom-chan: #39B436;
+/*Med Khanun - Pending*/
+$med-khanun: #FF9802;
 
 $base-color: #101010;
 $base-color-dark: #212529;
