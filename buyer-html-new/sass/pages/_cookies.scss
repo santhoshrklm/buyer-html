@@ -1,0 +1,51 @@
+.cookies {
+  padding-top: 2.4rem;
+  h2 {
+    font-size: 2.4rem;
+    color: $base-color;
+    font-family: 'sukhumvittadmai-bold';
+    line-height: 3.4rem;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    color: $base-color;
+    font-family: 'sukhumvittadmai-bold';
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+   font-size: 14px;
+   line-height: 1.57;
+   color: $base-color-light;
+  }
+  hr {
+    border-top: 0.1rem solid $border-lite;
+    margin: 0;
+    padding: 0;
+  }
+  .cookie-notice {
+    background-color: $white;
+    padding: 2.4rem;
+    width: 86rem;
+    margin: 0 auto;
+    @include breakpoint-down(md) {
+      width: 100%;
+    }
+    hr {
+      margin: 2.5rem 0;
+    }
+    p {
+      margin-bottom: 2rem;
+     a {
+       color: $theme-primary;
+       font-family: 'sukhumvittadmai-bold';
+       &:hover, &:active {
+         color: $theme-primary;
+       }
+     }
+    }
+  }
+}
