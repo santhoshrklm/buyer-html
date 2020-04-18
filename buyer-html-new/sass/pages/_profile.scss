@@ -1,6 +1,7 @@
 .profile-pad {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: stretch;
   .left-panel {
@@ -8,6 +9,12 @@
   }
   .right-panel {
     background: $soft-grey-new;
+    flex: 67rem 0 0 !important;
+    h1 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: $base-color;
+    }
     .address-panel {
       .add-new-address {
         .btn {
@@ -551,31 +558,127 @@
         display: inline-block;
       }
       .edit-btn {
-        padding: 0 1rem;
-        text-transform: uppercase;
-        padding: 0.5rem 1rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        line-height: 1.4rem;
-        right: 1.5rem;
-        top: 1.5rem;
+        // padding: 0 1rem;
+        // text-transform: uppercase;
+        // padding: 0.5rem 1rem;
+        // text-transform: uppercase;
+        // text-decoration: none;
+        // line-height: 1.4rem;
+        // right: 1.5rem;
+        // top: 1.5rem;
+        font-size: 1.4rem !important;
+        color: $thai-tea !important;
+        font-family: 'sukhumvittadmai-bold';
+        text-transform: capitalize;
+        i {
+          font-size: 1.5rem !important;
+          margin-right: 0.5rem;
+          &:before {
+            font-size: 1.5rem !important;
+            color: $thai-tea;
+          }
+        }
       }
     }
     .list-group{
       width: 100%;
+      .list-group-item {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 0.1rem solid $border;
+        margin-bottom: unset;
+        border-radius: 0 !important;
+        padding: 1.5rem;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
     }
+    .privacy-consent {
+      background: $white;
+      padding: 1.5rem;
+      margin-top: 1.6rem;
+      .custom-control {
+        line-height: 1;
+        label {
+          margin-left: 0.8rem !important;
+          font-size: 1.4rem;
+          &:before, &:after {
+            width: 1.4rem;
+            height: 1.4rem;
+            top: 0;
+          }
+        }
+      }
+      small {
+        a {
+          font-size: 1.2rem;
+          color: $theme-primary;
+          font-family: 'sukhumvittadmai-bold';
+          &:hover, &:active {
+            color: $theme-primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    h5 {
+      font-size: 1.4rem;;
+      color: $base-color;
+      font-family: 'sukhumvittadmai-bold';
+      a {
+        font-size: 1.4rem;
+        color: $kanom-chan;
+        font-family: 'sukhumvittadmai-bold';
+        &:hover, &:active {
+          color: $kanom-chan;
+          text-decoration: none;
+        }
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.57;
+      color: $base-color;
+    }
+    .cookie-permission {
+      background: $white;
+      padding: 1.5rem;
+      margin-top: 1.6rem;
+      h5 {
+        display: flex;
+        justify-content: space-between;
+      }
+      small {
+        a {
+          font-size: 1.2rem;
+          color: $theme-primary;
+          font-family: 'sukhumvittadmai-bold';
+          &:hover, &:active {
+            color: $theme-primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    
     .profile-details {
       label {
         font-size: 1.5rem;
         font-weight: 400;
         text-transform: uppercase;
         &.title {
+          font-size: 1.4rem;
           text-transform: capitalize;
-          color: $light-gray;
+          color: $base-color-light;
         }
       }
       .details {
-        color: $grey;
+        color: $base-color;
+        font-size: 1.4rem;
+        font-family: 'sukhumvittadmai-bold';
         &.name {
           text-transform: capitalize;
         }
