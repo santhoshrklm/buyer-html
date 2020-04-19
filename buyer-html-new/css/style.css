@@ -14590,8 +14590,8 @@ span.ads {
       width: 100%;
       margin: 0 0 1rem 0 !important; } }
   .profile-pad .address-panel .form-container-address {
-    width: 80%;
-    max-width: 62rem; }
+    width: 100%;
+    max-width: 64rem; }
     @media (max-width: 1199.98px) {
       .profile-pad .address-panel .form-container-address {
         width: 100%; } }
@@ -14602,7 +14602,9 @@ span.ads {
       margin-bottom: 1.5rem; }
     .profile-pad .address-panel .form-container-address label {
       font-size: 1.4rem;
-      line-height: 1; }
+      line-height: 1;
+      color: #565656;
+      font-weight: 500; }
     .profile-pad .address-panel .form-container-address .reactdrop {
       padding: 0 0.75rem; }
       .profile-pad .address-panel .form-container-address .reactdrop .reactdrop-lbl {
@@ -14625,11 +14627,13 @@ span.ads {
     .profile-pad .address-panel .form-container-address h3 {
       font-size: 2rem;
       font-weight: 600;
-      color: #101010; }
+      color: #101010;
+      font-family: 'sukhumvittadmai-bold'; }
       .profile-pad .address-panel .form-container-address h3 + span {
         font-size: 1.4rem;
         font-weight: 400;
-        color: #565656; }
+        color: #565656;
+        margin-bottom: 0.5rem; }
     .profile-pad .address-panel .form-container-address .info-phone-number {
       display: flex;
       justify-content: flex-start; }
@@ -14638,24 +14642,42 @@ span.ads {
         height: 1.3rem;
         background-color: #f8531e; }
     .profile-pad .address-panel .form-container-address .address-type {
-      margin-bottom: 1.8rem; }
-      @media (max-width: 575.98px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem; }
+      @media (max-width: 767.98px) {
         .profile-pad .address-panel .form-container-address .address-type {
           flex-wrap: wrap;
           flex-direction: column;
-          display: flex; } }
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start; } }
       .profile-pad .address-panel .form-container-address .address-type label {
         font-size: 1.4rem;
         font-weight: 500;
-        color: #101010; }
+        color: #101010;
+        margin-bottom: 0;
+        font-family: 'sukhumvittadmai-bold'; }
+        @media (max-width: 767.98px) {
+          .profile-pad .address-panel .form-container-address .address-type label {
+            margin-bottom: 2rem; } }
         @media (max-width: 575.98px) {
           .profile-pad .address-panel .form-container-address .address-type label {
-            margin-right: 0.5rem; } }
+            margin-right: 0.5rem;
+            margin-bottom: 1rem; } }
       .profile-pad .address-panel .form-container-address .address-type .form-check {
         margin-left: 1rem; }
+        @media (max-width: 767.98px) {
+          .profile-pad .address-panel .form-container-address .address-type .form-check {
+            margin-bottom: 2rem; } }
         @media (max-width: 575.98px) {
           .profile-pad .address-panel .form-container-address .address-type .form-check {
             margin: 1rem 0 0 0; } }
+        .profile-pad .address-panel .form-container-address .address-type .form-check label {
+          font-family: 'sukhumvittadmai-medium'; }
+          @media (max-width: 767.98px) {
+            .profile-pad .address-panel .form-container-address .address-type .form-check label {
+              margin-bottom: 0; } }
     .profile-pad .address-panel .form-container-address .alt-address {
       display: flex;
       justify-content: space-between; }
@@ -14689,7 +14711,7 @@ span.ads {
       font-size: 1.4rem;
       font-weight: 500;
       color: #101010;
-      margin: 0 0 1rem 0;
+      margin: 0 0 0.5rem 0;
       line-height: 1.5; }
       @media (max-width: 575.98px) {
         .profile-pad .address-panel .form-container-address .alt-address-label {
@@ -14727,7 +14749,7 @@ span.ads {
     justify-content: flex-start;
     font-size: 1.4rem;
     font-weight: 400;
-    color: #565656;
+    color: #101010;
     align-items: center;
     word-break: break-all;
     flex-wrap: wrap; }
@@ -14737,8 +14759,9 @@ span.ads {
     .profile-pad .address-panel .alt-phone a {
       font-size: 1.4rem;
       font-weight: 500;
-      color: #f8531e;
-      margin-left: 1rem; }
+      color: #3639b4;
+      margin-left: 1rem;
+      font-family: 'sukhumvittadmai-bold'; }
       @media (max-width: 575.98px) {
         .profile-pad .address-panel .alt-phone a {
           margin-left: 0; } }
@@ -14752,7 +14775,7 @@ span.ads {
     border: 0;
     border-top: 1px solid #cccccc; }
     .profile-pad .address-panel hr.new {
-      border-top: 2px solid #ebebeb;
+      border-top: 0.1REM solid #ebebeb;
       margin: 3rem 0; }
   .profile-pad .address-panel .card-deck {
     margin-bottom: 0 !important;
