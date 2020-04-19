@@ -15,6 +15,11 @@
       font-weight: bold;
       color: $base-color;
     }
+    h5 {
+      font-size: 1.4rem;;
+      color: $base-color;
+      font-family: 'sukhumvittadmai-bold';
+    }
     .address-panel {
       .add-new-address {
         .btn {
@@ -81,6 +86,9 @@
     font-weight: 600;
     text-transform: capitalize;
   }
+  p {
+    font-size: 1.4rem;
+  }
   .edit-btn {
     padding: 0 1rem;
     text-transform: uppercase;
@@ -92,6 +100,11 @@
     top: 1.5rem;
   }
   .address-panel {
+    header {
+      p {
+        max-width: 70%;
+      }
+    }
     .custom-checkbox {
       padding-top: 0 !important;
       line-height: 1.4;
@@ -336,10 +349,37 @@
         // margin: 0 1% 2% 0;
         // border: .1rem solid rgba(0,0,0,.125);
         flex: 0 0 100%;
-        margin: 0;
-        border: 0;
-        border-bottom: 0.1rem solid $border-new;
-        background-color: transparent !important;
+        margin: 0 0 1.6rem 0;
+        border: 0 !important;
+        // border-bottom: 0.1rem solid $border-new;
+        // background-color: transparent !important;
+        background-color: $white;
+        padding: 1.6rem;
+        .card-body {
+          .bx-address-left {
+            .list-unstyled {
+              margin-left: 2.3rem !important;
+            }
+          }
+          .bx-address-right {
+            position: relative;
+            .action-section {
+              bottom: 0;
+              right: 0;
+              a {
+                color: $base-color;
+                font-family: 'sukhumvittadmai-bold';
+                i {
+                  font-size: 1.4rem !important;
+                  margin-right: 0.5rem !important;
+                  &:before {
+                    font-size: 1.4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
         .card-header {
           h4 {
             font-weight: 700;
@@ -413,16 +453,18 @@
             position: absolute;
             opacity: 0;
             + .radio-label {
+              line-height: 1;
               &:before {
                 content: '';
                 background: $white;
                 border-radius: 100%;
                 border: 1px solid darken($soft-gray, 25%);
                 display: inline-block;
-                width: 2.4rem;
-                height: 2.4rem;
+                width: 1.6rem;
+                height: 1.6rem;
                 position: relative;
-                top: -0.2em;
+                // top: -0.2em;
+                top:0;
                 margin-right: 0.5em; 
                 vertical-align: top;
                 cursor: pointer;
@@ -715,7 +757,8 @@
       }
       .card-body {
         border: 0;
-        padding: 2rem 0;
+        // padding: 2rem 0;
+        padding: 0;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
