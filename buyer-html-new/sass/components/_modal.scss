@@ -17,7 +17,7 @@
   }
   .modal-xl {
     max-width:1200px !important;
-}
+  }
 }
 .pickup-model{
     .modal-body {
@@ -99,185 +99,246 @@
         font-family: 'Lato', sans-serif;
       }
     }
-  }
+}
 
-  .otp-modal {
-    p {
-      text-align: center;
-    }
-    h2 {
-      color: $base-color;
-      font-size: 2.4rem;
-      font-family: 'sukhumvittadmai-bold';
-      text-align: center;
-      line-height: 1.5;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-    .modal-title {
-      border: 0;
-      padding: 1.5rem 1.5rem 0 ;
-      background-color: $white;
-      text-align: center;
-      border-radius: .4rem .4rem 0 0;
-      color: $base-color;
-      font-size: 2rem;
-      font-weight: 500;
-      position: relative;
-      .close {
-        font-size: 2.5rem !important;
-        font-weight: 300;
-        opacity: 1;
-        position: absolute;
-        top: 1.6rem;
-        right: 1.6rem;
-        i {
-          &.icon-close {
-            &:before {
-              color: $base-color;
-            }
+.otp-modal {
+  p {
+    text-align: center;
+  }
+  h2 {
+    color: $base-color;
+    font-size: 2.4rem;
+    font-family: 'sukhumvittadmai-bold';
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .modal-title {
+    border: 0;
+    padding: 1.5rem 1.5rem 0 ;
+    background-color: $white;
+    text-align: center;
+    border-radius: .4rem .4rem 0 0;
+    color: $base-color;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    .close {
+      font-size: 2.5rem !important;
+      font-weight: 300;
+      opacity: 1;
+      position: absolute;
+      top: 1.6rem;
+      right: 1.6rem;
+      i {
+        &.icon-close {
+          &:before {
+            color: $base-color;
           }
         }
       }
-      button {
-        margin-top: 0;
-      }
-    }
-    .modal-body {
-      padding: 0 2.4rem 2.4rem;
-      p {
-        font-size: 1.4rem;
-        line-height: 1.5;
-        color: $base-color;
-        font-family: 'sukhumvittadmai-bold';
-        text-align: left;
-      }
-      label{
-        font-weight: 500;
-        color: $base-color-light;
-        font-size: 1.4rem; 
-        line-height: 1.6;   
-      }
-      .tab-content {
-        // padding:  1rem;
-      }
-    }
-    .form-group {
-      position: relative;
-    }
-    .form-control {
-      font-size: 1.3rem;
-      padding: 1rem 0.7rem 0.8rem 0.7rem;
-      // border: 0;
-      border-radius: 0.4rem;
-      border: 0.1rem solid $border;
-    }
-    input {
-      color: $theme-secondary-gray;
-    }
-    label {
-      color: $grey;
-      font-weight: 700;
-      &.fullwidth {
-        width: 100%;
-        padding: 0.5rem 0 0rem;
-      }
-    }
-    a {
-      padding: 0.5rem 0 0;
-      display: inline-block;
-      color: $theme-primary;
-      text-decoration: none;
-      font-size: 1.5rem;
-      &:active, &:hover {
-        opacity: 0.7;
-        text-decoration: none;
-      }
-    }
-    .valid-feedback, .invalid-feedback {
-      margin: 0.5rem 0 0 0;
     }
     button {
-      font-size: 1.7rem;
-      font-weight: 500;
+      margin-top: 0;
     }
   }
-  .chat-inbox-modal{
-        margin: 0px;
-        right: 2rem;
-        position: absolute;
-        bottom:0px;
-        max-width: 800px;
-        //top: 0px;
-        background:transparent;
-        .chat-box-close{
-          div{
-            align-self: center;
-            border-radius: 50%;
-            background: $theme-primary;
-            width:70px;
-            height:70px;
-            text-align: center;
-            color: $white;
-            font-size: 2.5rem;
-            margin:5px 0;          
-            vertical-align: middle;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i{
-              font-size: 3.2rem;
-              @include breakpoint-down(sm){
-                font-size: 2.5rem;
-              }
-            }
-            @include breakpoint-down (sm) {
-              width:45px;
-              height:45px;
+  .modal-body {
+    padding: 0 2.4rem 2.4rem;
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: $base-color;
+      font-family: 'sukhumvittadmai-bold';
+      text-align: left;
+    }
+    label{
+      font-weight: 500;
+      color: $base-color-light;
+      font-size: 1.4rem; 
+      line-height: 1.6;   
+    }
+    .tab-content {
+      // padding:  1rem;
+    }
+  }
+  .form-group {
+    position: relative;
+  }
+  .form-control {
+    font-size: 1.3rem;
+    padding: 1rem 0.7rem 0.8rem 0.7rem;
+    // border: 0;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $border;
+  }
+  input {
+    color: $theme-secondary-gray;
+  }
+  label {
+    color: $grey;
+    font-weight: 700;
+    &.fullwidth {
+      width: 100%;
+      padding: 0.5rem 0 0rem;
+    }
+  }
+  a {
+    padding: 0.5rem 0 0;
+    display: inline-block;
+    color: $theme-primary;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &:active, &:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
+  }
+  .valid-feedback, .invalid-feedback {
+    margin: 0.5rem 0 0 0;
+  }
+  button {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+.chat-inbox-modal{
+      margin: 0px;
+      right: 2rem;
+      position: absolute;
+      bottom:0px;
+      max-width: 800px;
+      //top: 0px;
+      background:transparent;
+      .chat-box-close{
+        div{
+          align-self: center;
+          border-radius: 50%;
+          background: $theme-primary;
+          width:70px;
+          height:70px;
+          text-align: center;
+          color: $white;
+          font-size: 2.5rem;
+          margin:5px 0;          
+          vertical-align: middle;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i{
+            font-size: 3.2rem;
+            @include breakpoint-down(sm){
+              font-size: 2.5rem;
             }
           }
+          @include breakpoint-down (sm) {
+            width:45px;
+            height:45px;
+          }
         }
-        .modal-content{
-          background: transparent;
-          border:0;
-          .modal-body{
-            overflow-x: visible;   
-            background: $white;    
-            background: white;
-            border-radius: 13px;   
-            .chat-box{
-              height: calc(80vh - 77px);
-              width:700px;
+      }
+      .modal-content{
+        background: transparent;
+        border:0;
+        .modal-body{
+          overflow-x: visible;   
+          background: $white;    
+          background: white;
+          border-radius: 13px;   
+          .chat-box{
+            height: calc(80vh - 77px);
+            width:700px;
+            @include breakpoint-down(md){
+              width: calc(100% - 5px);
+              height: calc(80vh - 12px);
+            }
+            &.chat-only{
+              width: calc(100%);
+              min-width: 540px;
               @include breakpoint-down(md){
-                width: calc(100% - 5px);
-                height: calc(80vh - 12px);
-              }
-              &.chat-only{
-                width: calc(100%);
-                min-width: 540px;
-                @include breakpoint-down(md){
-                  min-width: 100%;
-                }
+                min-width: 100%;
               }
             }
           }
         }
-        &.without-inbox
+      }
+      &.without-inbox
+      {
+        .modal-content
         {
-          .modal-content
-          {
-            .modal-body{
-              background:transparent !important;
+          .modal-body{
+            background:transparent !important;
+          }
+        }
+      }
+      @include breakpoint-down(xs){
+        width: 100%;
+        right: 0.5%;
+        left: 0.5%;
+      }
+}
+.__talkjs_popup{
+  z-index: 2147483601 !important;
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      padding: 2.4rem 2.4rem 4rem 2.4rem;
+      border-radius: 0.8rem;
+      box-shadow: 0 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.2);
+      background-color: $white;
+      overflow: hidden;
+      .modal-title {
+        border: 0;
+        padding: 0;
+        background-color: $white;
+        text-align: center;
+        border-radius: .4rem .4rem 0 0;
+        color: $base-color;
+        font-size: 2rem;
+        font-weight: 500;
+        position: relative;
+        .close {
+          font-size: 2.5rem !important;
+          font-weight: 300;
+          opacity: 1;
+          position: absolute;
+          top: -0.4rem;
+          right: -0.4rem;
+          i {
+            &.icon-close {
+              &:before {
+                color: $base-color;
+              }
             }
           }
         }
-        @include breakpoint-down(xs){
-          width: 100%;
-          right: 0.5%;
-          left: 0.5%;
+        button {
+          margin-top: 0;
         }
+        h2 {
+          color: $base-color;
+          font-size: 2.4rem;
+          font-family: 'sukhumvittadmai-bold';
+          text-align: center;
+          line-height: 1.5;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .modal-body {
+        padding: 0;
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 1.5;
+          color: $base-color-light;
+        }
+      }
+      .modal-footer {
+        padding-bottom: 0;
+      }   
+    }
   }
-  .__talkjs_popup{
-    z-index: 2147483601 !important;
-  }
-  
+}
