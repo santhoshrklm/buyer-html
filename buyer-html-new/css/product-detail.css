@@ -114,7 +114,7 @@
     border-top: 0;
     word-break: break-all; }
   .product-tab .tab-pane .table tr {
-    border-top: 1px solid #e0dee1; }
+    border-top: 1px solid #e0e0e0; }
     .product-tab .tab-pane .table tr:first-child {
       border-top: 0; }
   .product-tab .tab-pane .card {
@@ -198,7 +198,7 @@
     .product-tab .tab-content .tab-reviews .sort-head .sortby {
       width: 100%; } }
 .product-tab .nav-tabs {
-  border-bottom-color: #e0dee1;
+  border-bottom-color: #e0e0e0;
   border-bottom: 0; }
   .product-tab .nav-tabs .nav-item .nav-link:first-child {
     padding-left: 0; }
@@ -218,7 +218,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 0.1rem solid #e0dee1;
+  border: 0.1rem solid #e0e0e0;
   padding: 1rem 0rem; }
   @media (max-width: 767.98px) {
     .tab-reviews .bx-rating-pad {
@@ -280,7 +280,7 @@
   .product-tab .tab-content {
     color: #666666;
     padding: 3rem;
-    border: 0.1rem solid #e0dee1;
+    border: 0.1rem solid #e0e0e0;
     border-top: 3px solid rgba(235, 235, 247, 0.5);
     margin-top: -0.3rem; }
     @media (max-width: 575.98px) {
@@ -300,7 +300,7 @@
     list-style: none;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: 0.1rem solid #e0dee1; }
+    border-bottom: 0.1rem solid #e0e0e0; }
     .customer-reviews ul li .user-badge {
       margin: 0 1.5rem 0 0;
       color: #fff;
@@ -479,7 +479,7 @@
 .tab-reviews .sort-head {
   margin: 0 0 1.5rem 0;
   padding: 1.5rem 0;
-  border-bottom: 0.1rem solid #e0dee1;
+  border-bottom: 0.1rem solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -767,8 +767,8 @@
   .pickup-model .modal-body::-webkit-scrollbar-track {
     right: -0.3rem; }
   .pickup-model .modal-body::-webkit-scrollbar-thumb {
-    background-color: #e0dee1;
-    outline: 0.1rem solid #e0dee1;
+    background-color: #e0e0e0;
+    outline: 0.1rem solid #e0e0e0;
     border-radius: 10rem;
     min-height: 3rem; }
 .pickup-model .modal-header {
@@ -814,47 +814,62 @@
   padding: 1rem 0;
   font-weight: 700;
   text-align: center;
-  border-bottom: 1px solid #e0dee1;
+  border-bottom: 1px solid #e0e0e0;
   margin: 0; }
   .pickup-model h3 span {
     font-family: 'Lato', sans-serif; }
 
 .otp-modal p {
   text-align: center; }
+.otp-modal h2 {
+  color: #101010;
+  font-size: 2.4rem;
+  font-family: 'sukhumvittadmai-bold';
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
 .otp-modal .modal-title {
   border: 0;
-  padding: 15px;
-  background-color: #f5f5f5;
+  padding: 1.5rem 1.5rem 0;
+  background-color: white;
   text-align: center;
   border-radius: .4rem .4rem 0 0;
-  color: #100e37;
+  color: #101010;
   font-size: 2rem;
-  font-weight: 500; }
+  font-weight: 500;
+  position: relative; }
   .otp-modal .modal-title .close {
     font-size: 2.5rem !important;
-    font-weight: 300; }
+    font-weight: 300;
+    opacity: 1;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem; }
+    .otp-modal .modal-title .close i.icon-close:before {
+      color: #101010; }
   .otp-modal .modal-title button {
     margin-top: 0; }
 .otp-modal .modal-body {
-  padding: 2rem; }
+  padding: 0 2.4rem 2.4rem; }
   .otp-modal .modal-body p {
-    font-size: 1.5rem;
-    line-height: 1.33;
-    text-align: center;
-    color: #333333; }
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #101010;
+    font-family: 'sukhumvittadmai-bold';
+    text-align: left; }
   .otp-modal .modal-body label {
-    font-weight: 400;
-    color: #333333;
-    font-size: 1.5rem; }
-  .otp-modal .modal-body .tab-content {
-    padding: 1rem; }
+    font-weight: 500;
+    color: #565656;
+    font-size: 1.4rem;
+    line-height: 1.6; }
 .otp-modal .form-group {
   position: relative; }
 .otp-modal .form-control {
   font-size: 1.3rem;
   padding: 1rem 0.7rem 0.8rem 0.7rem;
   border-radius: 0.4rem;
-  border: 0.1rem solid #e0dee1; }
+  border: 0.1rem solid #e0e0e0; }
 .otp-modal input {
   color: #777; }
 .otp-modal label {
@@ -1263,7 +1278,7 @@
       .product-desc .bxdetail .popover-copyurl-container + div .popover-copyurl {
         position: absolute;
         background: #f7f7f7;
-        border: 1px solid #e0dee1;
+        border: 1px solid #e0e0e0;
         z-index: 2000;
         width: 30rem;
         padding: 1rem;
@@ -1512,7 +1527,7 @@
       z-index: 998;
       left: 0;
       background: white;
-      border-top: 0.1rem solid #e0dee1; } }
+      border-top: 0.1rem solid #e0e0e0; } }
   .extra-details .btn {
     margin-right: 0.5rem;
     justify-content: center;
@@ -1533,7 +1548,7 @@
     .extra-details .btn.btn-blue .icon-cart-new:before {
       color: white; }
   .extra-details fieldset.scheduler-border {
-    border: 0.1rem solid #e0dee1 !important;
+    border: 0.1rem solid #e0e0e0 !important;
     padding: 0 1rem 1rem 1rem !important;
     margin: 0 0 0 0 !important; }
     .extra-details fieldset.scheduler-border:first-child {
@@ -1636,7 +1651,7 @@
   border-radius: 0.4rem !important; }
   .consult-us button:first-child, .consult-us a:first-child {
     background: #69c533;
-    border: 0.1rem solid #e0dee1; }
+    border: 0.1rem solid #e0e0e0; }
     .consult-us button:first-child:hover, .consult-us a:first-child:hover {
       opacity: 0.8; }
 .consult-us i {
@@ -1706,7 +1721,7 @@
   align-items: center;
   font-size: 1.3rem;
   color: #999;
-  border-bottom: 0.1rem solid #e0dee1;
+  border-bottom: 0.1rem solid #e0e0e0;
   position: relative; }
   .share-widjet .reviews {
     color: #db2f4f;
@@ -1840,7 +1855,7 @@
   .product-pad .product-desc .bxdetail .price .price-qty {
     justify-content: flex-start; }
     .product-pad .product-desc .bxdetail .price .price-qty .price-per-sqm, .product-pad .product-desc .bxdetail .price .price-qty .qty-box {
-      border-right: 0.1rem solid #e0dee1;
+      border-right: 0.1rem solid #e0e0e0;
       display: flex;
       flex-direction: column; }
       .product-pad .product-desc .bxdetail .price .price-qty .price-per-sqm .offer, .product-pad .product-desc .bxdetail .price .price-qty .qty-box .offer {
@@ -1934,7 +1949,7 @@
   width: 3rem;
   height: 3rem;
   display: inline-block;
-  border: 0.1rem solid #e0dee1;
+  border: 0.1rem solid #e0e0e0;
   margin-right: 1rem; }
   .color-badge.more {
     background-color: #cccccc;
@@ -2372,7 +2387,7 @@
         .area-calculator .calculate-area-section .detailed-calculation ul li strong {
           font-family: 'sukhumvittadmai-bold'; }
   .area-calculator .calculation-result {
-    border-top: 0.1rem solid #e0dee1;
+    border-top: 0.1rem solid #e0e0e0;
     padding: 1.538rem;
     font-size: 1.2rem; }
     .area-calculator .calculation-result .results {
@@ -2522,7 +2537,7 @@
   .calculate-area .calculator {
     width: 50%; } }
 .similar-items h1 {
-  border-bottom: 0.1rem solid #e0dee1;
+  border-bottom: 0.1rem solid #e0e0e0;
   padding: 0 0 1.5rem 0;
   margin: 0 0 0 0;
   font-size: 1.8rem;
@@ -2745,7 +2760,7 @@
     color: #535252; }
 
 .installation-service {
-  border: 0.1rem solid #e0dee1;
+  border: 0.1rem solid #e0e0e0;
   padding: 1rem;
   width: 100%;
   float: left;
@@ -2782,7 +2797,7 @@
     float: left;
     padding: 0;
     width: 60%;
-    border: 0.1rem solid #e0dee1; }
+    border: 0.1rem solid #e0e0e0; }
     .installation-service .installation-details h4 {
       color: #303030 !important;
       font-size: 1.5rem;
@@ -2793,7 +2808,7 @@
       background: white;
       margin: 0;
       padding: 0.8rem 1.5rem 0.8rem 2rem;
-      border-bottom: 1px solid #e0dee1; }
+      border-bottom: 1px solid #e0e0e0; }
       .installation-service .installation-details .form-check:last-child {
         border-bottom: 0; }
       .installation-service .installation-details .form-check label {
@@ -2826,7 +2841,7 @@
         display: none;
         position: absolute;
         background: #f6f6f6;
-        border: 1px solid #e0dee1;
+        border: 1px solid #e0e0e0;
         z-index: 2000;
         width: 20rem;
         padding: 1.5rem;
@@ -2844,7 +2859,7 @@
           pointer-events: none; }
         .installation-service .installation-details .more-details .nonoc-popover::before {
           border-color: rgba(194, 225, 245, 0);
-          border-bottom-color: #e0dee1;
+          border-bottom-color: #e0e0e0;
           border-width: 11px;
           margin-left: -11px; }
         .installation-service .installation-details .more-details .nonoc-popover::after {
@@ -2892,7 +2907,7 @@
       align-items: center; }
       .installation .installation-cost-area .cost .cost-right input {
         width: 10rem;
-        border-right: 0.1rem solid #e0dee1; }
+        border-right: 0.1rem solid #e0e0e0; }
         @media (max-width: 575.98px) {
           .installation .installation-cost-area .cost .cost-right input {
             width: 7rem; } }
@@ -2926,7 +2941,7 @@
     text-transform: capitalize;
     font-weight: 700;
     text-align: right;
-    border: 0.1rem solid #e0dee1;
+    border: 0.1rem solid #e0e0e0;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background: white; }
@@ -2991,7 +3006,7 @@
       display: none;
       position: absolute;
       background: #f6f6f6;
-      border: 1px solid #e0dee1;
+      border: 1px solid #e0e0e0;
       z-index: 2000;
       width: 20rem;
       padding: 1.5rem;
@@ -3009,7 +3024,7 @@
         pointer-events: none; }
       .installation .installation-details .more-details .nonoc-popover::before {
         border-color: rgba(194, 225, 245, 0);
-        border-bottom-color: #e0dee1;
+        border-bottom-color: #e0e0e0;
         border-width: 11px;
         margin-left: -11px; }
       .installation .installation-details .more-details .nonoc-popover::after {
@@ -3071,7 +3086,7 @@
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  border-left: 1px solid #e0dee1; }
+  border-left: 1px solid #e0e0e0; }
   .sidenav ul {
     list-style: none;
     margin: 0;
@@ -3158,7 +3173,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  border: 1px solid #e0dee1;
+  border: 1px solid #e0e0e0;
   border-radius: 0.4rem;
   align-items: center;
   justify-content: space-between;
@@ -3217,7 +3232,7 @@
 .addto-cart-message {
   display: flex;
   justify-content: space-around;
-  border: 0.1rem solid #e0dee1;
+  border: 0.1rem solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3236,7 +3251,7 @@
   .addto-cart-message .product-image {
     display: flex;
     padding: 1rem 4rem 1rem 1rem;
-    background: #e0dee1;
+    background: #e0e0e0;
     background-color: rgba(0, 158, 167, 0.1);
     padding: 1rem; }
     @media (max-width: 991.98px) {
@@ -3356,7 +3371,7 @@
   width: auto;
   font-size: 1.2rem;
   text-align: center;
-  border: 1px dashed #e0dee1;
+  border: 1px dashed #e0e0e0;
   border-radius: 2px;
   font-weight: 300;
   display: flex;
@@ -3390,7 +3405,7 @@
     background: #db2f4f;
     border-radius: 50%;
     padding: 0.5rem;
-    border: 1px dashed #e0dee1;
+    border: 1px dashed #e0e0e0;
     font-size: 1.3rem;
     margin-right: 1rem;
     font-weight: 700; }
@@ -3697,7 +3712,7 @@
         .site-survey .card-body P {
           line-height: 1; } }
     .site-survey .card-body .btn {
-      border: 0.1rem solid #e0dee1;
+      border: 0.1rem solid #e0e0e0;
       border-radius: 0.4rem !important; }
       @media (max-width: 991.98px) {
         .site-survey .card-body .btn {
