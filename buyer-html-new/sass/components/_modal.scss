@@ -283,62 +283,64 @@
 
 .modal {
   .modal-dialog {
-    .modal-content {
-      padding: 2.4rem 2.4rem 4rem 2.4rem;
-      border-radius: 0.8rem;
-      box-shadow: 0 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.2);
-      background-color: $white;
-      overflow: hidden;
-      .modal-title {
-        border: 0;
-        padding: 0;
+    &.profile-modal-new {
+      .modal-content {
+        padding: 2.4rem 2.4rem 4rem 2.4rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.2);
         background-color: $white;
-        text-align: center;
-        border-radius: .4rem .4rem 0 0;
-        color: $base-color;
-        font-size: 2rem;
-        font-weight: 500;
-        position: relative;
-        .close {
-          font-size: 2.5rem !important;
-          font-weight: 300;
-          opacity: 1;
-          position: absolute;
-          top: -0.4rem;
-          right: -0.4rem;
-          i {
-            &.icon-close {
-              &:before {
-                color: $base-color;
+        overflow: hidden;
+        .modal-title {
+          border: 0;
+          padding: 0;
+          background-color: $white;
+          text-align: center;
+          border-radius: .4rem .4rem 0 0;
+          color: $base-color;
+          font-size: 2rem;
+          font-weight: 500;
+          position: relative;
+          .close {
+            font-size: 2.5rem !important;
+            font-weight: 300;
+            opacity: 1;
+            position: absolute;
+            top: -0.4rem;
+            right: -0.4rem;
+            i {
+              &.icon-close {
+                &:before {
+                  color: $base-color;
+                }
               }
             }
           }
+          button {
+            margin-top: 0;
+          }
+          h2 {
+            color: $base-color;
+            font-size: 2.4rem;
+            font-family: 'sukhumvittadmai-bold';
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+          }
         }
-        button {
-          margin-top: 0;
+        .modal-body {
+          padding: 0;
+          p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: $base-color-light;
+          }
         }
-        h2 {
-          color: $base-color;
-          font-size: 2.4rem;
-          font-family: 'sukhumvittadmai-bold';
-          text-align: center;
-          line-height: 1.5;
-          margin-top: 2rem;
-          margin-bottom: 1rem;
-        }
+        .modal-footer {
+          padding-bottom: 0;
+        }   
       }
-      .modal-body {
-        padding: 0;
-        p {
-          font-size: 1.6rem;
-          font-weight: 500;
-          line-height: 1.5;
-          color: $base-color-light;
-        }
-      }
-      .modal-footer {
-        padding-bottom: 0;
-      }   
     }
   }
 }
