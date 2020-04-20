@@ -554,7 +554,6 @@
       flex-wrap: nowrap;
       flex-direction: column;
       .welcome {
-        // display: flex;
         align-items: flex-end;
         align-self: stretch;
         flex: 0 1 100%;
@@ -564,27 +563,34 @@
       }
       a {
         text-decoration: none;
-        color: $light-gray;
+        color: $base-color-light;
         font-size: 1.6rem;
-        font-weight: 400;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: flex;
         align-items: center;
         align-self: stretch;
         flex: 0 1 100%;
         order: 0;
+        font-family: 'sukhumvittadmai-bold';
         &:hover {
           color: $theme-primary;
         }
         &.active {
           color: $theme-primary;
-          font-weight: 600;
+          i {
+            &:before {
+              color: $theme-primary;
+            }
+          }
         }
         i {
-          color: $theme-primary-light;
-          font-size: 3rem;
+          color: $new-lable-color;
+          font-size: 1.8rem;
           padding: 0 1rem 0 0;
-          width: 4rem;
+          width: 3rem;
+          &:before {
+            color: $new-lable-color !important;
+          }
           &.fa-credit-card {
             font-size: 2.8rem !important;
           }
@@ -600,13 +606,15 @@
           padding: 0.3rem 0 0;
         }
       }
-      ul{
-        li{
-          a{
-            font-size: 1.2rem;
-            font-weight: 500;
-            &.active{
-              font-weight: 500;
+      ul {
+        padding: 1rem 0 0 3rem;
+        li {
+          border: 0;
+          padding: 0.5rem 1rem !important;
+          a {
+            opacity: 0.6;
+            font-size: 1.4rem;
+            &.active {
             }
           }
         }
@@ -2007,7 +2015,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 1024px){
   // .profile-pad {

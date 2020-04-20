@@ -14903,25 +14903,28 @@ span.ads {
         padding: 0 0 0 4rem; }
       .profile-pad .profile-menu li a {
         text-decoration: none;
-        color: #999;
+        color: #565656;
         font-size: 1.6rem;
-        font-weight: 400;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: flex;
         align-items: center;
         align-self: stretch;
         flex: 0 1 100%;
-        order: 0; }
+        order: 0;
+        font-family: 'sukhumvittadmai-bold'; }
         .profile-pad .profile-menu li a:hover {
           color: #3639b4; }
         .profile-pad .profile-menu li a.active {
-          color: #3639b4;
-          font-weight: 600; }
+          color: #3639b4; }
+          .profile-pad .profile-menu li a.active i:before {
+            color: #3639b4; }
         .profile-pad .profile-menu li a i {
-          color: #4d51bd;
-          font-size: 3rem;
+          color: #858585;
+          font-size: 1.8rem;
           padding: 0 1rem 0 0;
-          width: 4rem; }
+          width: 3rem; }
+          .profile-pad .profile-menu li a i:before {
+            color: #858585 !important; }
           .profile-pad .profile-menu li a i.fa-credit-card {
             font-size: 2.8rem !important; }
           .profile-pad .profile-menu li a i.fa-address-book {
@@ -14931,11 +14934,14 @@ span.ads {
         .profile-pad .profile-menu li a span {
           font-size: 1.4rem;
           padding: 0.3rem 0 0; }
-      .profile-pad .profile-menu li ul li a {
-        font-size: 1.2rem;
-        font-weight: 500; }
-        .profile-pad .profile-menu li ul li a.active {
-          font-weight: 500; }
+      .profile-pad .profile-menu li ul {
+        padding: 1rem 0 0 3rem; }
+        .profile-pad .profile-menu li ul li {
+          border: 0;
+          padding: 0.5rem 1rem !important; }
+          .profile-pad .profile-menu li ul li a {
+            opacity: 0.6;
+            font-size: 1.4rem; }
   .profile-pad .my-profile header {
     display: flex;
     justify-content: space-between;
