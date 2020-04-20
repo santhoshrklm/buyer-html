@@ -8417,73 +8417,6 @@ span.ads {
       height: 100px !important;
       margin-right: 2rem !important; } }
 
-/*cookies permission*/
-.cookies-permission-overlay {
-  z-index: 1000;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.6rem 0; }
-  .cookies-permission-overlay .cookies-permission-left {
-    font-size: 14px;
-    line-height: 1.57;
-    color: white; }
-    @media (max-width: 767.98px) {
-      .cookies-permission-overlay .cookies-permission-left {
-        font-size: 1.2rem;
-        line-height: 1.33;
-        margin-bottom: 1.5rem; } }
-    .cookies-permission-overlay .cookies-permission-left a {
-      font-family: 'sukhumvittadmai-bold';
-      color: white;
-      text-decoration: underline; }
-      .cookies-permission-overlay .cookies-permission-left a:hover, .cookies-permission-overlay .cookies-permission-left a:active {
-        text-decoration: none;
-        color: white; }
-  .cookies-permission-overlay .cookies-permission-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-    @media (max-width: 767.98px) {
-      .cookies-permission-overlay .cookies-permission-right {
-        justify-content: flex-start; } }
-    @media (max-width: 575.98px) {
-      .cookies-permission-overlay .cookies-permission-right {
-        justify-content: space-between; } }
-    .cookies-permission-overlay .cookies-permission-right .btn-cancel {
-      font-family: 'sukhumvittadmai-bold';
-      color: white;
-      font-size: 1.4rem;
-      line-height: 1;
-      padding: 1.2rem 1.8rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      @media (max-width: 575.98px) {
-        .cookies-permission-overlay .cookies-permission-right .btn-cancel {
-          width: 95%; } }
-    .cookies-permission-overlay .cookies-permission-right .btn-accept {
-      font-family: 'sukhumvittadmai-bold';
-      color: #101010;
-      background: white;
-      font-size: 1.4rem;
-      text-align: center;
-      line-height: 1;
-      padding: 1.2rem 1.8rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0.4rem; }
-      @media (max-width: 575.98px) {
-        .cookies-permission-overlay .cookies-permission-right .btn-accept {
-          width: 95%; } }
-
 .cart-pad {
   display: flex;
   justify-content: space-between;
@@ -16472,5 +16405,87 @@ span.ads {
       color: #565656; }
   .modal .modal-dialog.profile-modal-new .modal-content .modal-footer {
     padding-bottom: 0; }
+
+.static {
+  background-color: white;
+  padding: 1.5rem;
+  width: 100%; }
+  .static #accordion .card {
+    margin-bottom: 0.5rem; }
+  .static #accordion .card-header {
+    border-radius: 0;
+    background: #f5f5f5;
+    border-bottom: 2px solid #ebebf7;
+    border-bottom: 0;
+    cursor: pointer; }
+    .static #accordion .card-header.collapsed {
+      background: #f3f1f4; }
+
+/*cookies permission*/
+.cookies-permission-overlay {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.6rem 0; }
+  .cookies-permission-overlay .cookies-permission-left {
+    font-size: 14px;
+    line-height: 1.57;
+    color: white; }
+    @media (max-width: 767.98px) {
+      .cookies-permission-overlay .cookies-permission-left {
+        font-size: 1.2rem;
+        line-height: 1.33;
+        margin-bottom: 1.5rem; } }
+    .cookies-permission-overlay .cookies-permission-left a {
+      font-family: 'sukhumvittadmai-bold';
+      color: white;
+      text-decoration: underline; }
+      .cookies-permission-overlay .cookies-permission-left a:hover, .cookies-permission-overlay .cookies-permission-left a:active {
+        text-decoration: none;
+        color: white; }
+  .cookies-permission-overlay .cookies-permission-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    @media (max-width: 767.98px) {
+      .cookies-permission-overlay .cookies-permission-right {
+        justify-content: flex-start; } }
+    @media (max-width: 575.98px) {
+      .cookies-permission-overlay .cookies-permission-right {
+        justify-content: space-between; } }
+    .cookies-permission-overlay .cookies-permission-right .btn-cancel {
+      font-family: 'sukhumvittadmai-bold';
+      color: white;
+      font-size: 1.4rem;
+      line-height: 1;
+      padding: 1.2rem 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 575.98px) {
+        .cookies-permission-overlay .cookies-permission-right .btn-cancel {
+          width: 95%; } }
+    .cookies-permission-overlay .cookies-permission-right .btn-accept {
+      font-family: 'sukhumvittadmai-bold';
+      color: #101010;
+      background: white;
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 1;
+      padding: 1.2rem 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.4rem; }
+      @media (max-width: 575.98px) {
+        .cookies-permission-overlay .cookies-permission-right .btn-accept {
+          width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
