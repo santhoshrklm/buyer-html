@@ -1,0 +1,135 @@
+/*========= Special Button ==========*/
+.btn {
+  transition: all 0.5s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  i {
+    &:before {
+      padding-right: 0.8rem;
+    }
+  }
+  &-special {
+    border-radius: 8px;
+    box-shadow: 0 2px 0 0 $nocnoc-blue-med-dark;
+    color: $white !important;
+    background-color: $theme-primary;
+    color: $white;
+    @include horizontal-gradient(darken($theme-primary,7%), $chor-muang);
+    box-shadow: 0 0.2rem 0 0 $nocnoc-blue-med-dark !important;
+    &:hover, &:active, &:visited {
+      background: $nocnoc-blue-med-dark;
+      @include horizontal-gradient(darken($nocnoc-blue-med-dark,7%), $nocnoc-blue-med-dark);
+      box-shadow: 0 0.2rem 0 0 #202288 !important;
+    }
+    &.btn-xs-new {
+      padding: 0.8rem 0.8rem 0.6rem 0.8rem !important;
+    }
+    &.btn-sm-new {
+      padding: 0.8rem 1.6rem 0.6rem 1.6rem !important;
+    }
+    &.btn-lg-new {
+      padding: 0.8rem 2.4rem 0.7rem 2.4rem !important;
+    }
+    &.btn-xl-new {
+      padding: 1.2rem 2.4rem 1rem 2.4rem !important;
+    }
+    i {
+      &:before {
+        color: $white;
+      }
+    }
+  }
+  &-transparent {
+    background: transparent;
+    color: $theme-primary !important;
+    &:hover, &:active, &:visited {
+      background: transparent;
+      color: $nocnoc-blue-dark !important;
+    }
+  }
+  &-primary-new {
+    background: $thai-tea;
+    color: $white !important;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 0 $thai-tea-med-dark !important;
+    &:hover, &:active, &:visited {
+      background: $thai-tea-med-dark;
+      box-shadow: 0 2px 0 0 $thai-tea-dark !important;
+    }
+    i {
+      &:before {
+        color: $white;
+      }
+    }
+  }
+  &-secondary-new {
+    background: $white;
+    color: $thai-tea !important;
+    border: 0.1rem solid $thai-tea;
+    &:hover, &:active, &:visited {
+      background: $white;
+      color: $thai-tea-dark !important;
+      border: 0.1rem solid $thai-tea-dark;
+    }
+    i {
+      &:before {
+        color: $thai-tea;
+      }
+    }
+  }
+  &-danger {
+    background: $look-choup;
+    color: $white !important;
+    &:hover, &:active, &:visited {
+      background: $look-choup;
+    }
+  }
+  &.btn-xs-new {
+    font-family: 'sukhumvittadmai-bold';
+    padding: 0.8rem;
+    font-size: 1.2rem !important;
+    line-height: 1.33;
+    i {
+      &:before {
+        font-size: 1.2rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+  &.btn-sm-new {
+    font-family: 'sukhumvittadmai-bold';
+    padding: 0.8rem 1.6rem;
+    font-size: 1.4rem !important;
+    line-height: 1.5;
+    i {
+      &:before {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &.btn-lg-new {
+    font-family: 'sukhumvittadmai-bold';
+    padding: 0.8rem 2.4rem;
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    i {
+      &:before {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &.btn-xl-new {
+    font-family: 'sukhumvittadmai-bold';
+    padding: 1.2rem 2.4rem;
+    font-size:  1.6rem !important;
+    line-height: 1.5;
+    i {
+      &:before {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
