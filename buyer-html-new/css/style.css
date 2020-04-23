@@ -16499,7 +16499,6 @@ span.ads {
 .btn-special {
   color: white !important;
   background-color: #3639b4;
-  color: white;
   /* fallback/image non-cover color */
   background-color: #2e3099;
   /* Firefox 3.6+ */
@@ -16548,9 +16547,8 @@ span.ads {
 .btn-primary-new {
   background: #FF7235;
   color: white !important;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 0 0 #EB6930 !important; }
+  box-shadow: 0 2px 0 0 #EB6930 !important;
+  border: 0; }
   .btn-primary-new:hover, .btn-primary-new:active, .btn-primary-new:visited {
     background: #EB6930;
     box-shadow: 0 2px 0 0 #CC5B2A !important; }

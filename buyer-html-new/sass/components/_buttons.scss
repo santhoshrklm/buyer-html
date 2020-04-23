@@ -16,7 +16,6 @@
   &-special {
     color: $white !important;
     background-color: $theme-primary;
-    color: $white;
     @include horizontal-gradient(darken($theme-primary,7%), $chor-muang);
     box-shadow: 0 0.2rem 0 0 $nocnoc-blue-med-dark !important;
     border: 0;
@@ -42,9 +41,8 @@
   &-primary-new {
     background: $thai-tea;
     color: $white !important;
-    border: 0;
-    border-radius: 8px;
     box-shadow: 0 2px 0 0 $thai-tea-med-dark !important;
+    border: 0;
     &:hover, &:active, &:visited {
       background: $thai-tea-med-dark;
       box-shadow: 0 2px 0 0 $thai-tea-dark !important;
