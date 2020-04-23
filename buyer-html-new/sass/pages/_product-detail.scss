@@ -4403,10 +4403,10 @@
       flex-direction: column;
       justify-content: center;
       overflow: hidden;
-      width: 60%;
-      @include breakpoint-down(xs) {
-        width: 75%;
-      }
+      // width: 60%;
+      // @include breakpoint-down(xs) {
+      //   width: 75%;
+      // }
       h5 {
         font-size: 1.4rem;
         color: $base-color-light;
@@ -4414,8 +4414,10 @@
       }
       .button-container {
         display: flex;
-        justify-content: flex-start;
+        // justify-content: flex-start;
         flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
       }
       .seller-rating{
         display: flex;
