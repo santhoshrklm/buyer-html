@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hnhc7h');
-  src:  url('fonts/icomoon.eot?hnhc7h#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hnhc7h') format('truetype'),
-    url('fonts/icomoon.woff?hnhc7h') format('woff'),
-    url('fonts/icomoon.svg?hnhc7h#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ydt4lq');
+  src:  url('fonts/icomoon.eot?ydt4lq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ydt4lq') format('truetype'),
+    url('fonts/icomoon.woff?ydt4lq') format('woff'),
+    url('fonts/icomoon.svg?ydt4lq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-delete-new:before {
+  content: "\e978";
+}
+.icon-wishlist-filled:before {
+  content: "\e979";
+}
+.icon-wishlist-normal:before {
+  content: "\e97a";
+}
 .icon-discount:before {
   content: "\e977";
 }
