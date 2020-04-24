@@ -14941,7 +14941,8 @@ span.ads {
   .profile-pad .my-profile h5 {
     font-size: 1.4rem;
     color: #101010;
-    font-family: 'sukhumvittadmai-bold'; }
+    font-family: 'sukhumvittadmai-bold';
+    margin-bottom: 1.5rem; }
     .profile-pad .my-profile h5 a {
       font-size: 1.4rem;
       color: #39B436;
