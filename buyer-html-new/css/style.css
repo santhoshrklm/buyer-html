@@ -14909,14 +14909,28 @@ span.ads {
     padding: 1.5rem;
     margin-top: 1.6rem; }
     .profile-pad .my-profile .privacy-consent .custom-control {
-      line-height: 1; }
+      line-height: 1;
+      padding-left: 0; }
       .profile-pad .my-profile .privacy-consent .custom-control label {
-        margin-left: 0.8rem !important;
+        margin-left: 0 !important;
         font-size: 1.4rem; }
         .profile-pad .my-profile .privacy-consent .custom-control label:before, .profile-pad .my-profile .privacy-consent .custom-control label:after {
-          width: 1.4rem;
-          height: 1.4rem;
-          top: 0; }
+          width: 1.6rem;
+          height: 1.6rem; }
+      .profile-pad .my-profile .privacy-consent .custom-control .checkbox-new {
+        width: 1.6rem;
+        height: 1.6rem; }
+        .profile-pad .my-profile .privacy-consent .custom-control .checkbox-new + label {
+          padding: 0 0 0 2.4rem; }
+        .profile-pad .my-profile .privacy-consent .custom-control .checkbox-new:checked + label:before {
+          background: #3639b4;
+          border: 0.2rem solid #3639b4; }
+        .profile-pad .my-profile .privacy-consent .custom-control .checkbox-new:checked + label:after {
+          left: 0.6rem;
+          top: 0.2rem;
+          width: 0.5rem;
+          height: 1rem;
+          border-width: 0 1.4px 1.4px 0; }
     .profile-pad .my-profile .privacy-consent small a {
       font-size: 1.2rem;
       color: #3639b4;

@@ -675,13 +675,35 @@
       margin-top: 1.6rem;
       .custom-control {
         line-height: 1;
+        padding-left: 0;
         label {
-          margin-left: 0.8rem !important;
+          margin-left: 0 !important;
           font-size: 1.4rem;
           &:before, &:after {
-            width: 1.4rem;
-            height: 1.4rem;
-            top: 0;
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+        .checkbox-new {
+          width: 1.6rem;
+          height: 1.6rem;
+          + label {
+            padding: 0 0 0 2.4rem;
+          }
+          &:checked {
+            + label {
+              &:before {
+                background: $theme-primary;
+                border: 0.2rem solid $theme-primary;
+              }
+              &:after {
+                left: 0.6rem;
+                top: 0.2rem;
+                width: 0.5rem;
+                height: 1rem;
+                border-width: 0 1.4px 1.4px 0;
+              }
+            }
           }
         }
       }
