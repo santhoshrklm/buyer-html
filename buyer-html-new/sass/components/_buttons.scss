@@ -14,6 +14,7 @@
     }
   }
   &-special {
+    box-shadow: 0 2px 0 0 $nocnoc-blue-med-dark;
     color: $white !important;
     background-color: $theme-primary;
     @include horizontal-gradient(darken($theme-primary,7%), $chor-muang);
@@ -23,6 +24,7 @@
       background: $nocnoc-blue-med-dark;
       @include horizontal-gradient(darken($nocnoc-blue-med-dark,7%), $nocnoc-blue-med-dark);
       box-shadow: 0 0.2rem 0 0 #202288 !important;
+      background-image: -webkit-linear-gradient(left, $nocnoc-blue-med-dark 0%, $nocnoc-blue-med-dark 100%) !important;
     }
     i {
       &:before {

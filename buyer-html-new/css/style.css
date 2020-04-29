@@ -16512,6 +16512,7 @@ span.ads {
 .btn i:before {
   padding-right: 0.8rem; }
 .btn-special {
+  box-shadow: 0 2px 0 0 #2B2D90;
   color: white !important;
   background-color: #3639b4;
   /* fallback/image non-cover color */
@@ -16550,7 +16551,8 @@ span.ads {
     background: linear-gradient(to right, #232475 0%, #2B2D90 100%);
     /* IE6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
-    box-shadow: 0 0.2rem 0 0 #202288 !important; }
+    box-shadow: 0 0.2rem 0 0 #202288 !important;
+    background-image: -webkit-linear-gradient(left, #2B2D90 0%, #2B2D90 100%) !important; }
   .btn-special i:before {
     color: white; }
 .btn-transparent {
